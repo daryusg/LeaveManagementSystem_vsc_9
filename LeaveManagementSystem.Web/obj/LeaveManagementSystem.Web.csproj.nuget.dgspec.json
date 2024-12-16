@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\LeaveManagementSystem.Web.csproj": {}
+    "c:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\LeaveManagementSystem.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\LeaveManagementSystem.Web.csproj": {
+    "c:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\LeaveManagementSystem.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\LeaveManagementSystem.Web.csproj",
+        "projectUniqueName": "c:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\LeaveManagementSystem.Web.csproj",
         "projectName": "LeaveManagementSystem.Web",
-        "projectPath": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\LeaveManagementSystem.Web.csproj",
+        "projectPath": "c:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\LeaveManagementSystem.Web.csproj",
         "packagesPath": "C:\\Users\\kev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\",
+        "outputPath": "c:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
