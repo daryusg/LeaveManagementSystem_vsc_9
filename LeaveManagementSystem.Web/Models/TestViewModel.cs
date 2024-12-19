@@ -1,5 +1,3 @@
-using System;
-
 namespace LeaveManagementSystem.Web.Models;
 
 public class TestViewModel
