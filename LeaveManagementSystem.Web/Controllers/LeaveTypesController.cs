@@ -21,7 +21,10 @@ namespace LeaveManagementSystem.Web.Controllers
         // GET: LeaveTypes
         public async Task<IActionResult> Index()
         {
-            return View(await _context.LeaveTypes.ToListAsync());
+            //cip...60 _context is a connection to the db (ApplicaionDbContext). LeaveTypes is from "...DbSet<LeaveType> LeaveTypes..." in ApplicationDbContext.cs.
+            // var data = SELECT * FROM LeaveTypes
+            var data = await _context.LeaveTypes.ToListAsync();
+            return View(data);
         }
 
         // GET: LeaveTypes/Details/5
@@ -32,6 +35,8 @@ namespace LeaveManagementSystem.Web.Controllers
                 return NotFound();
             }
 
+            //Parameterisation securely passes the id and is key for preventing SQL injection attacks.
+            //SELECT TOP 1 FROM LeaveTypes WHERE (Id = @id)
             var leaveType = await _context.LeaveTypes
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (leaveType == null)
@@ -71,7 +76,8 @@ namespace LeaveManagementSystem.Web.Controllers
             {
                 return NotFound();
             }
-
+            
+            //SELECT TOP 1 FROM LeaveTypes WHERE (Id = @id)
             var leaveType = await _context.LeaveTypes.FindAsync(id);
             if (leaveType == null)
             {
