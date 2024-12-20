@@ -1,0 +1,10 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "LMS",
+            "database": "${workspaceFolder:LeaveManagementSystem_vsc_9}/LeaveManagementSystem.Web/app.db"
+        }
+    ]
+}
