@@ -1,5 +1,4 @@
-@model LeaveManagementSystem.Web.Data.LeaveType
-
+@model LeaveTypeReadOnlyVM //cip...78
 @{
     ViewData["Title"] = $"Leave Type Details: {@Model.Name}";
 }
@@ -16,10 +15,10 @@
             @Html.DisplayFor(model => model.Name)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.NumberOfDays)
+            @Html.DisplayNameFor(model => model.Days)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.NumberOfDays)
+            @Html.DisplayFor(model => model.Days)
         </dd>
     </dl>
 </div>

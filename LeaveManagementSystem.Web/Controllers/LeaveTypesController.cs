@@ -2,16 +2,19 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using LeaveManagementSystem.Web.Data;
 using LeaveManagementSystem.Web.Models.LeaveTypes;
+using AutoMapper;
 
 namespace LeaveManagementSystem.Web.Controllers
 {
     public class LeaveTypesController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly IMapper _mapper;
 
-        public LeaveTypesController(ApplicationDbContext context)
+        public LeaveTypesController(ApplicationDbContext context, IMapper mapper)
         {
             _context = context;
+            this._mapper = mapper;
         }
 
         // GET: LeaveTypes
@@ -20,13 +23,14 @@ namespace LeaveManagementSystem.Web.Controllers
             //cip...60 _context is a connection to the db (ApplicaionDbContext). LeaveTypes is from "...DbSet<LeaveType> LeaveTypes..." in ApplicationDbContext.cs.
             // var data = SELECT * FROM LeaveTypes
             var data = await _context.LeaveTypes.ToListAsync();
-            //convert the data model into a view model.
-            var viewData = data.Select(q => new IndexVM
-            {
-                Id = q.Id,
-                Name = q.Name,
-                Days = q.NumberOfDays
-            });
+            //convert the data model into a view model. cip...75 (Refactor Index with View Model)
+            // var viewData = data.Select(q => new IndexVM
+            // {
+            //     Id = q.Id,
+            //     Name = q.Name,
+            //     Days = q.NumberOfDays
+            // });
+            var viewData = _mapper.Map<List<LeaveTypeReadOnlyVM>>(data); //cip...77
             //return the view model to the view.
             return View(viewData);
         }
@@ -48,7 +52,9 @@ namespace LeaveManagementSystem.Web.Controllers
                 return NotFound();
             }
 
-            return View(leaveType);
+            var viewData = _mapper.Map<LeaveTypeReadOnlyVM>(leaveType); //cip...78
+
+            return View(viewData);
         }
 
         // GET: LeaveTypes/Create

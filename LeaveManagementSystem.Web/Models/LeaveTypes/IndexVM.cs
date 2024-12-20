@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace LeaveManagementSystem.Web.Models.LeaveTypes;
 
-public class IndexVM
+public class LeaveTypeReadOnlyVM
 {
     public int Id { get; set; } //cip...75
     [MaxLength(150)]
