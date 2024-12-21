@@ -71,6 +71,14 @@ namespace LeaveManagementSystem.Web.Controllers
         //public async Task<IActionResult> Create([Bind("Id,Name,NumberOfDays")] LeaveType leaveType)
         public async Task<IActionResult> Create(LeaveTypeCreateVM leaveTypeCreate) //cip...80
         {
+            //additonal validation
+            const string shouldNotBeginWith = "zzz";
+            const string shouldNotContain = "yyy";
+            if ((leaveTypeCreate.Name.Substring(0, 3).ToLower() == shouldNotBeginWith) || (leaveTypeCreate.Name.ToLower().Contains(shouldNotContain))) //cip...81
+            {
+                ModelState.AddModelError(nameof(leaveTypeCreate.Name), "Invalid name");
+            }
+
             if (ModelState.IsValid)
             {
                 var leaveType = _mapper.Map<LeaveType>(leaveTypeCreate); //cip...80
