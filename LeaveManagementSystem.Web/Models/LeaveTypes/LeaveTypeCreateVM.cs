@@ -10,5 +10,6 @@ public class LeaveTypeCreateVM
 
     [Required] //cip...81 it's not nullable so why???
     [Range(1, 90)] //cip...81
+    [Display(Name="Maximum allocation of days")] //cip...83
     public int Days { get; set; }
 }

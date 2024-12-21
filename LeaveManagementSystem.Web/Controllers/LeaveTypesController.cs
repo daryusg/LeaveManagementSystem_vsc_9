@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using LeaveManagementSystem.Web.Data;
 using LeaveManagementSystem.Web.Models.LeaveTypes;
 using AutoMapper;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace LeaveManagementSystem.Web.Controllers
 {
@@ -10,6 +11,7 @@ namespace LeaveManagementSystem.Web.Controllers
     {
         private readonly ApplicationDbContext _context;
         private readonly IMapper _mapper;
+        private const string duplicateName = "Duplicate name";
 
         public LeaveTypesController(ApplicationDbContext context, IMapper mapper)
         {
@@ -71,13 +73,16 @@ namespace LeaveManagementSystem.Web.Controllers
         //public async Task<IActionResult> Create([Bind("Id,Name,NumberOfDays")] LeaveType leaveType)
         public async Task<IActionResult> Create(LeaveTypeCreateVM leaveTypeCreate) //cip...80
         {
-            //additonal validation
+            //additonal validation 1. cip...81
             const string shouldNotBeginWith = "zzz";
             const string shouldNotContain = "yyy";
-            if ((leaveTypeCreate.Name.Substring(0, 3).ToLower() == shouldNotBeginWith) || (leaveTypeCreate.Name.ToLower().Contains(shouldNotContain))) //cip...81
+            if ((leaveTypeCreate.Name.Substring(0, 3).ToLower() == shouldNotBeginWith) || (leaveTypeCreate.Name.ToLower().Contains(shouldNotContain)))
             {
                 ModelState.AddModelError(nameof(leaveTypeCreate.Name), "Invalid name");
             }
+            //additonal validation 2. cip...84
+            if (await CheckIfLeaveTypeNameExists(null, leaveTypeCreate.Name))
+                ModelState.AddModelError(nameof(leaveTypeCreate.Name), duplicateName);
 
             if (ModelState.IsValid)
             {
@@ -103,7 +108,8 @@ namespace LeaveManagementSystem.Web.Controllers
             {
                 return NotFound();
             }
-            return View(leaveType);
+            var viewData = _mapper.Map<LeaveTypeEditVM>(leaveType); //cip...82
+            return View(viewData);
         }
 
         // POST: LeaveTypes/Edit/5
@@ -111,18 +117,23 @@ namespace LeaveManagementSystem.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,NumberOfDays")] LeaveType leaveType)
+        //public async Task<IActionResult> Edit(int id, [Bind("Id,Name,NumberOfDays")] LeaveType leaveType)
+        public async Task<IActionResult> Edit(int id, LeaveTypeEditVM leaveType)
         {
             if (id != leaveType.Id)
             {
                 return NotFound();
             }
 
+            if (await CheckIfLeaveTypeNameExists(leaveType.Id, leaveType.Name)) //cip...84
+                ModelState.AddModelError(nameof(leaveType.Name), duplicateName);
+
             if (ModelState.IsValid)
             {
                 try
                 {
-                    _context.Update(leaveType);
+                    var model = _mapper.Map<LeaveType>(leaveType); //cip...82
+                    _context.Update(model);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -155,8 +166,8 @@ namespace LeaveManagementSystem.Web.Controllers
             {
                 return NotFound();
             }
-
-            return View(leaveType);
+            var viewData = _mapper.Map<LeaveTypeReadOnlyVM>(leaveType); //cip...83
+            return View(viewData);
         }
 
         // POST: LeaveTypes/Delete/5
@@ -173,10 +184,24 @@ namespace LeaveManagementSystem.Web.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
+        //-------------------------------------------------------------------------------------------------
+        //-------------------------------------------------------------------------------------------------
+        //-------------------------------------------------------------------------------------------------
         private bool LeaveTypeExists(int id)
         {
             return _context.LeaveTypes.Any(e => e.Id == id);
+        }
+
+        private async Task<bool> CheckIfLeaveTypeNameExists(int? id, string name) //cip...84
+        {
+            //return (_context.LeaveTypes.Any(q => q.Name.ToLower() == name.ToLower());
+            //return (_context.LeaveTypes.Any(q => q.Name.ToLower().Equals(name.ToLower(), StringComparison.InvariantCultureIgnoreCase)));// tw explained that he's had failures with the db conversion.
+            if (id == null)
+                //new record, no need to validate the id
+                return (await _context.LeaveTypes.AnyAsync(q => q.Name.ToLower().Equals(name.ToLower())));
+            else
+                //existing record, validate the id
+                return (await _context.LeaveTypes.AnyAsync(q => q.Name.ToLower().Equals(name.ToLower()) && (q.Id != id)));
         }
     }
 }

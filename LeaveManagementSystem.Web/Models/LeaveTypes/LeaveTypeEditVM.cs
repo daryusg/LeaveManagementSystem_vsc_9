@@ -2,10 +2,12 @@ using System.ComponentModel.DataAnnotations;
 
 namespace LeaveManagementSystem.Web.Models.LeaveTypes;
 
-public class LeaveTypeReadOnlyVM : BaseLeaveTypeVm
+public class LeaveTypeEditVM : BaseLeaveTypeVm
 {
-    [MaxLength(150)]
-    public string Name { get; set; } = string.Empty; //cip...75
+    [Length(4, 150, ErrorMessage ="Invalid field length (4-150)" )]
+    public string Name { get; set; } = string.Empty;
+    [Range(1, 90)]
     [Display(Name="Maximum allocation of days")] //cip...83
     public int Days { get; set; }
 }
+
