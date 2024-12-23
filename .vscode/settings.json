@@ -6,5 +6,6 @@
             "name": "LMS",
             "database": "${workspaceFolder:LeaveManagementSystem_vsc_9}/LeaveManagementSystem.Web/app.db"
         }
-    ]
+    ],
+    "sqltools.useNodeRuntime": true
 }

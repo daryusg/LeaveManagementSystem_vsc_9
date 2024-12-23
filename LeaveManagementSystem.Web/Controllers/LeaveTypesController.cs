@@ -1,38 +1,19 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using LeaveManagementSystem.Web.Data;
 using LeaveManagementSystem.Web.Models.LeaveTypes;
-using AutoMapper;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using LeaveManagementSystem.Web.Services;
 
 namespace LeaveManagementSystem.Web.Controllers
 {
-    public class LeaveTypesController : Controller
+    public class LeaveTypesController(ILeaveTypesService _leaveTypesService) : Controller //cip...93
     {
-        private readonly ApplicationDbContext _context;
-        private readonly IMapper _mapper;
-        private const string duplicateName = "Duplicate name";
-
-        public LeaveTypesController(ApplicationDbContext context, IMapper mapper)
-        {
-            _context = context;
-            this._mapper = mapper;
-        }
+        private const string duplicateName = "Duplicate name"; //cip...84
+        private const string invalidName = "Invalid name";
 
         // GET: LeaveTypes
         public async Task<IActionResult> Index()
         {
-            //cip...60 _context is a connection to the db (ApplicaionDbContext). LeaveTypes is from "...DbSet<LeaveType> LeaveTypes..." in ApplicationDbContext.cs.
-            // var data = SELECT * FROM LeaveTypes
-            var data = await _context.LeaveTypes.ToListAsync();
-            //convert the data model into a view model. cip...75 (Refactor Index with View Model)
-            // var viewData = data.Select(q => new IndexVM
-            // {
-            //     Id = q.Id,
-            //     Name = q.Name,
-            //     Days = q.NumberOfDays
-            // });
-            var viewData = _mapper.Map<List<LeaveTypeReadOnlyVM>>(data); //cip...77
+            var viewData = await _leaveTypesService.GetAllAsync(); //cip...93
             //return the view model to the view.
             return View(viewData);
         }
@@ -45,16 +26,12 @@ namespace LeaveManagementSystem.Web.Controllers
                 return NotFound();
             }
 
-            //Parameterisation securely passes the id and is key for preventing SQL injection attacks.
-            //SELECT TOP 1 FROM LeaveTypes WHERE (Id = @id)
-            var leaveType = await _context.LeaveTypes
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (leaveType == null)
+            var viewData = await _leaveTypesService.GetAsync<LeaveTypeReadOnlyVM>(id);
+
+            if (viewData == null)
             {
                 return NotFound();
             }
-
-            var viewData = _mapper.Map<LeaveTypeReadOnlyVM>(leaveType); //cip...78
 
             return View(viewData);
         }
@@ -78,17 +55,15 @@ namespace LeaveManagementSystem.Web.Controllers
             const string shouldNotContain = "yyy";
             if ((leaveTypeCreate.Name.Substring(0, 3).ToLower() == shouldNotBeginWith) || (leaveTypeCreate.Name.ToLower().Contains(shouldNotContain)))
             {
-                ModelState.AddModelError(nameof(leaveTypeCreate.Name), "Invalid name");
+                ModelState.AddModelError(nameof(leaveTypeCreate.Name), invalidName);
             }
             //additonal validation 2. cip...84
-            if (await CheckIfLeaveTypeNameExists(null, leaveTypeCreate.Name))
+            if (await _leaveTypesService.CheckIfLeaveTypeNameExistsAsync(null, leaveTypeCreate.Name))
                 ModelState.AddModelError(nameof(leaveTypeCreate.Name), duplicateName);
 
             if (ModelState.IsValid)
             {
-                var leaveType = _mapper.Map<LeaveType>(leaveTypeCreate); //cip...80
-                _context.Add(leaveType);
-                await _context.SaveChangesAsync();
+                await _leaveTypesService.CreateAsync(leaveTypeCreate);
                 return RedirectToAction(nameof(Index));
             }
             return View(leaveTypeCreate);
@@ -102,13 +77,11 @@ namespace LeaveManagementSystem.Web.Controllers
                 return NotFound();
             }
             
-            //SELECT TOP 1 FROM LeaveTypes WHERE (Id = @id)
-            var leaveType = await _context.LeaveTypes.FindAsync(id);
-            if (leaveType == null)
+            var viewData = await _leaveTypesService.GetAsync<LeaveTypeEditVM>(id); //cip...93
+            if (viewData == null)
             {
                 return NotFound();
             }
-            var viewData = _mapper.Map<LeaveTypeEditVM>(leaveType); //cip...82
             return View(viewData);
         }
 
@@ -125,20 +98,18 @@ namespace LeaveManagementSystem.Web.Controllers
                 return NotFound();
             }
 
-            if (await CheckIfLeaveTypeNameExists(leaveType.Id, leaveType.Name)) //cip...84
+            if (await _leaveTypesService.CheckIfLeaveTypeNameExistsAsync(leaveType.Id, leaveType.Name)) //cip...93
                 ModelState.AddModelError(nameof(leaveType.Name), duplicateName);
 
             if (ModelState.IsValid)
             {
                 try
                 {
-                    var model = _mapper.Map<LeaveType>(leaveType); //cip...82
-                    _context.Update(model);
-                    await _context.SaveChangesAsync();
+                    await _leaveTypesService.EditAsync(leaveType); //cip...93
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!LeaveTypeExists(leaveType.Id))
+                    if (!_leaveTypesService.LeaveTypeExists(leaveType.Id)) //cip...93
                     {
                         return NotFound();
                     }
@@ -160,13 +131,11 @@ namespace LeaveManagementSystem.Web.Controllers
                 return NotFound();
             }
 
-            var leaveType = await _context.LeaveTypes
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (leaveType == null)
+            var viewData = await _leaveTypesService.GetAsync<LeaveTypeReadOnlyVM>(id); //cip...93
+            if (viewData == null)
             {
                 return NotFound();
             }
-            var viewData = _mapper.Map<LeaveTypeReadOnlyVM>(leaveType); //cip...83
             return View(viewData);
         }
 
@@ -175,33 +144,8 @@ namespace LeaveManagementSystem.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var leaveType = await _context.LeaveTypes.FindAsync(id);
-            if (leaveType != null)
-            {
-                _context.LeaveTypes.Remove(leaveType);
-            }
-
-            await _context.SaveChangesAsync();
+            await _leaveTypesService.RemoveAsync(id); //cip...93
             return RedirectToAction(nameof(Index));
-        }
-        //-------------------------------------------------------------------------------------------------
-        //-------------------------------------------------------------------------------------------------
-        //-------------------------------------------------------------------------------------------------
-        private bool LeaveTypeExists(int id)
-        {
-            return _context.LeaveTypes.Any(e => e.Id == id);
-        }
-
-        private async Task<bool> CheckIfLeaveTypeNameExists(int? id, string name) //cip...84
-        {
-            //return (_context.LeaveTypes.Any(q => q.Name.ToLower() == name.ToLower());
-            //return (_context.LeaveTypes.Any(q => q.Name.ToLower().Equals(name.ToLower(), StringComparison.InvariantCultureIgnoreCase)));// tw explained that he's had failures with the db conversion.
-            if (id == null)
-                //new record, no need to validate the id
-                return (await _context.LeaveTypes.AnyAsync(q => q.Name.ToLower().Equals(name.ToLower())));
-            else
-                //existing record, validate the id
-                return (await _context.LeaveTypes.AnyAsync(q => q.Name.ToLower().Equals(name.ToLower()) && (q.Id != id)));
         }
     }
 }
