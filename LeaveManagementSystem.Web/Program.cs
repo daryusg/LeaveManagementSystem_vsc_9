@@ -1,8 +1,4 @@
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
-using LeaveManagementSystem.Web.Data;
 using System.Reflection;
-using LeaveManagementSystem.Web.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,7 +12,8 @@ builder.Services.AddScoped<ILeaveTypesService, LeaveTypesService>(); //cip...91.
 
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly()); //cip...77
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true) //cip...107. (default user) IdentityUser->ApplicationUser
+    .AddRoles<IdentityRole>() //cip...107
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
 

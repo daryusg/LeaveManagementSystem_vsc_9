@@ -1,8 +1,6 @@
-﻿using LeaveManagementSystem.Web.Models.LeaveTypes;
-
-namespace LeaveManagementSystem.Web.Services
+﻿namespace LeaveManagementSystem.Web.Services
 {
-  public interface ILeaveTypesService
+    public interface ILeaveTypesService
   {
     Task CreateAsync(LeaveTypeCreateVM model);
     Task EditAsync(LeaveTypeEditVM model);

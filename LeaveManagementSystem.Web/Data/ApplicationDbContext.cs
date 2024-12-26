@@ -1,10 +1,6 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
+﻿namespace LeaveManagementSystem.Web.Data;
 
-namespace LeaveManagementSystem.Web.Data;
-
-public class ApplicationDbContext : IdentityDbContext
+public class ApplicationDbContext : IdentityDbContext<ApplicationUser> //cip...107. default user from default (IdentityUser) to ApplicationUser.
 {
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
         : base(options)
@@ -16,10 +12,13 @@ public class ApplicationDbContext : IdentityDbContext
         base.OnModelCreating(builder); //must be here
 
         //users
+        //cip..103 was for ef 8. in ef 9, after gening a migration, "dotnet ef database update" fails with error "...The model for context 'ApplicationDbContext' has pending changes. Add a new migration before updating the database..."
+        //gening another migration produces a file with "...columns: new[] { "ConcurrencyStamp", "PasswordHash", "SecurityStamp" },...".
+        //i'll only use if needed, maybe never.
         //note: ConcurrencyStamp, PasswordHash & SecurityStamp need static values in ef 9 (https://www.udemy.com/course/complete-aspnet-core-31-and-entity-framework-development/learn/lecture/43693496#questions/22709311).
-        var hasher = new PasswordHasher<IdentityUser>();
-        builder.Entity<IdentityUser>().HasData(
-            new IdentityUser
+        var hasher = new PasswordHasher<ApplicationUser>();
+        builder.Entity<ApplicationUser>().HasData( //cip...107. (default user) IdentityUser->ApplicationUser.
+            new ApplicationUser
             {
                 Id = "cb6397fe-acf8-49dd-b791-01bf0b069aee",
                 Email = "admin@localhost.com",
@@ -29,9 +28,12 @@ public class ApplicationDbContext : IdentityDbContext
                 PasswordHash = "AQAAAAIAAYagAAAAEN5WCPZ+e5Tcc6puplTNrflD+R6WpF82fsT2aCWMlDDmwAlhys5FMsfFVgax4+GI7Q==", //hasher.HashPassword(null, "P@ssw0rd"),
                 EmailConfirmed = true,
                 SecurityStamp = "26d82787-3f4c-4fe2-b6c6-1660a3c8d58a", //Guid.NewGuid().ToString("D"),
-                ConcurrencyStamp = "adb2ad4efab64d049c8a713991f0bd37" //Guid.NewGuid().ToString("N")
+                ConcurrencyStamp = "adb2ad4efab64d049c8a713991f0bd37", //Guid.NewGuid().ToString("N"),
+                FirstName = "Admin",
+                LastName = "Default",
+                DateOfBirth = new DateOnly(1990, 07, 01)
             },
-            new IdentityUser
+            new ApplicationUser
             {
                 Id = "8a862852-9e68-4bcc-b624-220e9b060cf9",
                 Email = "admin_bu1@localhost.com",
@@ -41,9 +43,12 @@ public class ApplicationDbContext : IdentityDbContext
                 PasswordHash = "AQAAAAIAAYagAAAAEJ5jT7bufJvPmguGXW9QAbwUO4GGPlOPUpZDSdL3J5uk9pgBbth4gkSONtFF3+A8kg==", //hasher.HashPassword(null, "P@ssw0rd"),
                 EmailConfirmed = true,
                 SecurityStamp = "8dd5bb17-2a8e-4998-a66b-8611e32a9b9a", //Guid.NewGuid().ToString("D"),
-                ConcurrencyStamp = "bff9869ba62a4a4986479a91c0d6890b" //Guid.NewGuid().ToString("N")
+                ConcurrencyStamp = "bff9869ba62a4a4986479a91c0d6890b", //Guid.NewGuid().ToString("N")
+                FirstName = "Admin_Bu1",
+                LastName = "Default",
+                DateOfBirth = new DateOnly(1991, 07, 01)
             },
-            new IdentityUser
+            new ApplicationUser
             {
                 Id = "a23d75b8-c842-4164-9cb1-f9e7c2366c3b",
                 Email = "testuser@leavemanagement.com",
@@ -53,7 +58,10 @@ public class ApplicationDbContext : IdentityDbContext
                 PasswordHash = "AQAAAAIAAYagAAAAEFmo3ccUYE1zfv2SyMqUSjAxLxupY6bcQEuHLVIgF+ShU/lOkD2lbsPYrlcXNnKNnQ==", //hasher.HashPassword(null, "P@ssw0rd"),
                 EmailConfirmed = true,
                 SecurityStamp = "49123653-2d14-4579-a213-e8263f280755", //Guid.NewGuid().ToString("D"),
-                ConcurrencyStamp = "939075471b23410b832121d4f56ebeb3" //Guid.NewGuid().ToString("N")
+                ConcurrencyStamp = "939075471b23410b832121d4f56ebeb3", //Guid.NewGuid().ToString("N")
+                FirstName = "test",
+                LastName = "user",
+                DateOfBirth = new DateOnly(1992, 07, 01)
             }
         );
 

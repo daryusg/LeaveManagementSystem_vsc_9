@@ -1,8 +1,3 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using LeaveManagementSystem.Web.Models.LeaveTypes;
-using LeaveManagementSystem.Web.Services;
-
 namespace LeaveManagementSystem.Web.Controllers
 {
     public class LeaveTypesController(ILeaveTypesService _leaveTypesService) : Controller //cip...93
