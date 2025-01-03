@@ -25,3 +25,4 @@ global using LeaveManagementSystem.Web.Models;
 global using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 global using AutoMapper;
 //cip...107 -------------------------------------------------
+global using LeaveManagementSystem.Web.Common; //cip...112

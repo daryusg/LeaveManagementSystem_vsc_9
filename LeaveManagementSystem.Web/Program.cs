@@ -9,10 +9,12 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddScoped<ILeaveTypesService, LeaveTypesService>(); //cip...91. register the service for dependency injection.
+builder.Services.AddTransient<IEmailSender, EmailSender>(); //cip...111
 
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly()); //cip...77
 
 builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true) //cip...107. (default user) IdentityUser->ApplicationUser
+//cip...108 Register.cshtml.cs if (_userManager.Options.SignIn.RequireConfirmedAccount) -> options.SignIn.RequireConfirmedAccount = true
     .AddRoles<IdentityRole>() //cip...107
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
