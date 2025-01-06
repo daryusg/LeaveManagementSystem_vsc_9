@@ -1,6 +1,6 @@
 namespace LeaveManagementSystem.Web.Controllers
 {
-    [Authorize(Roles = "Administrator")] //cip...112
+    [Authorize(Roles = Constants.Roles.cAdministrator)] //cip...112
     public class LeaveTypesController(ILeaveTypesService _leaveTypesService) : Controller //cip...93
     {
         private const string duplicateName = "Duplicate name"; //cip...84

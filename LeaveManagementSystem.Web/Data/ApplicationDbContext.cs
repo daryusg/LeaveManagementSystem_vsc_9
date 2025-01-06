@@ -107,5 +107,7 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser> //cip...1
         );
     }
 
-    public DbSet<LeaveType> LeaveTypes { get; set; }
+    public DbSet<LeaveType> LeaveTypes { get; set; } //cip...58
+    public DbSet<Period> Periods { get; set; } //cip...121
+    public DbSet<LeaveAllocation> LeaveAllocations { get; set; } //cip...121
 }
