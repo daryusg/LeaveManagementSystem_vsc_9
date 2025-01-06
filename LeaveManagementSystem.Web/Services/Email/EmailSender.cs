@@ -2,7 +2,7 @@ using System;
 using System.Net.Mail;
 using Microsoft.DotNet.Scaffolding.Shared.Messaging;
 
-namespace LeaveManagementSystem.Web.Services;
+namespace LeaveManagementSystem.Web.Services.Email;
 
 //cip...111
 public class EmailSender(IConfiguration _configuration) : IEmailSender

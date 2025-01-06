@@ -1,7 +1,7 @@
-﻿namespace LeaveManagementSystem.Web.Services
+﻿namespace LeaveManagementSystem.Web.Services.LeaveTypes;
+
+public interface ILeaveTypesService
 {
-    public interface ILeaveTypesService
-  {
     Task CreateAsync(LeaveTypeCreateVM model);
     Task EditAsync(LeaveTypeEditVM model);
     Task<List<LeaveTypeReadOnlyVM>> GetAllAsync();
@@ -9,5 +9,4 @@
     Task RemoveAsync(int id);
     bool LeaveTypeExists(int id);
     Task<bool> CheckIfLeaveTypeNameExistsAsync(int? id, string name);
-  }
 }

@@ -1,3 +1,5 @@
+using LeaveManagementSystem.Web.Services.LeaveTypes;
+
 namespace LeaveManagementSystem.Web.Controllers
 {
     [Authorize(Roles = Constants.Roles.cAdministrator)] //cip...112

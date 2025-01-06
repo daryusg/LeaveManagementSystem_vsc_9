@@ -1,4 +1,8 @@
 using System.Reflection;
+using LeaveManagementSystem.Web.Services.Email;
+using LeaveManagementSystem.Web.Services.LeaveAllocations;
+using LeaveManagementSystem.Web.Services.LeaveTypes;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +13,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddScoped<ILeaveTypesService, LeaveTypesService>(); //cip...91. register the service for dependency injection.
+builder.Services.AddScoped<ILeaveAllocationsService, LeaveAllocationsService>(); //cip...123. register the service for dependency injection.
 builder.Services.AddTransient<IEmailSender, EmailSender>(); //cip...111
 
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly()); //cip...77
