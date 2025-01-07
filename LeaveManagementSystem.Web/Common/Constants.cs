@@ -8,4 +8,6 @@ public static class Constants
         public const string cSupervisor = "Supervisor";
         public const string cEmployee = "Employee";
     }
+
+    public static int cMonthsPerYear = 12; //cip...125
 }

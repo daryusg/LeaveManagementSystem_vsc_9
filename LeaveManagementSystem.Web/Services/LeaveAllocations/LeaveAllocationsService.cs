@@ -5,19 +5,28 @@ namespace LeaveManagementSystem.Web.Services.LeaveAllocations;
 public class LeaveAllocationsService(ApplicationDbContext _context) : ILeaveAllocationsService
 {
     //cip...124
-    public async Task AllocateLeave(string employeeId)
+    public async Task AllocateLeaveAsync(string employeeId)
     {
         //get all the leave types
         var leaveTypes = await _context.LeaveTypes.ToListAsync();
 
         //get the current period based on the year
         var currentDate = DateTime.Now;
-        var period = await _context.Periods.SingleAsync(q => q.EndDate.Year == currentDate.Year);
+        Period period;
+        try
+        {
+            period = await _context.Periods.SingleAsync(q => q.EndDate.Year == currentDate.Year);
+        }
+        catch(Exception e)
+        {
+            throw new Exception("Invalid period data", e.InnerException);
+        }
         //calculate leave based on the number of months left in the period
         var monthsRemaining = period.EndDate.Month - currentDate.Month;
         //for each leave type, create an allocation entry
         foreach(var leaveType in leaveTypes)
         {
+            var accrualRate = decimal.Divide(leaveType.NumberOfDays, Constants.cMonthsPerYear); //cip...125
             var leaveAllocation = new LeaveAllocation
             {
                 EmployeeId = employeeId,
@@ -26,7 +35,7 @@ public class LeaveAllocationsService(ApplicationDbContext _context) : ILeaveAllo
                 //check out tw's ef core course for full explanation (https://www.udemy.com/course/entity-framework-core-a-full-tour/?couponCode=NEWYEARCAREER).
                 // Period = period, //navigation property
                 PeriodId = period.Id, //fk property NOTE: tw's recommendation: use fk property. DON'T DO BOTH. do 1 or t'other.
-                Days = leaveType.NumberOfDays / monthsRemaining
+                Days = (int)Math.Ceiling(accrualRate * monthsRemaining)  //cip...125
             };
             _context.Add(leaveAllocation);
         }

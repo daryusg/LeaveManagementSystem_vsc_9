@@ -24,6 +24,10 @@
             },
             "sourceFileMap": {
                 "/Views": "${workspaceFolder}/Views"
+            },
+            //07/01/25. https://stackoverflow.com/questions/55192869/cannot-find-or-open-the-pdb-file-in-vs-code
+            "logging": {
+              "moduleLoad": false
             }
         },
         {
