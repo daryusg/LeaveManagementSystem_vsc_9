@@ -1,4 +1,5 @@
 using System;
+using NuGet.Packaging.Signing;
 
 namespace LeaveManagementSystem.Web.Services.LeaveAllocations;
 
@@ -41,5 +42,17 @@ public class LeaveAllocationsService(ApplicationDbContext _context) : ILeaveAllo
         }
         //save to db once. all fail or none fail. this needs to be in line with the reqs.
         await _context.SaveChangesAsync();
+    }
+
+    //cip...126
+    public async Task<List<LeaveAllocation>> GetAllocations(string employeeId)
+    {
+        var allocations = await _context.LeaveAllocations
+            .Include(q => q.LeaveType) //join the LeaveType table. fills in the LeaveType field
+            .Include(q => q.Employee) //join the Employee table. fills in the Employee field
+            .Include(q => q.Period) //join the Period table. fills in the Period field
+            .Where(q => q.EmployeeId == employeeId)
+            .ToListAsync(); //this is where it executes the query. cip...126
+        return allocations;
     }
 }
