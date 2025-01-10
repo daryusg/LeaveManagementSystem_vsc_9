@@ -200,6 +200,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhdmVBbGxvY2F0aW9uc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/kev/projects_vscode/LeaveManagementSystem_vsc_9/LeaveManagementSystem.Web/Views/LeaveAllocations/EditAllocation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhdmVBbGxvY2F0aW9uc1xFZGl0QWxsb2NhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/kev/projects_vscode/LeaveManagementSystem_vsc_9/LeaveManagementSystem.Web/Views/LeaveAllocations/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhdmVBbGxvY2F0aW9uc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

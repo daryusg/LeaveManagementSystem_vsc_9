@@ -81,6 +81,16 @@ public class LeaveAllocationsService(ApplicationDbContext _context, IHttpContext
         var employees = _mapper.Map<List<ApplicationUser>, List<EmployeeVM>>(users.ToList()); //cip...131 NOTE: users is IList
         return(employees);
     }
+
+    public async Task<LeaveAllocationVM> GetEmployeeAllocationAsync(int allocationId) //cip...134
+    {
+        var allocation = await _context.LeaveAllocations
+            .Include(q => q.LeaveType)
+            .FirstOrDefaultAsync(q => q.Id == allocationId);
+
+        var model = _mapper.Map<LeaveAllocationEditVM>(allocation);
+        return(model);
+    }
     //-------------------------------------------------------------------------------------------------
     //-------------------------------------------------------------------------------------------------
     //-------------------------------------------------------------------------------------------------
