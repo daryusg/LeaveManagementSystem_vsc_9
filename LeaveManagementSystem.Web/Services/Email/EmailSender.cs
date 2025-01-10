@@ -1,6 +1,4 @@
-using System;
 using System.Net.Mail;
-using Microsoft.DotNet.Scaffolding.Shared.Messaging;
 
 namespace LeaveManagementSystem.Web.Services.Email;
 

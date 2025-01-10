@@ -1,13 +1,13 @@
-using System;
-using NuGet.Packaging.Signing;
-
 namespace LeaveManagementSystem.Web.Services.LeaveAllocations;
 
-public class LeaveAllocationsService(ApplicationDbContext _context) : ILeaveAllocationsService
+//cip...124
+public class LeaveAllocationsService(ApplicationDbContext _context, IHttpContextAccessor _httpContextAccessor, UserManager<ApplicationUser> _userManager, IMapper _mapper) : ILeaveAllocationsService
 {
-    //cip...124
-    public async Task AllocateLeaveAsync(string employeeId)
+    public async Task AllocateLeaveAsync(string employeeId) //cip...130 i need the employeeId param as this routine is used at registration and therefore the user is NOT logged in
     {
+        //NOTE: the following line can't be used here as we use this routine at registration and therefore the user is NOT logged in
+        //var employeeId = await GetEmployeeIdAsync(); //my own cip...127
+        //var employee = await _userManager.GetUserAsync(_httpContextAccessor.HttpContext?.User);
         //get all the leave types
         var leaveTypes = await _context.LeaveTypes.ToListAsync();
 
@@ -44,15 +44,71 @@ public class LeaveAllocationsService(ApplicationDbContext _context) : ILeaveAllo
         await _context.SaveChangesAsync();
     }
 
-    //cip...126
-    public async Task<List<LeaveAllocation>> GetAllocations(string employeeId)
+    public async Task<EmployeeAllocationVM> GetEmployeeAllocationsAsync(string? employeeId) //cip...128
     {
-        var allocations = await _context.LeaveAllocations
-            .Include(q => q.LeaveType) //join the LeaveType table. fills in the LeaveType field
-            .Include(q => q.Employee) //join the Employee table. fills in the Employee field
-            .Include(q => q.Period) //join the Period table. fills in the Period field
-            .Where(q => q.EmployeeId == employeeId)
+        if(string.IsNullOrEmpty(employeeId)) //cip..131
+            employeeId = await GetEmployeeIdAsync(); //get the id of the logged in user
+
+        var allocations = await GetAllocationsAsync(employeeId);
+        var allocationVmList = _mapper.Map<List<LeaveAllocation>, List<LeaveAllocationVM>>(allocations);
+
+        var user = await GetEmployeeAsync(employeeId); //get _httpContextAccessor.HttpContext?.User details
+        var employeeVm = new EmployeeAllocationVM
+        {
+            DateOfBirth = user.DateOfBirth,
+            Email = user.Email,
+            FirstName = user.FirstName,
+            LastName = user.LastName,
+            Id = user.Id,
+            LeaveAllocations = allocationVmList
+        };
+
+        return employeeVm;
+    }
+
+    public async Task<List<EmployeeVM>> GetEmployeesAsync() //cip...131
+    {
+        var users = await _userManager.GetUsersInRoleAsync(Constants.Roles.cEmployee);
+        var employees = _mapper.Map<List<ApplicationUser>, List<EmployeeVM>>(users.ToList()); //cip...131 NOTE: users is IList
+        return(employees);
+    }
+    //-------------------------------------------------------------------------------------------------
+    //-------------------------------------------------------------------------------------------------
+    //-------------------------------------------------------------------------------------------------
+    protected async Task<string> GetEmployeeIdAsync() //my own cip...127
+    {
+        var user = await _userManager.GetUserAsync(_httpContextAccessor.HttpContext?.User);
+        return user.Id;
+    }
+
+    private async Task<ApplicationUser> GetEmployeeAsync(string? employeeId) //my own cip...128
+    {
+        var user = string.IsNullOrEmpty(employeeId) //cip...131
+            ? await _userManager.GetUserAsync(_httpContextAccessor.HttpContext?.User)
+            : await _userManager.FindByIdAsync(employeeId);
+
+        return user;
+    }
+
+    //cip...126...moved when made private cip..131
+    private async Task<List<LeaveAllocation>> GetAllocationsAsync(string employeeId) //cip...131 made private
+    {
+        var currentDate = DateTime.Now; //cip...130
+        // option 1. cip...130. 2 queries
+        // var period = await _context.Periods.SingleAsync(q => q.EndDate.Year == currentDate.Year); //cip...130
+        // var leaveAllocations = await _context.LeaveAllocations
+        //     .Include(q => q.LeaveType) //join the LeaveType table. fills in the LeaveType field via LeaveypeId
+        //     //.Include(q => q.Employee) //cip...128 refactored. the EmployeeAllocationVM contains LeaveAllocations
+        //     .Include(q => q.Period) //join the Period table. fills in the Period field via PeriodId
+        //     .Where(q => q.EmployeeId == employeeId && q.PeriodId == period.Id)
+        //     .ToListAsync(); //this is where it executes the query. cip...126
+        // option 2. cip...130. 1 query
+        var leaveAllocations = await _context.LeaveAllocations
+            .Include(q => q.LeaveType) //join the LeaveType table. fills in the LeaveType field via LeaveypeId
+            //.Include(q => q.Employee) //cip...128 refactored. the EmployeeAllocationVM contains LeaveAllocations
+            .Include(q => q.Period) //join the Period table. fills in the Period field via PeriodId
+            .Where(q => q.EmployeeId == employeeId && q.Period.EndDate.Year == currentDate.Year)
             .ToListAsync(); //this is where it executes the query. cip...126
-        return allocations;
+        return leaveAllocations;
     }
 }

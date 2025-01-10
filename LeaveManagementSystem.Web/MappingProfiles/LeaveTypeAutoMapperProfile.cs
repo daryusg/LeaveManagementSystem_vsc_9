@@ -1,8 +1,8 @@
 namespace LeaveManagementSystem.Web.MappingProfiles;
 
-public class AutoMapperProfile : Profile
+public class LeaveTypeAutoMapperProfile : Profile
 {
-    public AutoMapperProfile()
+    public LeaveTypeAutoMapperProfile()
     {
         CreateMap<LeaveType, LeaveTypeReadOnlyVM>()
             .ForMember(dest => dest.Days, opt => opt.MapFrom(src => src.NumberOfDays)); //cip...77 map from:LeaveType to:IndexVM

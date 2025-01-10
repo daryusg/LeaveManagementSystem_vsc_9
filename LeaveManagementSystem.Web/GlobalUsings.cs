@@ -20,9 +20,10 @@ global using Microsoft.Extensions.Logging;
 
 global using Microsoft.EntityFrameworkCore;
 global using LeaveManagementSystem.Web.Models.LeaveTypes;
-global using LeaveManagementSystem.Web.Services;
 global using LeaveManagementSystem.Web.Models;
 global using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 global using AutoMapper;
 //cip...107 -------------------------------------------------
 global using LeaveManagementSystem.Web.Common; //cip...112
+global using LeaveManagementSystem.Web.Models.LeaveAllocations; //cip...128
+global using LeaveManagementSystem.Web.Models.Periods; //cip...128

@@ -1,5 +1,3 @@
-using System;
-
 namespace LeaveManagementSystem.Web.Data;
 
 // cip...120

@@ -16,6 +16,7 @@ builder.Services.AddScoped<ILeaveTypesService, LeaveTypesService>(); //cip...91.
 builder.Services.AddScoped<ILeaveAllocationsService, LeaveAllocationsService>(); //cip...123. register the service for dependency injection.
 builder.Services.AddTransient<IEmailSender, EmailSender>(); //cip...111
 
+builder.Services.AddHttpContextAccessor(); //cip...127
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly()); //cip...77
 
 builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true) //cip...107. (default user) IdentityUser->ApplicationUser
