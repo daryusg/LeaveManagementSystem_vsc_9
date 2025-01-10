@@ -13,6 +13,15 @@ namespace LeaveManagementSystem.Web.Controllers
             return View(employees);
         }
 
+        [Authorize(Roles = Constants.Roles.cAdministrator)]
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<ActionResult> AllocateLeave(string? employeeId) //cip...132
+        {
+            await _leaveAllocationsService.AllocateLeaveAsync(employeeId);
+            return RedirectToAction(nameof(Details), new {employeeId}); 
+        }
+
         public async Task<ActionResult> Details(string? employeeId)
         {
             var employeeLeaveAllocationsVM = await _leaveAllocationsService.GetEmployeeAllocationsAsync(employeeId);

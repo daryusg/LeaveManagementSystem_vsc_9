@@ -5,10 +5,7 @@ namespace LeaveManagementSystem.Web.Data;
 public class LeaveType : BaseEntity // cip...120
 {
     //cip...120 public int Id { get; set; } //cip...58 can also be LeaveTypeId. if i veer from naming convention then i can use the [Key] attribute to inform ef.
-    
-    [Column(TypeName = "nvarchar(150)")] //cip...58 can also be [MaxLength(150)]
     public string Name { get; set; } = string.Empty;
-
-    [Display(Name="Maximum allocation of days")] //cip...83
     public int NumberOfDays { get; set; }
+    public List<LeaveAllocation>? LeaveAllocations { get; set; } //cip...132. option 2
 }

@@ -8,8 +8,12 @@ public class LeaveAllocationsService(ApplicationDbContext _context, IHttpContext
         //NOTE: the following line can't be used here as we use this routine at registration and therefore the user is NOT logged in
         //var employeeId = await GetEmployeeIdAsync(); //my own cip...127
         //var employee = await _userManager.GetUserAsync(_httpContextAccessor.HttpContext?.User);
+        //cip...132 don't add leave types that already exist. option 2. i added 
         //get all the leave types
-        var leaveTypes = await _context.LeaveTypes.ToListAsync();
+        var leaveTypes = await _context.LeaveTypes
+            .Where(q1 => !q1.LeaveAllocations.Any(q2 => q2.EmployeeId == employeeId)) //14/01/25 (??) ToDo: rewatch and dismantle this to gain comprehension
+            //IMHO: use the LeaveAllocation-LeaveType join to get all leavetypes with no leave allocations for this emloyee.
+            .ToListAsync();
 
         //get the current period based on the year
         var currentDate = DateTime.Now;
@@ -27,6 +31,9 @@ public class LeaveAllocationsService(ApplicationDbContext _context, IHttpContext
         //for each leave type, create an allocation entry
         foreach(var leaveType in leaveTypes)
         {
+            //cip...132 don't add leave types that already exist. option 2. works but not efficient
+            //if(await AllocationExists(employeeId, period.Id, leaveType.Id))
+            //    continue;
             var accrualRate = decimal.Divide(leaveType.NumberOfDays, Constants.cMonthsPerYear); //cip...125
             var leaveAllocation = new LeaveAllocation
             {
@@ -48,11 +55,12 @@ public class LeaveAllocationsService(ApplicationDbContext _context, IHttpContext
     {
         if(string.IsNullOrEmpty(employeeId)) //cip..131
             employeeId = await GetEmployeeIdAsync(); //get the id of the logged in user
+        var user = await GetEmployeeAsync(employeeId); //get _httpContextAccessor.HttpContext?.User details
 
         var allocations = await GetAllocationsAsync(employeeId);
         var allocationVmList = _mapper.Map<List<LeaveAllocation>, List<LeaveAllocationVM>>(allocations);
-
-        var user = await GetEmployeeAsync(employeeId); //get _httpContextAccessor.HttpContext?.User details
+        
+        var leaveTypesCount = await _context.LeaveTypes.CountAsync(); //cip...132
         var employeeVm = new EmployeeAllocationVM
         {
             DateOfBirth = user.DateOfBirth,
@@ -60,7 +68,8 @@ public class LeaveAllocationsService(ApplicationDbContext _context, IHttpContext
             FirstName = user.FirstName,
             LastName = user.LastName,
             Id = user.Id,
-            LeaveAllocations = allocationVmList
+            LeaveAllocations = allocationVmList,
+            IsCompletedAllocation = leaveTypesCount == allocations.Count
         };
 
         return employeeVm;
@@ -110,5 +119,11 @@ public class LeaveAllocationsService(ApplicationDbContext _context, IHttpContext
             .Where(q => q.EmployeeId == employeeId && q.Period.EndDate.Year == currentDate.Year)
             .ToListAsync(); //this is where it executes the query. cip...126
         return leaveAllocations;
+    }
+
+    private async Task<bool> AllocationExists(string employeeId, int periodId, int leaveTypeId) //cip...132
+    {
+        var exists = await _context.LeaveAllocations.AnyAsync(q => q.EmployeeId == employeeId && q.PeriodId == periodId && q.LeaveTypeId ==leaveTypeId);
+        return(exists);
     }
 }

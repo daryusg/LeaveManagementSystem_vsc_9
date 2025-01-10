@@ -160,7 +160,7 @@ namespace LeaveManagementSystem.Web.Areas.Identity.Pages.Account
                     }
 
                     var userId = await _userManager.GetUserIdAsync(user);
-                    await _leaveAllocationsService.AllocateLeaveAsync(userId); //cip...125. this should probably be added AFTER user confirmation.
+                    await _leaveAllocationsService.AllocateLeaveAsync(userId); //cip...125. this should (probably) be added AFTER user confirmation.
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
                     var callbackUrl = Url.Page(
