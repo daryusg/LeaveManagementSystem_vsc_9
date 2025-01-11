@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{CC761A8E-6EED-4F69-84ED-01FA7E5F529D}|LeaveManagementSystem.Web\\LeaveManagementSystem.Web.csproj|c:\\users\\kev\\projects_vscode\\leavemanagementsystem_vsc_9\\leavemanagementsystem.web\\services\\leavetypesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC761A8E-6EED-4F69-84ED-01FA7E5F529D}|LeaveManagementSystem.Web\\LeaveManagementSystem.Web.csproj|solutionrelative:leavemanagementsystem.web\\services\\leavetypesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC761A8E-6EED-4F69-84ED-01FA7E5F529D}|LeaveManagementSystem.Web\\LeaveManagementSystem.Web.csproj|c:\\users\\kev\\projects_vscode\\leavemanagementsystem_vsc_9\\leavemanagementsystem.web\\services\\ileavetypesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC761A8E-6EED-4F69-84ED-01FA7E5F529D}|LeaveManagementSystem.Web\\LeaveManagementSystem.Web.csproj|solutionrelative:leavemanagementsystem.web\\services\\ileavetypesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,32 +26,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ILeaveTypesService.cs",
-              "DocumentMoniker": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\Services\\ILeaveTypesService.cs",
-              "RelativeDocumentMoniker": "LeaveManagementSystem.Web\\Services\\ILeaveTypesService.cs",
-              "ToolTip": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\Services\\ILeaveTypesService.cs",
-              "RelativeToolTip": "LeaveManagementSystem.Web\\Services\\ILeaveTypesService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T14:40:12.807Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LeaveTypesService.cs",
-              "DocumentMoniker": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\Services\\LeaveTypesService.cs",
-              "RelativeDocumentMoniker": "LeaveManagementSystem.Web\\Services\\LeaveTypesService.cs",
-              "ToolTip": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\Services\\LeaveTypesService.cs",
-              "RelativeToolTip": "LeaveManagementSystem.Web\\Services\\LeaveTypesService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T14:39:18.949Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",

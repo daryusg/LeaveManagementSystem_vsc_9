@@ -9,4 +9,6 @@ public interface ILeaveTypesService
     Task RemoveAsync(int id);
     bool LeaveTypeExists(int id);
     Task<bool> CheckIfLeaveTypeNameExistsAsync(int? id, string name);
+    //Task<bool> DaysExceedMaximum(int leaveTypeId, int days); //cip...135
+    Task<int> GetMaxDaysForLeaveType(int leaveTypeId); //my code cip...135
 }

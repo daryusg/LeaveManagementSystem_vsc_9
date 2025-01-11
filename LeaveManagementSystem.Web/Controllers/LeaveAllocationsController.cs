@@ -31,32 +31,35 @@ namespace LeaveManagementSystem.Web.Controllers
                 return NotFound();
             }
 
-            var allocation = await _leaveAllocationsService.GetEmployeeAllocationAsync(id.Value);
-            if (allocation == null)
+            var allocationEditVM = await _leaveAllocationsService.GetEmployeeAllocationAsync(id.Value);
+            if (allocationEditVM == null)
             {
                 return NotFound();
             }
-            return View(allocation);
+            return View(allocationEditVM);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditAllocation(LeaveAllocationEditVM allocation)
         {
-            if (await _leaveTypesService.DaysExceedMaximum(allocation.LeaveType.Id, allocation.Days))
+            //if (await _leaveTypesService.DaysExceedMaximum(allocation.LeaveType.Id, allocation.Days)) //cip...135
+            var maxDaysForLeaveType = await _leaveTypesService.GetMaxDaysForLeaveType(allocation.LeaveType.Id); //cip...135
+            if (maxDaysForLeaveType < allocation.Days)
             {
-                ModelState.AddModelError("Days", "The allocation exceeds the maximum leave type value");
+                ModelState.AddModelError("Days", $"The allocation exceeds the maximum leave type value ({maxDaysForLeaveType}).");
             }
 
             if (ModelState.IsValid)
             {
-                await _leaveAllocationsService.EditAllocation(allocation);
-                return RedirectToAction(nameof(Details), new { userId = allocation.Employee.Id });
+                await _leaveAllocationsService.EditAllocationAsync(allocation);
+                return RedirectToAction(nameof(Details), new { employeeId = allocation.Employee.Id });
             }
 
-            var days = allocation.Days;
-            allocation = await _leaveAllocationsService.GetEmployeeAllocation(allocation.Id);
-            allocation.Days = days;
+            //cip...135. restoring the form to its original state (see above: EditAllocation(int? id)) + the updated days.
+            var days = allocation.Days; //save the allocation.
+            allocation = await _leaveAllocationsService.GetEmployeeAllocationAsync(allocation.Id); //reload the (original) allocation
+            allocation.Days = days; //set the allocation with the updated days.
             return View(allocation);
         }
 

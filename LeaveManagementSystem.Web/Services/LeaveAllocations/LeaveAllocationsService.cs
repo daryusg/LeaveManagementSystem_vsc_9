@@ -82,14 +82,34 @@ public class LeaveAllocationsService(ApplicationDbContext _context, IHttpContext
         return(employees);
     }
 
-    public async Task<LeaveAllocationVM> GetEmployeeAllocationAsync(int allocationId) //cip...134
+    public async Task<LeaveAllocationEditVM> GetEmployeeAllocationAsync(int allocationId) //cip...134
     {
         var allocation = await _context.LeaveAllocations
             .Include(q => q.LeaveType)
+            .Include(q => q.Employee)
             .FirstOrDefaultAsync(q => q.Id == allocationId);
 
         var model = _mapper.Map<LeaveAllocationEditVM>(allocation);
         return(model);
+    }
+
+    public async Task EditAllocationAsync(LeaveAllocationEditVM allocationEditVM) //cip...134
+    {
+        //option 1
+        //var leaveAllocation = await GetEmployeeAllocationAsync(allocationEditVM.Id) ?? throw new Exception("Leave allocation record does not exist."); //option 1
+        //option 2
+        // if(leaveAllocation == null)
+        // {
+        //     throw new Exception("Leave allocation record does not exist.");
+        // }
+        //leaveAllocation.Days = allocationEditVM.Days;
+        //option 1a _context.Update(leaveAllocation); //update all the fields
+        //option 1b _context.Entry(leaveAllocation).State = EntityState.Modified; //update the modified fields
+        //await _context.SaveChangesAsync();
+        //option 2
+        await _context.LeaveAllocations
+            .Where(q => q.Id == allocationEditVM.Id)
+            .ExecuteUpdateAsync(s1 => s1.SetProperty(s2 => s2.Days, allocationEditVM.Days));
     }
     //-------------------------------------------------------------------------------------------------
     //-------------------------------------------------------------------------------------------------

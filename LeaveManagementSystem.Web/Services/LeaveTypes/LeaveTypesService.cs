@@ -43,6 +43,18 @@ public class LeaveTypesService(ApplicationDbContext _context, IMapper _mapper) :
         _context.Add(leaveType);
         await _context.SaveChangesAsync();
     }
+
+    // public async Task<bool> DaysExceedMaximum(int leaveTypeId, int days) //cip...135
+    // {
+    //     var leaveType = await _context.LeaveTypes.FindAsync(leaveTypeId);
+    //     return leaveType.NumberOfDays < days;
+    // }    
+
+    public async Task<int> GetMaxDaysForLeaveType(int leaveTypeId) //my code cip...135
+    {
+        var leaveType = await _context.LeaveTypes.FindAsync(leaveTypeId);
+        return leaveType.NumberOfDays;
+    }    
     //-------------------------------------------------------------------------------------------------
     //cip...91
     public bool LeaveTypeExists(int id) //cip...93
