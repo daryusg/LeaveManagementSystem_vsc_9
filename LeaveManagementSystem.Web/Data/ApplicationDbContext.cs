@@ -1,5 +1,4 @@
 ﻿using System.Reflection;
-using LeaveManagementSystem.Web.Data.Configurations;
 
 namespace LeaveManagementSystem.Web.Data;
 

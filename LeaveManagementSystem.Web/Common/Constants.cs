@@ -10,4 +10,12 @@ public static class Constants
     }
 
     public static int cMonthsPerYear = 12; //cip...125
+
+    public enum LeaveRequestStatus
+    {
+        Pending = 1,
+        Approved,
+        Declined,
+        Cancelled
+    }
 }

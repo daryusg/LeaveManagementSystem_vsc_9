@@ -1,5 +1,3 @@
-using System;
-using System.Net.NetworkInformation;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace LeaveManagementSystem.Web.Data.Configurations;

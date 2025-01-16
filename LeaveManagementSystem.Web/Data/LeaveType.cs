@@ -1,5 +1,3 @@
-using System.ComponentModel.DataAnnotations.Schema;
-
 namespace LeaveManagementSystem.Web.Data;
 
 public class LeaveType : BaseEntity // cip...120

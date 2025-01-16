@@ -1,4 +1,3 @@
-using System;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace LeaveManagementSystem.Web.Data.Configurations;
