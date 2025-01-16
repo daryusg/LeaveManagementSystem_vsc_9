@@ -6,7 +6,7 @@ public class LeaveAllocationsService(ApplicationDbContext _context, IHttpContext
     public async Task AllocateLeaveAsync(string employeeId) //cip...130 i need the employeeId param as this routine is used at registration and therefore the user is NOT logged in
     {
         //NOTE: the following line can't be used here as we use this routine at registration and therefore the user is NOT logged in
-        //var employeeId = await GetEmployeeIdAsync(); //my own cip...127
+        //var employeeId = await GetEmployeeIdAsync(); //my code cip...127
         //var employee = await _userManager.GetUserAsync(_httpContextAccessor.HttpContext?.User);
         //cip...132 don't add leave types that already exist. option 2. i added 
         //get all the leave types
@@ -114,13 +114,13 @@ public class LeaveAllocationsService(ApplicationDbContext _context, IHttpContext
     //-------------------------------------------------------------------------------------------------
     //-------------------------------------------------------------------------------------------------
     //-------------------------------------------------------------------------------------------------
-    protected async Task<string> GetEmployeeIdAsync() //my own cip...127
+    protected async Task<string> GetEmployeeIdAsync() //my code cip...127
     {
         var user = await _userManager.GetUserAsync(_httpContextAccessor.HttpContext?.User);
         return user.Id;
     }
 
-    private async Task<ApplicationUser> GetEmployeeAsync(string? employeeId) //my own cip...128
+    private async Task<ApplicationUser> GetEmployeeAsync(string? employeeId) //my code cip...128
     {
         var user = string.IsNullOrEmpty(employeeId) //cip...131
             ? await _userManager.GetUserAsync(_httpContextAccessor.HttpContext?.User)

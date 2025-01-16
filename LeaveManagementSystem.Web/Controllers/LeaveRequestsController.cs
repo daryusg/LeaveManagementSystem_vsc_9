@@ -36,9 +36,26 @@ namespace LeaveManagementSystem.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(LeaveRequestCreateVM model) // [HttpPost] param will ALWAYS be a view model.
         {
+            //NOTE: the following is implemented in cip...147 by LeaveRequestCreateVM inheriting from IValidatableObject.
+            //make sure the end date is after the start date.
+            if (ModelState.IsValid)
+                if (model.StartDate.DayNumber > model.EndDate.DayNumber)
+                    ModelState.AddModelError(nameof(model.EndDate), $"The End Date cannot precede the Start Date.");
+
+            //cip...146 validate that the days don't exceed the allocation.
+            if (ModelState.IsValid)
+                if (await _leaveRequestsService.RequestDatesExceedAllocationAsync(model))
+                {
+                    var maxDays = await _leaveRequestsService.GetUsersMaxDaysForLeaveTypeAsync(model.LeaveTypeId);
+                    var msgDaysLeft = maxDays + (maxDays == 1 ? " day" : " days") + " left";
+                    ModelState.AddModelError(string.Empty, $"You have exceeded your allocation ({msgDaysLeft})"); //page
+                    ModelState.AddModelError(nameof(model.EndDate), $"You have exceeded your allocation ({msgDaysLeft})");//page item
+                }
+        
             if (ModelState.IsValid)
             {
                 await _leaveRequestsService.CreateLeaveRequestAsync(model);
+                return RedirectToAction(nameof(Index)); //cip...148 tw informed that this should've been added before (cip...146?)
             }
             //NOTE: LeaveTypes is null at this point because it's unbound
             //refill...

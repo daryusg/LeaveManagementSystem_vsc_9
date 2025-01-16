@@ -8,4 +8,6 @@ public interface ILeaveRequestsService
     Task<LeaveRequestsVm> GetAllLeaveRequestsAsync();
     Task CancelLeaveRequestAsync(int leaveRequestId);
     Task ReviewLeaveRequestAsync(ReviewLeaveRequestVM model);
+    Task<bool> RequestDatesExceedAllocationAsync(LeaveRequestCreateVM model); //cip...146
+    Task<int> GetUsersMaxDaysForLeaveTypeAsync(int leaveTypeId); //my code cip...146
 }

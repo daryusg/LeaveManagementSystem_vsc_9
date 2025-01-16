@@ -44,6 +44,25 @@ public class LeaveRequestsService (IMapper _mapper, IHttpContextAccessor _httpCo
         throw new NotImplementedException();
     }
 
+    public async Task<int> GetUsersMaxDaysForLeaveTypeAsync(int leaveTypeId) //cip...146
+    {
+        var user = await _userManager.GetUserAsync(_httpContextAccessor.HttpContext?.User);
+        
+        var allocationToDecuct = await _context.LeaveAllocations
+            .FirstAsync(q => q.LeaveTypeId == leaveTypeId && q.EmployeeId == user.Id);
+        return allocationToDecuct.Days;
+    }
+
+    public async Task<bool> RequestDatesExceedAllocationAsync(LeaveRequestCreateVM model) //cip...146
+    {
+        var user = await _userManager.GetUserAsync(_httpContextAccessor.HttpContext?.User);
+        
+        var numberOfDays = (model.EndDate.DayNumber - model.StartDate.DayNumber) + 1;
+        var allocationToDecuct = await _context.LeaveAllocations
+            .FirstAsync(q => q.LeaveTypeId == model.LeaveTypeId && q.EmployeeId == user.Id);
+        return numberOfDays > allocationToDecuct.Days;
+    }
+
     public async Task ReviewLeaveRequestAsync(ReviewLeaveRequestVM model)
     {
         throw new NotImplementedException();
