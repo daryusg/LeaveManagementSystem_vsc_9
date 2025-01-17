@@ -4,7 +4,7 @@ namespace LeaveManagementSystem.Web.Services.LeaveRequests;
 public interface ILeaveRequestsService
 {
     Task CreateLeaveRequestAsync(LeaveRequestCreateVM model);
-    Task<EmployeeLeaveRequestsVM> GetEmployeeLeaveRequestsAsync();
+    Task<IEnumerable<LeaveRequestReadOnlyVM>> GetEmployeeLeaveRequestsAsync();
     Task<LeaveRequestsVm> GetAllLeaveRequestsAsync();
     Task CancelLeaveRequestAsync(int leaveRequestId);
     Task ReviewLeaveRequestAsync(ReviewLeaveRequestVM model);

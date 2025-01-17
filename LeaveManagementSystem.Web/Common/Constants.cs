@@ -11,7 +11,7 @@ public static class Constants
 
     public static int cMonthsPerYear = 12; //cip...125
 
-    public enum LeaveRequestStatus
+    public enum LeaveRequestStatusEnum //cip...145 (was LeaveRequestStatus but LeaveRequestStatusEnum in git. LeaveRequestStatus is, also, a table so not auto deternmined by vsc)
     {
         Pending = 1,
         Approved,

@@ -28,3 +28,4 @@ global using LeaveManagementSystem.Web.Common; //cip...112
 global using LeaveManagementSystem.Web.Models.LeaveAllocations; //cip...128
 global using LeaveManagementSystem.Web.Models.Periods; //cip...128
 global using LeaveManagementSystem.Web.Models.LeaveRequests; //cip...143
+global using System.ComponentModel; //cip...149

@@ -1,0 +1,84 @@
+﻿@model IEnumerable<LeaveRequestReadOnlyVM> //cip...149
+@{
+    ViewData["Title"] = "Leave Request List";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Request Leave</a>
+    <a asp-controller="LeaveAllocations" asp-action="Details" class="btn btn-secondary">Back to Allocations</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.LeaveType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StartDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EndDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumberOfDays)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LeaveRequestStatus)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        var className = string.Empty;
+        switch (item.LeaveRequestStatus)
+        {
+            case Constants.LeaveRequestStatusEnum.Pending:
+                className = "warning";
+                break;
+            case Constants.LeaveRequestStatusEnum.Approved:
+                className = "success";
+                break;
+            case Constants.LeaveRequestStatusEnum.Declined:
+                className = "danger";
+                break;
+            case Constants.LeaveRequestStatusEnum.Cancelled:
+                className = "dark";
+                break;
+        }
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.LeaveType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EndDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumberOfDays)
+            </td>
+            <td>
+                <span class="badge rounded-pill text-bg-@className">@item.LeaveRequestStatus.ToString()</span> @*@item.LeaveRequestStatus.ToString() displays the enum's text and not it's enum value*@
+            </td>
+            <td>
+                @switch (item.LeaveRequestStatus)
+                {
+                    case Constants.LeaveRequestStatusEnum.Pending:
+                        <form asp-action="Cancel">
+                            <input type="hidden" asp-for="@item.Id" name="gobbledygook"> @*cip...151 this demos that the name in the controller can be different*@
+                            <input class="btn btn-danger" type="submit" value="Cancel" />
+                        </form>
+                        break;
+                    case Constants.LeaveRequestStatusEnum.Approved:
+                        //17/01/25 allow user to cancel if hol not already taken??
+                        break;
+                }
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

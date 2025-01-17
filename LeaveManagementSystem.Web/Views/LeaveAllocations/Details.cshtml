@@ -3,6 +3,7 @@
 @{
     ViewData["Title"] = "View Allocations";
     var isAdmin = User.IsInRole(Constants.Roles.cAdministrator); //cip...132
+    var isEmployee = User.IsInRole(Constants.Roles.cEmployee); //cip...149
     string msg = isAdmin ? "There are no allocations."  : "You have no allocations. Please contact your administrator.";
 }
 
@@ -12,7 +13,10 @@
     <a asp-action="Index" class="btn btn-primary">Back to List</a>
     <br />
 }
-
+@if(isEmployee) //cip...149
+{
+    <a asp-controller="LeaveRequests" asp-action="Index" class="btn btn-primary">View Request History</a>
+}
 <div>
     <hr />
     <dl class="row">

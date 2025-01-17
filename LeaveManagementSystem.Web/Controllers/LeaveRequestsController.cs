@@ -10,9 +10,10 @@ namespace LeaveManagementSystem.Web.Controllers
     {
         //Employee View Requests
         // GET: LeaveRequestsController
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index() //cip...150
         {
-            return View();
+            var model = await _leaveRequestsService.GetEmployeeLeaveRequestsAsync();
+            return View(model);
         }
 
         //Employee Create Requests
@@ -67,9 +68,10 @@ namespace LeaveManagementSystem.Web.Controllers
         //Employee Cancel Requests
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Cancel(int leaveRequestId)
+        public async Task<IActionResult> Cancel(int gobbledygook)
         {
-            return View();
+            await _leaveRequestsService.CancelLeaveRequestAsync(gobbledygook);
+            return RedirectToAction(nameof(Index));
         }
 
         //Admin/Supervisor review Requests

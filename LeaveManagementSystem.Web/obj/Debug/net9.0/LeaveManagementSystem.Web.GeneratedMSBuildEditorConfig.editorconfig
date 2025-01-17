@@ -212,6 +212,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhdmVSZXF1ZXN0c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/kev/projects_vscode/LeaveManagementSystem_vsc_9/LeaveManagementSystem.Web/Views/LeaveRequests/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhdmVSZXF1ZXN0c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/kev/projects_vscode/LeaveManagementSystem_vsc_9/LeaveManagementSystem.Web/Views/LeaveTypes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhdmVUeXBlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
