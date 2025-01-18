@@ -257,6 +257,118 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
     },
     {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\sweetalert\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\README.md",
+      "PackagePath": "staticwebassets\\lib\\sweetalert\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\dist\\sweetalert.min.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert\\dist\\sweetalert.min.js"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\package.json",
+      "PackagePath": "staticwebassets\\lib\\sweetalert\\package.json"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\core.d.ts",
+      "PackagePath": "staticwebassets\\lib\\sweetalert\\typings\\core.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\actions.d.ts",
+      "PackagePath": "staticwebassets\\lib\\sweetalert\\typings\\modules\\actions.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\class-list\\index.d.ts",
+      "PackagePath": "staticwebassets\\lib\\sweetalert\\typings\\modules\\class-list\\index.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\event-listeners.d.ts",
+      "PackagePath": "staticwebassets\\lib\\sweetalert\\typings\\modules\\event-listeners.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\init\\buttons.d.ts",
+      "PackagePath": "staticwebassets\\lib\\sweetalert\\typings\\modules\\init\\buttons.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\init\\content.d.ts",
+      "PackagePath": "staticwebassets\\lib\\sweetalert\\typings\\modules\\init\\content.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\init\\icon.d.ts",
+      "PackagePath": "staticwebassets\\lib\\sweetalert\\typings\\modules\\init\\icon.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\init\\index.d.ts",
+      "PackagePath": "staticwebassets\\lib\\sweetalert\\typings\\modules\\init\\index.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\init\\modal.d.ts",
+      "PackagePath": "staticwebassets\\lib\\sweetalert\\typings\\modules\\init\\modal.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\init\\overlay.d.ts",
+      "PackagePath": "staticwebassets\\lib\\sweetalert\\typings\\modules\\init\\overlay.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\init\\text.d.ts",
+      "PackagePath": "staticwebassets\\lib\\sweetalert\\typings\\modules\\init\\text.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\markup\\buttons.d.ts",
+      "PackagePath": "staticwebassets\\lib\\sweetalert\\typings\\modules\\markup\\buttons.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\markup\\content.d.ts",
+      "PackagePath": "staticwebassets\\lib\\sweetalert\\typings\\modules\\markup\\content.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\markup\\icons.d.ts",
+      "PackagePath": "staticwebassets\\lib\\sweetalert\\typings\\modules\\markup\\icons.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\markup\\index.d.ts",
+      "PackagePath": "staticwebassets\\lib\\sweetalert\\typings\\modules\\markup\\index.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\markup\\modal.d.ts",
+      "PackagePath": "staticwebassets\\lib\\sweetalert\\typings\\modules\\markup\\modal.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\markup\\overlay.d.ts",
+      "PackagePath": "staticwebassets\\lib\\sweetalert\\typings\\modules\\markup\\overlay.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\options\\buttons.d.ts",
+      "PackagePath": "staticwebassets\\lib\\sweetalert\\typings\\modules\\options\\buttons.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\options\\content.d.ts",
+      "PackagePath": "staticwebassets\\lib\\sweetalert\\typings\\modules\\options\\content.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\options\\deprecations.d.ts",
+      "PackagePath": "staticwebassets\\lib\\sweetalert\\typings\\modules\\options\\deprecations.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\options\\index.d.ts",
+      "PackagePath": "staticwebassets\\lib\\sweetalert\\typings\\modules\\options\\index.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\state.d.ts",
+      "PackagePath": "staticwebassets\\lib\\sweetalert\\typings\\modules\\state.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\utils.d.ts",
+      "PackagePath": "staticwebassets\\lib\\sweetalert\\typings\\modules\\utils.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\sweetalert.d.ts",
+      "PackagePath": "staticwebassets\\lib\\sweetalert\\typings\\sweetalert.d.ts"
+    },
+    {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.LeaveManagementSystem.Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },

@@ -699,3 +699,7 @@ C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.W
 C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Debug\net9.0\LeaveManagementSystem.Web.pdb
 C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Debug\net9.0\LeaveManagementSystem.Web.genruntimeconfig.cache
 C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Debug\net9.0\ref\LeaveManagementSystem.Web.dll
+C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Debug\net9.0\compressed\zomflska0v-644oxse6sl.gz
+C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Debug\net9.0\compressed\25tfrjeqpg-2wesbwsy70.gz
+C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Debug\net9.0\compressed\kgxwqu3ums-k9rv021zg3.gz
+C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Debug\net9.0\compressed\r4euch45ob-vdm9z07ko3.gz

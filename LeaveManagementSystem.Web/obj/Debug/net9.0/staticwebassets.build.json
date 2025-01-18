@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rPG9JDgy1CTw/V9HUYI43hCWjEJ4WTtissrJ78hRoHM=",
+  "Hash": "y0DavScFdBeKPuV+VUAIZO8due9d3JUAhMqbvPUyobQ=",
   "Source": "LeaveManagementSystem.Web",
   "BasePath": "_content/LeaveManagementSystem.Web",
   "Mode": "Default",
@@ -1466,6 +1466,27 @@
       "OriginalItemSpec": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\25tfrjeqpg-2wesbwsy70.gz",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "lib/sweetalert/LICENSE#[.{fingerprint=2wesbwsy70}]?.md.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\LICENSE.md",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "h1bodpaj2o",
+      "Integrity": "GyFwddLbDhrwzZQ+VtZQVPoDsWkzJpuXIoMZPkNMdf0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\LICENSE.md"
+    },
+    {
       "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\2tikzqlmtu-ag7o75518u.gz",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
@@ -2642,6 +2663,27 @@
       "OriginalItemSpec": "C:\\Users\\kev\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\9.0.0\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\kgxwqu3ums-k9rv021zg3.gz",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "lib/sweetalert/package#[.{fingerprint=k9rv021zg3}]?.json.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\package.json",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "0f4yfph67c",
+      "Integrity": "JLJQps6uAZXKcK6pav/Kn5oJjArRvGKJZWXUx9QO23g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\package.json"
+    },
+    {
       "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\l186vlgaag-37tfw0ft22.gz",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
@@ -3228,6 +3270,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\r4euch45ob-vdm9z07ko3.gz",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "lib/sweetalert/README#[.{fingerprint=vdm9z07ko3}]?.md.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\README.md",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "5poi6lelq1",
+      "Integrity": "d1jNhpyS4ofUbJ2ESiUjig3yl2bMBLEpP9r9Dk8Eea0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\README.md"
     },
     {
       "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\r4jfy66so6-ee0r1s7dh0.gz",
@@ -3963,6 +4026,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\zomflska0v-644oxse6sl.gz",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "lib/sweetalert/dist/sweetalert.min#[.{fingerprint=644oxse6sl}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\dist\\sweetalert.min.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "n08kkcpiuo",
+      "Integrity": "l7l1Av5DDIMuxHbtFZvriptL4BeM6Yzgm2Bxtp3NfLk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\dist\\sweetalert.min.js"
     },
     {
       "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\zzna4nrm5w-notf2xhcfb.gz",
@@ -5349,6 +5433,594 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\dist\\sweetalert.min.js",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "lib/sweetalert/dist/sweetalert.min#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "644oxse6sl",
+      "Integrity": "KsRuvuRtUVvobe66OFtOQfjP8WA2SzYsmm4VPfMnxms=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert\\dist\\sweetalert.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\LICENSE.md",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "lib/sweetalert/LICENSE#[.{fingerprint}]?.md",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2wesbwsy70",
+      "Integrity": "YuUTbVQBTJBVu42cAxytjkObYns5PHqdUGmp19lHbSY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert\\LICENSE.md"
+    },
+    {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\package.json",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "lib/sweetalert/package#[.{fingerprint}]?.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "k9rv021zg3",
+      "Integrity": "yLPpmvCunv1MZam1i6d+xCyg+70Ltc3Oc50AygfEn/M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert\\package.json"
+    },
+    {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\README.md",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "lib/sweetalert/README#[.{fingerprint}]?.md",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vdm9z07ko3",
+      "Integrity": "k0yiD+dQSBsTPzVq8DfPKqEzX3xBhS2e6+bZmyos7Vg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert\\README.md"
+    },
+    {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\core.d.ts",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "lib/sweetalert/typings/core.d#[.{fingerprint}]?.ts",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tpfcsn2fzh",
+      "Integrity": "b+0JsLByVJmgDEa6YUtcDZwkD5p10Qeh07KvUb2kv74=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert\\typings\\core.d.ts"
+    },
+    {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\actions.d.ts",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "lib/sweetalert/typings/modules/actions.d#[.{fingerprint}]?.ts",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wmo6h2q439",
+      "Integrity": "OFt1MRO4AIEUsysU7i3fcQb9iRdYY5RPI2/64ZhXnRc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert\\typings\\modules\\actions.d.ts"
+    },
+    {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\class-list\\index.d.ts",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "lib/sweetalert/typings/modules/class-list/index.d#[.{fingerprint}]?.ts",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7mc2d60v78",
+      "Integrity": "oY6gn2TNhlm5h9l+7KIkicdIW37r83m9/BW8kRVU+R4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert\\typings\\modules\\class-list\\index.d.ts"
+    },
+    {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\event-listeners.d.ts",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "lib/sweetalert/typings/modules/event-listeners.d#[.{fingerprint}]?.ts",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "x5gbxukegu",
+      "Integrity": "ayAurOLC7pL02JOPKk1B26/8UXkympb5282VyqDQebk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert\\typings\\modules\\event-listeners.d.ts"
+    },
+    {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\init\\buttons.d.ts",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "lib/sweetalert/typings/modules/init/buttons.d#[.{fingerprint}]?.ts",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lv5g2gw5yf",
+      "Integrity": "P7yPGTrtcrHQkgHzzeg6J2ciABI0UY3s2VcULP9ON+w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert\\typings\\modules\\init\\buttons.d.ts"
+    },
+    {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\init\\content.d.ts",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "lib/sweetalert/typings/modules/init/content.d#[.{fingerprint}]?.ts",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yz89owul80",
+      "Integrity": "zk2JXi26651M1YvxsW1ZRxKxkdviPUshe5sYNyqnIR8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert\\typings\\modules\\init\\content.d.ts"
+    },
+    {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\init\\icon.d.ts",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "lib/sweetalert/typings/modules/init/icon.d#[.{fingerprint}]?.ts",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "08v5yf6vbk",
+      "Integrity": "sLSlR0ArkvTQUncObLniOtaePBO46wIM9OvhX1yf4kI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert\\typings\\modules\\init\\icon.d.ts"
+    },
+    {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\init\\index.d.ts",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "lib/sweetalert/typings/modules/init/index.d#[.{fingerprint}]?.ts",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "t3yb1e3osp",
+      "Integrity": "aUq6dPmfwPQAWMN1t+x0zn3BaY2XcS5go6BFozgdHPM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert\\typings\\modules\\init\\index.d.ts"
+    },
+    {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\init\\modal.d.ts",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "lib/sweetalert/typings/modules/init/modal.d#[.{fingerprint}]?.ts",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "87i2k1sqdk",
+      "Integrity": "XL/tdfhbchSGl6F7G+iyT0mX9tEo3/CuQum4A0A//HQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert\\typings\\modules\\init\\modal.d.ts"
+    },
+    {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\init\\overlay.d.ts",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "lib/sweetalert/typings/modules/init/overlay.d#[.{fingerprint}]?.ts",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "f3amrwa5rr",
+      "Integrity": "mzftVAxbdGUiMjjaY1OTL2mzinCteTCrlpA3dFZ8ZOw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert\\typings\\modules\\init\\overlay.d.ts"
+    },
+    {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\init\\text.d.ts",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "lib/sweetalert/typings/modules/init/text.d#[.{fingerprint}]?.ts",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "w32kcq4g0c",
+      "Integrity": "VETp4A4St/+9kA4i6bPti3ZtecMcAClJrnnZXSW2q6Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert\\typings\\modules\\init\\text.d.ts"
+    },
+    {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\markup\\buttons.d.ts",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "lib/sweetalert/typings/modules/markup/buttons.d#[.{fingerprint}]?.ts",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9r6zbgieoy",
+      "Integrity": "9dcTPPbRXuZr9N+C2sb80KN1txjo5X+S8E3s2zr9FtU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert\\typings\\modules\\markup\\buttons.d.ts"
+    },
+    {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\markup\\content.d.ts",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "lib/sweetalert/typings/modules/markup/content.d#[.{fingerprint}]?.ts",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "r22va0l5xf",
+      "Integrity": "Q/aWAhWRu8cAh0HarXXcOBX8mxi2MSRLsI7ZrQPxQjw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert\\typings\\modules\\markup\\content.d.ts"
+    },
+    {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\markup\\icons.d.ts",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "lib/sweetalert/typings/modules/markup/icons.d#[.{fingerprint}]?.ts",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hw81mn45vc",
+      "Integrity": "UfX7niTkCRwrcRq3IKXYQTrxrNYFl1vEYOIGvzKzkSQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert\\typings\\modules\\markup\\icons.d.ts"
+    },
+    {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\markup\\index.d.ts",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "lib/sweetalert/typings/modules/markup/index.d#[.{fingerprint}]?.ts",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "si85dhy49i",
+      "Integrity": "nBSwQaWJlt6yNB3PkkleZ5kJ5jerquYJgYM7Kf9i0lE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert\\typings\\modules\\markup\\index.d.ts"
+    },
+    {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\markup\\modal.d.ts",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "lib/sweetalert/typings/modules/markup/modal.d#[.{fingerprint}]?.ts",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8s62x5v23x",
+      "Integrity": "2PN63/ABKkM5HOiXQsCHb/Jbk4t5xaK+pNqY+q3a0t8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert\\typings\\modules\\markup\\modal.d.ts"
+    },
+    {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\markup\\overlay.d.ts",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "lib/sweetalert/typings/modules/markup/overlay.d#[.{fingerprint}]?.ts",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "224b2e5j38",
+      "Integrity": "tswidoBT5uT3yGaBbNZHpRtDC+OXSf0SMwpvN7f57rQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert\\typings\\modules\\markup\\overlay.d.ts"
+    },
+    {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\options\\buttons.d.ts",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "lib/sweetalert/typings/modules/options/buttons.d#[.{fingerprint}]?.ts",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "j4zjc20tm5",
+      "Integrity": "bbPBOTmkYcTBSqkCKlOda4GwygaAZasD/Euu7Xm80vo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert\\typings\\modules\\options\\buttons.d.ts"
+    },
+    {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\options\\content.d.ts",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "lib/sweetalert/typings/modules/options/content.d#[.{fingerprint}]?.ts",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cmb6zmrffg",
+      "Integrity": "rPQEQUCshwzt46lZnETjfZC0uqT9cTXH6eH/z00G2RA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert\\typings\\modules\\options\\content.d.ts"
+    },
+    {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\options\\deprecations.d.ts",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "lib/sweetalert/typings/modules/options/deprecations.d#[.{fingerprint}]?.ts",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rea9bfiav1",
+      "Integrity": "88Nwrk7mBs4E9CXP6+576uf0tsAIDaxBCifzBcQNvRE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert\\typings\\modules\\options\\deprecations.d.ts"
+    },
+    {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\options\\index.d.ts",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "lib/sweetalert/typings/modules/options/index.d#[.{fingerprint}]?.ts",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1cv9d70g33",
+      "Integrity": "H1AeucvApz6FKv+ebW2sFhWFtXusQunnuN2h+RH5xgM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert\\typings\\modules\\options\\index.d.ts"
+    },
+    {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\state.d.ts",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "lib/sweetalert/typings/modules/state.d#[.{fingerprint}]?.ts",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "a3e4kydyer",
+      "Integrity": "VszPgPX/ClwH9S7lIkhso6r50q0jX3jpoJNB/6vZ2/E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert\\typings\\modules\\state.d.ts"
+    },
+    {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\utils.d.ts",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "lib/sweetalert/typings/modules/utils.d#[.{fingerprint}]?.ts",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rm4j1deitz",
+      "Integrity": "M/PdDcNi1nsGHAJQ8OdTH1Mb5YhUlfNo2sRPxRYf0g0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert\\typings\\modules\\utils.d.ts"
+    },
+    {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\sweetalert.d.ts",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "lib/sweetalert/typings/sweetalert.d#[.{fingerprint}]?.ts",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7npyu6et5r",
+      "Integrity": "rXNlXnH2asfF6UMOWCfhiRfRzFlTfLtTju5J0O65ZQo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\sweetalert\\typings\\sweetalert.d.ts"
     }
   ],
   "Endpoints": [
@@ -14913,7 +15585,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Jan 2025 15:11:44 GMT"
+          "Value": "Sat, 18 Jan 2025 13:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14974,7 +15646,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Jan 2025 15:11:44 GMT"
+          "Value": "Sat, 18 Jan 2025 13:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15019,7 +15691,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Jan 2025 15:11:44 GMT"
+          "Value": "Sat, 18 Jan 2025 13:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15074,7 +15746,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Jan 2025 15:11:44 GMT"
+          "Value": "Sat, 18 Jan 2025 13:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15135,7 +15807,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Jan 2025 15:11:44 GMT"
+          "Value": "Sat, 18 Jan 2025 13:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15180,7 +15852,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Jan 2025 15:11:44 GMT"
+          "Value": "Sat, 18 Jan 2025 13:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15235,7 +15907,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Jan 2025 15:11:44 GMT"
+          "Value": "Sat, 18 Jan 2025 13:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15288,7 +15960,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Jan 2025 15:11:44 GMT"
+          "Value": "Sat, 18 Jan 2025 13:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15325,7 +15997,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Jan 2025 15:11:44 GMT"
+          "Value": "Sat, 18 Jan 2025 13:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15372,7 +16044,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Jan 2025 15:11:44 GMT"
+          "Value": "Sat, 18 Jan 2025 13:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15425,7 +16097,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Jan 2025 15:11:44 GMT"
+          "Value": "Sat, 18 Jan 2025 13:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15462,7 +16134,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Jan 2025 15:11:44 GMT"
+          "Value": "Sat, 18 Jan 2025 13:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -35365,6 +36037,3166 @@
         {
           "Name": "integrity",
           "Value": "sha256-2HU/xneLnzk1+0gLVt9w3aTEo9abhtzWkmuVdffRieg="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/dist/sweetalert.min.644oxse6sl.js",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\zomflska0v-644oxse6sl.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000083465487"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11980"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l7l1Av5DDIMuxHbtFZvriptL4BeM6Yzgm2Bxtp3NfLk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"KsRuvuRtUVvobe66OFtOQfjP8WA2SzYsmm4VPfMnxms=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "644oxse6sl"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/dist/sweetalert.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KsRuvuRtUVvobe66OFtOQfjP8WA2SzYsmm4VPfMnxms="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/dist/sweetalert.min.644oxse6sl.js",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\dist\\sweetalert.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40808"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KsRuvuRtUVvobe66OFtOQfjP8WA2SzYsmm4VPfMnxms=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "644oxse6sl"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/dist/sweetalert.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KsRuvuRtUVvobe66OFtOQfjP8WA2SzYsmm4VPfMnxms="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/dist/sweetalert.min.644oxse6sl.js.gz",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\zomflska0v-644oxse6sl.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11980"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l7l1Av5DDIMuxHbtFZvriptL4BeM6Yzgm2Bxtp3NfLk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "644oxse6sl"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/dist/sweetalert.min.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-l7l1Av5DDIMuxHbtFZvriptL4BeM6Yzgm2Bxtp3NfLk="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/dist/sweetalert.min.js",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\zomflska0v-644oxse6sl.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000083465487"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11980"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l7l1Av5DDIMuxHbtFZvriptL4BeM6Yzgm2Bxtp3NfLk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"KsRuvuRtUVvobe66OFtOQfjP8WA2SzYsmm4VPfMnxms=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KsRuvuRtUVvobe66OFtOQfjP8WA2SzYsmm4VPfMnxms="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/dist/sweetalert.min.js",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\dist\\sweetalert.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40808"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KsRuvuRtUVvobe66OFtOQfjP8WA2SzYsmm4VPfMnxms=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KsRuvuRtUVvobe66OFtOQfjP8WA2SzYsmm4VPfMnxms="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/dist/sweetalert.min.js.gz",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\zomflska0v-644oxse6sl.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11980"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l7l1Av5DDIMuxHbtFZvriptL4BeM6Yzgm2Bxtp3NfLk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-l7l1Av5DDIMuxHbtFZvriptL4BeM6Yzgm2Bxtp3NfLk="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/LICENSE.2wesbwsy70.md",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\25tfrjeqpg-2wesbwsy70.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001485884101"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "672"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GyFwddLbDhrwzZQ+VtZQVPoDsWkzJpuXIoMZPkNMdf0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/markdown"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"YuUTbVQBTJBVu42cAxytjkObYns5PHqdUGmp19lHbSY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2wesbwsy70"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/LICENSE.md"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YuUTbVQBTJBVu42cAxytjkObYns5PHqdUGmp19lHbSY="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/LICENSE.2wesbwsy70.md",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\LICENSE.md",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1091"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/markdown"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YuUTbVQBTJBVu42cAxytjkObYns5PHqdUGmp19lHbSY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2wesbwsy70"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/LICENSE.md"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YuUTbVQBTJBVu42cAxytjkObYns5PHqdUGmp19lHbSY="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/LICENSE.2wesbwsy70.md.gz",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\25tfrjeqpg-2wesbwsy70.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "672"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/markdown"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GyFwddLbDhrwzZQ+VtZQVPoDsWkzJpuXIoMZPkNMdf0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2wesbwsy70"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/LICENSE.md.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GyFwddLbDhrwzZQ+VtZQVPoDsWkzJpuXIoMZPkNMdf0="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/LICENSE.md",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\25tfrjeqpg-2wesbwsy70.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001485884101"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "672"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GyFwddLbDhrwzZQ+VtZQVPoDsWkzJpuXIoMZPkNMdf0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/markdown"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"YuUTbVQBTJBVu42cAxytjkObYns5PHqdUGmp19lHbSY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YuUTbVQBTJBVu42cAxytjkObYns5PHqdUGmp19lHbSY="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/LICENSE.md",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\LICENSE.md",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1091"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/markdown"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YuUTbVQBTJBVu42cAxytjkObYns5PHqdUGmp19lHbSY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YuUTbVQBTJBVu42cAxytjkObYns5PHqdUGmp19lHbSY="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/LICENSE.md.gz",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\25tfrjeqpg-2wesbwsy70.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "672"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/markdown"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GyFwddLbDhrwzZQ+VtZQVPoDsWkzJpuXIoMZPkNMdf0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GyFwddLbDhrwzZQ+VtZQVPoDsWkzJpuXIoMZPkNMdf0="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/package.json",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\kgxwqu3ums-k9rv021zg3.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000835421888"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1196"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JLJQps6uAZXKcK6pav/Kn5oJjArRvGKJZWXUx9QO23g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"yLPpmvCunv1MZam1i6d+xCyg+70Ltc3Oc50AygfEn/M=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yLPpmvCunv1MZam1i6d+xCyg+70Ltc3Oc50AygfEn/M="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/package.json",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\package.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3024"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yLPpmvCunv1MZam1i6d+xCyg+70Ltc3Oc50AygfEn/M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yLPpmvCunv1MZam1i6d+xCyg+70Ltc3Oc50AygfEn/M="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/package.json.gz",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\kgxwqu3ums-k9rv021zg3.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1196"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JLJQps6uAZXKcK6pav/Kn5oJjArRvGKJZWXUx9QO23g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JLJQps6uAZXKcK6pav/Kn5oJjArRvGKJZWXUx9QO23g="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/package.k9rv021zg3.json",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\kgxwqu3ums-k9rv021zg3.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000835421888"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1196"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JLJQps6uAZXKcK6pav/Kn5oJjArRvGKJZWXUx9QO23g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"yLPpmvCunv1MZam1i6d+xCyg+70Ltc3Oc50AygfEn/M=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k9rv021zg3"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/package.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yLPpmvCunv1MZam1i6d+xCyg+70Ltc3Oc50AygfEn/M="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/package.k9rv021zg3.json",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\package.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3024"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yLPpmvCunv1MZam1i6d+xCyg+70Ltc3Oc50AygfEn/M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k9rv021zg3"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/package.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yLPpmvCunv1MZam1i6d+xCyg+70Ltc3Oc50AygfEn/M="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/package.k9rv021zg3.json.gz",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\kgxwqu3ums-k9rv021zg3.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1196"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JLJQps6uAZXKcK6pav/Kn5oJjArRvGKJZWXUx9QO23g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k9rv021zg3"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/package.json.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JLJQps6uAZXKcK6pav/Kn5oJjArRvGKJZWXUx9QO23g="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/README.md",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\r4euch45ob-vdm9z07ko3.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000465116279"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2149"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d1jNhpyS4ofUbJ2ESiUjig3yl2bMBLEpP9r9Dk8Eea0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/markdown"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"k0yiD+dQSBsTPzVq8DfPKqEzX3xBhS2e6+bZmyos7Vg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-k0yiD+dQSBsTPzVq8DfPKqEzX3xBhS2e6+bZmyos7Vg="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/README.md",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\README.md",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7736"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/markdown"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k0yiD+dQSBsTPzVq8DfPKqEzX3xBhS2e6+bZmyos7Vg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-k0yiD+dQSBsTPzVq8DfPKqEzX3xBhS2e6+bZmyos7Vg="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/README.md.gz",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\r4euch45ob-vdm9z07ko3.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2149"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/markdown"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d1jNhpyS4ofUbJ2ESiUjig3yl2bMBLEpP9r9Dk8Eea0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-d1jNhpyS4ofUbJ2ESiUjig3yl2bMBLEpP9r9Dk8Eea0="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/README.vdm9z07ko3.md",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\r4euch45ob-vdm9z07ko3.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000465116279"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2149"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d1jNhpyS4ofUbJ2ESiUjig3yl2bMBLEpP9r9Dk8Eea0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/markdown"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"k0yiD+dQSBsTPzVq8DfPKqEzX3xBhS2e6+bZmyos7Vg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vdm9z07ko3"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/README.md"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-k0yiD+dQSBsTPzVq8DfPKqEzX3xBhS2e6+bZmyos7Vg="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/README.vdm9z07ko3.md",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\README.md",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7736"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/markdown"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k0yiD+dQSBsTPzVq8DfPKqEzX3xBhS2e6+bZmyos7Vg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vdm9z07ko3"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/README.md"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-k0yiD+dQSBsTPzVq8DfPKqEzX3xBhS2e6+bZmyos7Vg="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/README.vdm9z07ko3.md.gz",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\r4euch45ob-vdm9z07ko3.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2149"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/markdown"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d1jNhpyS4ofUbJ2ESiUjig3yl2bMBLEpP9r9Dk8Eea0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vdm9z07ko3"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/README.md.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-d1jNhpyS4ofUbJ2ESiUjig3yl2bMBLEpP9r9Dk8Eea0="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/core.d.tpfcsn2fzh.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\core.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "492"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"b+0JsLByVJmgDEa6YUtcDZwkD5p10Qeh07KvUb2kv74=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tpfcsn2fzh"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/typings/core.d.ts"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-b+0JsLByVJmgDEa6YUtcDZwkD5p10Qeh07KvUb2kv74="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/core.d.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\core.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "492"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"b+0JsLByVJmgDEa6YUtcDZwkD5p10Qeh07KvUb2kv74=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-b+0JsLByVJmgDEa6YUtcDZwkD5p10Qeh07KvUb2kv74="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/actions.d.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\actions.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "236"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OFt1MRO4AIEUsysU7i3fcQb9iRdYY5RPI2/64ZhXnRc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OFt1MRO4AIEUsysU7i3fcQb9iRdYY5RPI2/64ZhXnRc="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/actions.d.wmo6h2q439.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\actions.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "236"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OFt1MRO4AIEUsysU7i3fcQb9iRdYY5RPI2/64ZhXnRc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wmo6h2q439"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/typings/modules/actions.d.ts"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OFt1MRO4AIEUsysU7i3fcQb9iRdYY5RPI2/64ZhXnRc="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/class-list/index.d.7mc2d60v78.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\class-list\\index.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "139"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oY6gn2TNhlm5h9l+7KIkicdIW37r83m9/BW8kRVU+R4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7mc2d60v78"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/typings/modules/class-list/index.d.ts"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oY6gn2TNhlm5h9l+7KIkicdIW37r83m9/BW8kRVU+R4="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/class-list/index.d.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\class-list\\index.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "139"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oY6gn2TNhlm5h9l+7KIkicdIW37r83m9/BW8kRVU+R4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oY6gn2TNhlm5h9l+7KIkicdIW37r83m9/BW8kRVU+R4="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/event-listeners.d.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\event-listeners.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ayAurOLC7pL02JOPKk1B26/8UXkympb5282VyqDQebk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ayAurOLC7pL02JOPKk1B26/8UXkympb5282VyqDQebk="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/event-listeners.d.x5gbxukegu.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\event-listeners.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ayAurOLC7pL02JOPKk1B26/8UXkympb5282VyqDQebk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x5gbxukegu"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/typings/modules/event-listeners.d.ts"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ayAurOLC7pL02JOPKk1B26/8UXkympb5282VyqDQebk="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/init/buttons.d.lv5g2gw5yf.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\init\\buttons.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "156"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"P7yPGTrtcrHQkgHzzeg6J2ciABI0UY3s2VcULP9ON+w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lv5g2gw5yf"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/typings/modules/init/buttons.d.ts"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-P7yPGTrtcrHQkgHzzeg6J2ciABI0UY3s2VcULP9ON+w="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/init/buttons.d.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\init\\buttons.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "156"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"P7yPGTrtcrHQkgHzzeg6J2ciABI0UY3s2VcULP9ON+w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-P7yPGTrtcrHQkgHzzeg6J2ciABI0UY3s2VcULP9ON+w="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/init/content.d.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\init\\content.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "140"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zk2JXi26651M1YvxsW1ZRxKxkdviPUshe5sYNyqnIR8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zk2JXi26651M1YvxsW1ZRxKxkdviPUshe5sYNyqnIR8="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/init/content.d.yz89owul80.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\init\\content.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "140"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zk2JXi26651M1YvxsW1ZRxKxkdviPUshe5sYNyqnIR8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yz89owul80"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/typings/modules/init/content.d.ts"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zk2JXi26651M1YvxsW1ZRxKxkdviPUshe5sYNyqnIR8="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/init/icon.d.08v5yf6vbk.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\init\\icon.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sLSlR0ArkvTQUncObLniOtaePBO46wIM9OvhX1yf4kI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "08v5yf6vbk"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/typings/modules/init/icon.d.ts"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sLSlR0ArkvTQUncObLniOtaePBO46wIM9OvhX1yf4kI="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/init/icon.d.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\init\\icon.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sLSlR0ArkvTQUncObLniOtaePBO46wIM9OvhX1yf4kI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sLSlR0ArkvTQUncObLniOtaePBO46wIM9OvhX1yf4kI="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/init/index.d.t3yb1e3osp.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\init\\index.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "119"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aUq6dPmfwPQAWMN1t+x0zn3BaY2XcS5go6BFozgdHPM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "t3yb1e3osp"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/typings/modules/init/index.d.ts"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aUq6dPmfwPQAWMN1t+x0zn3BaY2XcS5go6BFozgdHPM="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/init/index.d.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\init\\index.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "119"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aUq6dPmfwPQAWMN1t+x0zn3BaY2XcS5go6BFozgdHPM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aUq6dPmfwPQAWMN1t+x0zn3BaY2XcS5go6BFozgdHPM="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/init/modal.d.87i2k1sqdk.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\init\\modal.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "254"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XL/tdfhbchSGl6F7G+iyT0mX9tEo3/CuQum4A0A//HQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "87i2k1sqdk"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/typings/modules/init/modal.d.ts"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XL/tdfhbchSGl6F7G+iyT0mX9tEo3/CuQum4A0A//HQ="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/init/modal.d.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\init\\modal.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "254"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XL/tdfhbchSGl6F7G+iyT0mX9tEo3/CuQum4A0A//HQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XL/tdfhbchSGl6F7G+iyT0mX9tEo3/CuQum4A0A//HQ="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/init/overlay.d.f3amrwa5rr.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\init\\overlay.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "75"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mzftVAxbdGUiMjjaY1OTL2mzinCteTCrlpA3dFZ8ZOw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "f3amrwa5rr"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/typings/modules/init/overlay.d.ts"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mzftVAxbdGUiMjjaY1OTL2mzinCteTCrlpA3dFZ8ZOw="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/init/overlay.d.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\init\\overlay.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "75"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mzftVAxbdGUiMjjaY1OTL2mzinCteTCrlpA3dFZ8ZOw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mzftVAxbdGUiMjjaY1OTL2mzinCteTCrlpA3dFZ8ZOw="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/init/text.d.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\init\\text.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "112"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VETp4A4St/+9kA4i6bPti3ZtecMcAClJrnnZXSW2q6Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VETp4A4St/+9kA4i6bPti3ZtecMcAClJrnnZXSW2q6Q="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/init/text.d.w32kcq4g0c.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\init\\text.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "112"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VETp4A4St/+9kA4i6bPti3ZtecMcAClJrnnZXSW2q6Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w32kcq4g0c"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/typings/modules/init/text.d.ts"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VETp4A4St/+9kA4i6bPti3ZtecMcAClJrnnZXSW2q6Q="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/markup/buttons.d.9r6zbgieoy.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\markup\\buttons.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "43"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9dcTPPbRXuZr9N+C2sb80KN1txjo5X+S8E3s2zr9FtU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9r6zbgieoy"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/typings/modules/markup/buttons.d.ts"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9dcTPPbRXuZr9N+C2sb80KN1txjo5X+S8E3s2zr9FtU="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/markup/buttons.d.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\markup\\buttons.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "43"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9dcTPPbRXuZr9N+C2sb80KN1txjo5X+S8E3s2zr9FtU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9dcTPPbRXuZr9N+C2sb80KN1txjo5X+S8E3s2zr9FtU="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/markup/content.d.r22va0l5xf.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\markup\\content.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Q/aWAhWRu8cAh0HarXXcOBX8mxi2MSRLsI7ZrQPxQjw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r22va0l5xf"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/typings/modules/markup/content.d.ts"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Q/aWAhWRu8cAh0HarXXcOBX8mxi2MSRLsI7ZrQPxQjw="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/markup/content.d.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\markup\\content.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Q/aWAhWRu8cAh0HarXXcOBX8mxi2MSRLsI7ZrQPxQjw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Q/aWAhWRu8cAh0HarXXcOBX8mxi2MSRLsI7ZrQPxQjw="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/markup/icons.d.hw81mn45vc.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\markup\\icons.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "160"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UfX7niTkCRwrcRq3IKXYQTrxrNYFl1vEYOIGvzKzkSQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hw81mn45vc"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/typings/modules/markup/icons.d.ts"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UfX7niTkCRwrcRq3IKXYQTrxrNYFl1vEYOIGvzKzkSQ="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/markup/icons.d.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\markup\\icons.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "160"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UfX7niTkCRwrcRq3IKXYQTrxrNYFl1vEYOIGvzKzkSQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UfX7niTkCRwrcRq3IKXYQTrxrNYFl1vEYOIGvzKzkSQ="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/markup/index.d.si85dhy49i.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\markup\\index.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "325"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nBSwQaWJlt6yNB3PkkleZ5kJ5jerquYJgYM7Kf9i0lE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "si85dhy49i"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/typings/modules/markup/index.d.ts"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nBSwQaWJlt6yNB3PkkleZ5kJ5jerquYJgYM7Kf9i0lE="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/markup/index.d.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\markup\\index.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "325"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nBSwQaWJlt6yNB3PkkleZ5kJ5jerquYJgYM7Kf9i0lE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nBSwQaWJlt6yNB3PkkleZ5kJ5jerquYJgYM7Kf9i0lE="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/markup/modal.d.8s62x5v23x.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\markup\\modal.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "70"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2PN63/ABKkM5HOiXQsCHb/Jbk4t5xaK+pNqY+q3a0t8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8s62x5v23x"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/typings/modules/markup/modal.d.ts"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2PN63/ABKkM5HOiXQsCHb/Jbk4t5xaK+pNqY+q3a0t8="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/markup/modal.d.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\markup\\modal.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "70"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2PN63/ABKkM5HOiXQsCHb/Jbk4t5xaK+pNqY+q3a0t8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2PN63/ABKkM5HOiXQsCHb/Jbk4t5xaK+pNqY+q3a0t8="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/markup/overlay.d.224b2e5j38.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\markup\\overlay.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "55"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tswidoBT5uT3yGaBbNZHpRtDC+OXSf0SMwpvN7f57rQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "224b2e5j38"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/typings/modules/markup/overlay.d.ts"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tswidoBT5uT3yGaBbNZHpRtDC+OXSf0SMwpvN7f57rQ="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/markup/overlay.d.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\markup\\overlay.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "55"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tswidoBT5uT3yGaBbNZHpRtDC+OXSf0SMwpvN7f57rQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tswidoBT5uT3yGaBbNZHpRtDC+OXSf0SMwpvN7f57rQ="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/options/buttons.d.j4zjc20tm5.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\options\\buttons.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "479"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bbPBOTmkYcTBSqkCKlOda4GwygaAZasD/Euu7Xm80vo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "j4zjc20tm5"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/typings/modules/options/buttons.d.ts"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bbPBOTmkYcTBSqkCKlOda4GwygaAZasD/Euu7Xm80vo="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/options/buttons.d.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\options\\buttons.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "479"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bbPBOTmkYcTBSqkCKlOda4GwygaAZasD/Euu7Xm80vo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bbPBOTmkYcTBSqkCKlOda4GwygaAZasD/Euu7Xm80vo="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/options/content.d.cmb6zmrffg.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\options\\content.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "177"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rPQEQUCshwzt46lZnETjfZC0uqT9cTXH6eH/z00G2RA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cmb6zmrffg"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/typings/modules/options/content.d.ts"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rPQEQUCshwzt46lZnETjfZC0uqT9cTXH6eH/z00G2RA="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/options/content.d.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\options\\content.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "177"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rPQEQUCshwzt46lZnETjfZC0uqT9cTXH6eH/z00G2RA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rPQEQUCshwzt46lZnETjfZC0uqT9cTXH6eH/z00G2RA="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/options/deprecations.d.rea9bfiav1.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\options\\deprecations.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "340"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"88Nwrk7mBs4E9CXP6+576uf0tsAIDaxBCifzBcQNvRE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rea9bfiav1"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/typings/modules/options/deprecations.d.ts"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-88Nwrk7mBs4E9CXP6+576uf0tsAIDaxBCifzBcQNvRE="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/options/deprecations.d.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\options\\deprecations.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "340"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"88Nwrk7mBs4E9CXP6+576uf0tsAIDaxBCifzBcQNvRE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-88Nwrk7mBs4E9CXP6+576uf0tsAIDaxBCifzBcQNvRE="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/options/index.d.1cv9d70g33.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\options\\index.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "529"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H1AeucvApz6FKv+ebW2sFhWFtXusQunnuN2h+RH5xgM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1cv9d70g33"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/typings/modules/options/index.d.ts"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-H1AeucvApz6FKv+ebW2sFhWFtXusQunnuN2h+RH5xgM="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/options/index.d.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\options\\index.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "529"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H1AeucvApz6FKv+ebW2sFhWFtXusQunnuN2h+RH5xgM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-H1AeucvApz6FKv+ebW2sFhWFtXusQunnuN2h+RH5xgM="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/state.d.a3e4kydyer.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\state.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "709"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VszPgPX/ClwH9S7lIkhso6r50q0jX3jpoJNB/6vZ2/E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "a3e4kydyer"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/typings/modules/state.d.ts"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VszPgPX/ClwH9S7lIkhso6r50q0jX3jpoJNB/6vZ2/E="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/state.d.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\state.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "709"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VszPgPX/ClwH9S7lIkhso6r50q0jX3jpoJNB/6vZ2/E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VszPgPX/ClwH9S7lIkhso6r50q0jX3jpoJNB/6vZ2/E="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/utils.d.rm4j1deitz.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\utils.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "450"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"M/PdDcNi1nsGHAJQ8OdTH1Mb5YhUlfNo2sRPxRYf0g0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rm4j1deitz"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/typings/modules/utils.d.ts"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-M/PdDcNi1nsGHAJQ8OdTH1Mb5YhUlfNo2sRPxRYf0g0="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/modules/utils.d.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\modules\\utils.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "450"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"M/PdDcNi1nsGHAJQ8OdTH1Mb5YhUlfNo2sRPxRYf0g0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-M/PdDcNi1nsGHAJQ8OdTH1Mb5YhUlfNo2sRPxRYf0g0="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/sweetalert.d.7npyu6et5r.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\sweetalert.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rXNlXnH2asfF6UMOWCfhiRfRzFlTfLtTju5J0O65ZQo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7npyu6et5r"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/sweetalert/typings/sweetalert.d.ts"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rXNlXnH2asfF6UMOWCfhiRfRzFlTfLtTju5J0O65ZQo="
+        }
+      ]
+    },
+    {
+      "Route": "lib/sweetalert/typings/sweetalert.d.ts",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\sweetalert\\typings\\sweetalert.d.ts",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/vnd.dlna.mpeg-tts"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rXNlXnH2asfF6UMOWCfhiRfRzFlTfLtTju5J0O65ZQo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 13:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rXNlXnH2asfF6UMOWCfhiRfRzFlTfLtTju5J0O65ZQo="
         }
       ]
     }
