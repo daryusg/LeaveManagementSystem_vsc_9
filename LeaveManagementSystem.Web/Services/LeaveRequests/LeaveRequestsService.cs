@@ -1,18 +1,13 @@
 namespace LeaveManagementSystem.Web.Services.LeaveRequests;
 
-public class LeaveRequestsService (IMapper _mapper, IHttpContextAccessor _httpContextAccessor, UserManager<ApplicationUser> _userManager, ApplicationDbContext _context): ILeaveRequestsService
+public class LeaveRequestsService (IMapper _mapper, ApplicationDbContext _context, IFunctions _functions): ILeaveRequestsService
 {
     public async Task CancelLeaveRequestAsync(int Id) //cip...151/152
     {
         var leaveRequest = await _context.LeaveRequests.FindAsync(Id);
         leaveRequest.LeaveRequestStatusId = (int)Constants.LeaveRequestStatusEnum.Cancelled;
-
-        //add the requested days back to the allocation (reversed from CreateLeaveRequestAsync, however, logically, the request contains the employeeid)
-        var numberOfDays = (leaveRequest.EndDate.DayNumber - leaveRequest.StartDate.DayNumber) + 1;
-        var allocationToRestore = await _context.LeaveAllocations
-            .FirstAsync(q => q.LeaveTypeId == leaveRequest.LeaveTypeId && q.EmployeeId == leaveRequest.EmployeeId);
-        allocationToRestore.Days += numberOfDays;
-
+        //restore the allocation days
+        await _functions.UpdateAllocationDays(leaveRequest, false); //cip..162
         await _context.SaveChangesAsync();
     }
 
@@ -21,36 +16,51 @@ public class LeaveRequestsService (IMapper _mapper, IHttpContextAccessor _httpCo
     {
         //map data to leave request data model
         var leaveRequest = _mapper.Map<LeaveRequest>(model);
-
         //get logged in employee id
-        var user = await _userManager.GetUserAsync(_httpContextAccessor.HttpContext?.User);
-        leaveRequest.EmployeeId = user.Id;
-
+        leaveRequest.EmployeeId = await _functions.GetEmployeeIdAsync();;
         //set LeaveRequestStatusId to Pending
         leaveRequest.LeaveRequestStatusId = (int)Common.Constants.LeaveRequestStatusEnum.Pending;
-
         //save leave request
         //_context.LeaveRequests.Add(leaveRequest);
         //or
         _context.Add(leaveRequest);
-
-        //deduct requested days from allocation
-        var numberOfDays = (model.EndDate.DayNumber - model.StartDate.DayNumber) + 1;
-        var allocationToDecuct = await _context.LeaveAllocations
-            .FirstAsync(q => q.LeaveTypeId == model.LeaveTypeId && q.EmployeeId == user.Id);
-        allocationToDecuct.Days -= numberOfDays;
-
+        //deduct the allocation days
+        await _functions.UpdateAllocationDays(leaveRequest, true); //cip..162
         await _context.SaveChangesAsync(); //if any of the previous ops failed then this won't save.
     }
 
-    public async Task<LeaveRequestsVm> GetAllLeaveRequestsAsync()
+    public async Task<EmployeeLeaveRequestsVM> GetAllLeaveRequestsAsync() //cip...156
     {
-        throw new NotImplementedException();
+        var leaveRequests = await _context.LeaveRequests
+            .Include(q => q.LeaveType) //join the LeaveType table
+            .ToListAsync();
+
+        //copied from GetEmployeeLeaveRequestsAsync. instead of using the _mapper object, i can to a new data type map on-the-fly
+        var leaveRequestsReadOnlyVM = leaveRequests.Select(q => new LeaveRequestReadOnlyVM
+        {
+            StartDate = q.StartDate,
+            EndDate = q.EndDate,
+            Id = q.Id,
+            LeaveType = q.LeaveType.Name,
+            LeaveRequestStatus = (Constants.LeaveRequestStatusEnum)q.LeaveRequestStatusId, //cip...150 cast to an enum
+            NumberOfDays = (q.EndDate.DayNumber - q.StartDate.DayNumber) + 1
+        }).ToList();
+
+        var model = new EmployeeLeaveRequestsVM
+        {
+            PendingRequests = leaveRequests.Count(q => q.LeaveRequestStatusId == (int)Common.Constants.LeaveRequestStatusEnum.Pending),
+            ApprovedRequests= leaveRequests.Count(q => q.LeaveRequestStatusId == (int)Common.Constants.LeaveRequestStatusEnum.Approved),
+            DeclinedRequests = leaveRequests.Count(q => q.LeaveRequestStatusId == (int)Common.Constants.LeaveRequestStatusEnum.Declined),
+            TotalRequests = leaveRequests.Count,
+            LeaveRequests = leaveRequestsReadOnlyVM
+        };
+        
+        return model;
     }
 
     public async Task<IEnumerable<LeaveRequestReadOnlyVM>> GetEmployeeLeaveRequestsAsync() //cip...150
     {
-        var user = await _userManager.GetUserAsync(_httpContextAccessor.HttpContext?.User);
+        var user = await _functions.GetEmployeeAsync();
         var leaveRequests = await _context.LeaveRequests
             .Include(q => q.LeaveType) //join the LeaveType table
             .Where(q => q.EmployeeId == user.Id)
@@ -68,27 +78,64 @@ public class LeaveRequestsService (IMapper _mapper, IHttpContextAccessor _httpCo
         return model;
     }
 
+    public async Task<ReviewLeaveRequestVM> GetLeaveRequestForReviewAsync(int leaveRequestId) //cip...158
+    {
+        var leaveRequest = await _context.LeaveRequests
+            .Include(q => q.LeaveType) //join the LeaveType table
+            .FirstAsync(q => q.Id == leaveRequestId); //cip...158 can't .include with a .find.
+        
+        var user = await _functions.GetEmployeeAsync(leaveRequest.EmployeeId);
+        
+        var model = new ReviewLeaveRequestVM
+        {
+            StartDate= leaveRequest.StartDate,
+            EndDate = leaveRequest.EndDate,
+            NumberOfDays = (leaveRequest.EndDate.DayNumber - leaveRequest.StartDate.DayNumber) + 1,
+            LeaveRequestStatus = (Constants.LeaveRequestStatusEnum)leaveRequest.LeaveRequestStatusId,
+            Id = leaveRequestId,
+            LeaveType = leaveRequest.LeaveType.Name,
+            RequestComments = leaveRequest.RequestComments, //cip...159
+            Employee = new EmployeeVM
+            {
+                Id = leaveRequest.EmployeeId,
+                Email = user.Email,
+                FirstName = user.FirstName,
+                LastName = user.LastName
+            }
+        };
+        return model;
+    }
+
     public async Task<int> GetUsersMaxDaysForLeaveTypeAsync(int leaveTypeId) //cip...146
     {
-        var user = await _userManager.GetUserAsync(_httpContextAccessor.HttpContext?.User);
+        var user = await _functions.GetEmployeeAsync();
         
         var allocationToDecuct = await _context.LeaveAllocations
             .FirstAsync(q => q.LeaveTypeId == leaveTypeId && q.EmployeeId == user.Id);
         return allocationToDecuct.Days;
     }
 
-    public async Task<bool> RequestDatesExceedAllocationAsync(LeaveRequestCreateVM model) //cip...146
+    public async Task<bool> RequestDatesExceedAllocationAsync(LeaveRequestCreateVM model) //cip...146. must be public
     {
-        var user = await _userManager.GetUserAsync(_httpContextAccessor.HttpContext?.User);
-        
+        var user = await _functions.GetEmployeeAsync();
+        var periodId = (await _functions.GetCurrentPeriodAsync()).Id; //cip...161
         var numberOfDays = (model.EndDate.DayNumber - model.StartDate.DayNumber) + 1;
         var allocationToDecuct = await _context.LeaveAllocations
-            .FirstAsync(q => q.LeaveTypeId == model.LeaveTypeId && q.EmployeeId == user.Id);
+            .FirstAsync(q => q.LeaveTypeId == model.LeaveTypeId && q.EmployeeId == user.Id && q.PeriodId == periodId);
         return numberOfDays > allocationToDecuct.Days;
     }
 
-    public async Task ReviewLeaveRequestAsync(ReviewLeaveRequestVM model)
+    public async Task ReviewLeaveRequestAsync(int leaveRequestId, bool approved) //cip...159
     {
-        throw new NotImplementedException();
+        var leaveRequest = await _context.LeaveRequests.FindAsync(leaveRequestId); //FindAsync = Use primary key
+        leaveRequest.LeaveRequestStatusId = approved ? (int)Constants.LeaveRequestStatusEnum.Approved : (int)Constants.LeaveRequestStatusEnum.Declined;
+
+        leaveRequest.ReviewerId = (await _functions.GetEmployeeAsync()).Id; //set the reviewer
+        if(!approved) //if declined then give the days back to the employee
+        {
+            //restore the allocation days
+            await _functions.UpdateAllocationDays(leaveRequest, false); //cip..162
+        }
+        await _context.SaveChangesAsync();
     }
 }

@@ -1,0 +1,122 @@
+﻿@model EmployeeLeaveRequestsVM //cip...157
+@{
+    ViewData["Title"] = "View Leave Requests";
+}
+
+<h1>Adminn Leave Requests View</h1>
+
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <div class="card-body text-center">
+                <h1 class="card-title text-primary">@Model.TotalRequests</h1>
+                <h5 class="card-text">@Html.DisplayNameFor(model => model.TotalRequests)</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <div class="card-body text-center">
+                <h1 class="card-title text-success">@Model.ApprovedRequests</h1>
+                <h5 class="card-text">@Html.DisplayNameFor(model => model.ApprovedRequests)</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <div class="card-body text-center">
+                <h1 class="card-title text-warninf">@Model.DeclinedRequests</h1>
+                <h5 class="card-text">@Html.DisplayNameFor(model => model.DeclinedRequests)</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <div class="card-body text-center">
+                <h1 class="card-title text-danger">@Model.PendingRequests</h1>
+                <h5 class="card-text">@Html.DisplayNameFor(model => model.PendingRequests)</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+@if(!Model.LeaveRequests.Any()) @* or Model.LeaveRequests.Count==0*@
+{
+    <div class="alert alert-info">
+        <h3>There are no requests at this time.</h3>
+    </div>
+}
+else
+{
+    <hr/>
+    <h2>Leave Requests</h2>
+    <hr/>
+
+    <table class="table"> @*continuity: copied from/based on LeaveRequests.Index.cshtml which is, similarly, based on a list ofLeave Requests (IEnumerable<LeaveRequestReadOnlyVM>)*@
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.LeaveRequests[0].LeaveType)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.LeaveRequests[0].StartDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.LeaveRequests[0].EndDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.LeaveRequests[0].NumberOfDays)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.LeaveRequests[0].LeaveRequestStatus)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model.LeaveRequests) {
+            var className = string.Empty;
+            switch (item.LeaveRequestStatus)
+            {
+                case Constants.LeaveRequestStatusEnum.Pending:
+                    className = "warning";
+                    break;
+                case Constants.LeaveRequestStatusEnum.Approved:
+                    className = "success";
+                    break;
+                case Constants.LeaveRequestStatusEnum.Declined:
+                    className = "danger";
+                    break;
+                case Constants.LeaveRequestStatusEnum.Cancelled:
+                    className = "dark";
+                    break;
+            }
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LeaveType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StartDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EndDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumberOfDays)
+                </td>
+                <td>
+                    <span class="badge rounded-pill text-bg-@className">@item.LeaveRequestStatus.ToString()</span> @*@item.LeaveRequestStatus.ToString() displays the enum's text and not it's enum value*@
+                </td>
+                <td>
+                    @switch (item.LeaveRequestStatus)
+                    {
+                        case Constants.LeaveRequestStatusEnum.Pending:
+                            <a asp-action="Review" asp-route-leaveRequestId="@item.Id" class="btn btn-primary">Review</a> //cip...157
+                            break;
+                    }
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}

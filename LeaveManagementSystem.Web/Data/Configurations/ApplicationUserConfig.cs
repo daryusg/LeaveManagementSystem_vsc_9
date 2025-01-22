@@ -11,6 +11,21 @@ public class ApplicationUserConfig : IEntityTypeConfiguration<ApplicationUser>
         builder.HasData(
             new ApplicationUser
             {
+                Id = "cb6397fe-acf8-49dd-b791-01bf0b069aee",
+                Email = "admin@localhost.com",
+                NormalizedEmail = "ADMIN@LOCALHOST.COM",
+                UserName = "admin@localhost.com",
+                NormalizedUserName = "ADMIN@LOCALHOST.COM",
+                PasswordHash = "AQAAAAIAAYagAAAAEN5WCPZ+e5Tcc6puplTNrflD+R6WpF82fsT2aCWMlDDmwAlhys5FMsfFVgax4+GI7Q==", //hasher.HashPassword(null, "P@ssw0rd"),
+                EmailConfirmed = true,
+                SecurityStamp = "26d82787-3f4c-4fe2-b6c6-1660a3c8d58a", //Guid.NewGuid().ToString("D"),
+                ConcurrencyStamp = "adb2ad4efab64d049c8a713991f0bd37", //Guid.NewGuid().ToString("N"),
+                FirstName = "Admin",
+                LastName = "Default",
+                DateOfBirth = new DateOnly(1990, 07, 01)
+            },
+            new ApplicationUser
+            {
                 Id = "8a862852-9e68-4bcc-b624-220e9b060cf9",
                 Email = "admin_bu1@localhost.com",
                 NormalizedEmail = "ADMIN_BU1@LOCALHOST.COM",

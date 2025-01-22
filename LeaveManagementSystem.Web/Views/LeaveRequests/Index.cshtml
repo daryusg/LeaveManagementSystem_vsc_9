@@ -68,7 +68,7 @@
                 @switch (item.LeaveRequestStatus)
                 {
                     case Constants.LeaveRequestStatusEnum.Pending:
-                        <button data-id="@item.Id" class="btn btn-danger cancelBtn">Cancel</button>
+                        <button data-id="@item.Id" class="btn btn-danger cancelBtn">Cancel</button> //cip...155
                         break;
                     case Constants.LeaveRequestStatusEnum.Approved:
                         //17/01/25 allow user to cancel if hol not already taken??
@@ -86,6 +86,7 @@
     <input type="hidden" id="leaveRequestId" name="gobbledygook"> @*cip...154 i can't use asp-for because i'm out of the loop. id is how i reference thie control in javascript.*@
 </form>
 
+@*cip...155*@
 @section Scripts{ @*why "Scripts"? _Layout.cshtml (below footer)-> @await RenderSectionAsync("Scripts", required: false)*@
 @*this is put here to ensure that it's rendered after the javascript has loaded: _Layout.cshtml (below footer)-> <script src="~/lib/jquery/dist/jquery.min.js"></script>*@
     <script>

@@ -16,6 +16,8 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddScoped<ILeaveTypesService, LeaveTypesService>(); //cip...91. register the service for dependency injection.
 builder.Services.AddScoped<ILeaveAllocationsService, LeaveAllocationsService>(); //cip...123. register the service for dependency injection.
 builder.Services.AddScoped<ILeaveRequestsService, LeaveRequestsService>(); //cip...142. register the service for dependency injection.
+builder.Services.AddScoped<IFunctions, Functions>(); //cip...162. register the service for dependency injection. NOTE: uses AddHttpContextAccessor.
+
 builder.Services.AddTransient<IEmailSender, EmailSender>(); //cip...111
 
 builder.Services.AddHttpContextAccessor(); //cip...127

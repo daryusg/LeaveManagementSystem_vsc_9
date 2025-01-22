@@ -77,21 +77,24 @@ namespace LeaveManagementSystem.Web.Controllers
         //Admin/Supervisor review Requests
         public async Task<IActionResult> ListRequests()
         {
-            return View();
+            var model = await _leaveRequestsService.GetAllLeaveRequestsAsync();
+            return View(model);
         }
 
         //Admin/Supervisor review Requests
-        public async Task<IActionResult> Review(int leaveRequestId)
+        public async Task<IActionResult> Review(int leaveRequestId) //cip...158
         {
-            return View();
+            var model = await _leaveRequestsService.GetLeaveRequestForReviewAsync(leaveRequestId);
+            return View(model);
         }
 
         //Admin/Supervisor review Requests
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Review(/*vm*/)
+        public async Task<IActionResult> Review(int leaveRequestId, bool approved) //cip...159
         {
-            return View();
+            await _leaveRequestsService.ReviewLeaveRequestAsync(leaveRequestId, approved);
+            return RedirectToAction(nameof(ListRequests));
         }
     }
 }
