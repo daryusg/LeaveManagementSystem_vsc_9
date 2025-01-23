@@ -1,6 +1,6 @@
 namespace LeaveManagementSystem.Web.Services.LeaveRequests;
 
-public class LeaveRequestsService (IMapper _mapper, ApplicationDbContext _context, IFunctions _functions): ILeaveRequestsService
+public class LeaveRequestsService(IMapper _mapper, ApplicationDbContext _context, IFunctions _functions) : ILeaveRequestsService
 {
     public async Task CancelLeaveRequestAsync(int Id) //cip...151/152
     {
@@ -16,8 +16,8 @@ public class LeaveRequestsService (IMapper _mapper, ApplicationDbContext _contex
     {
         //map data to leave request data model
         var leaveRequest = _mapper.Map<LeaveRequest>(model);
-        //get logged in employee id
-        leaveRequest.EmployeeId = await _functions.GetEmployeeIdAsync();;
+        //if it's not the admin tinkering then get the logged in employee id
+        leaveRequest.EmployeeId = model.EmployeeId ?? await _functions.GetEmployeeIdAsync(); ;
         //set LeaveRequestStatusId to Pending
         leaveRequest.LeaveRequestStatusId = (int)Common.Constants.LeaveRequestStatusEnum.Pending;
         //save leave request
@@ -49,12 +49,12 @@ public class LeaveRequestsService (IMapper _mapper, ApplicationDbContext _contex
         var model = new EmployeeLeaveRequestsVM
         {
             PendingRequests = leaveRequests.Count(q => q.LeaveRequestStatusId == (int)Common.Constants.LeaveRequestStatusEnum.Pending),
-            ApprovedRequests= leaveRequests.Count(q => q.LeaveRequestStatusId == (int)Common.Constants.LeaveRequestStatusEnum.Approved),
+            ApprovedRequests = leaveRequests.Count(q => q.LeaveRequestStatusId == (int)Common.Constants.LeaveRequestStatusEnum.Approved),
             DeclinedRequests = leaveRequests.Count(q => q.LeaveRequestStatusId == (int)Common.Constants.LeaveRequestStatusEnum.Declined),
             TotalRequests = leaveRequests.Count,
             LeaveRequests = leaveRequestsReadOnlyVM
         };
-        
+
         return model;
     }
 
@@ -83,12 +83,12 @@ public class LeaveRequestsService (IMapper _mapper, ApplicationDbContext _contex
         var leaveRequest = await _context.LeaveRequests
             .Include(q => q.LeaveType) //join the LeaveType table
             .FirstAsync(q => q.Id == leaveRequestId); //cip...158 can't .include with a .find.
-        
+
         var user = await _functions.GetEmployeeAsync(leaveRequest.EmployeeId);
-        
+
         var model = new ReviewLeaveRequestVM
         {
-            StartDate= leaveRequest.StartDate,
+            StartDate = leaveRequest.StartDate,
             EndDate = leaveRequest.EndDate,
             NumberOfDays = (leaveRequest.EndDate.DayNumber - leaveRequest.StartDate.DayNumber) + 1,
             LeaveRequestStatus = (Constants.LeaveRequestStatusEnum)leaveRequest.LeaveRequestStatusId,
@@ -109,7 +109,7 @@ public class LeaveRequestsService (IMapper _mapper, ApplicationDbContext _contex
     public async Task<int> GetUsersMaxDaysForLeaveTypeAsync(int leaveTypeId) //cip...146
     {
         var user = await _functions.GetEmployeeAsync();
-        
+
         var allocationToDecuct = await _context.LeaveAllocations
             .FirstAsync(q => q.LeaveTypeId == leaveTypeId && q.EmployeeId == user.Id);
         return allocationToDecuct.Days;
@@ -117,12 +117,14 @@ public class LeaveRequestsService (IMapper _mapper, ApplicationDbContext _contex
 
     public async Task<bool> RequestDatesExceedAllocationAsync(LeaveRequestCreateVM model) //cip...146. must be public
     {
-        var user = await _functions.GetEmployeeAsync();
+        //var user = await _functions.GetEmployeeAsync();
+        var employeeId = model.EmployeeId ?? (await _functions.GetEmployeeAsync()).Id; //cip...164
         var periodId = (await _functions.GetCurrentPeriodAsync()).Id; //cip...161
         var numberOfDays = (model.EndDate.DayNumber - model.StartDate.DayNumber) + 1;
-        var allocationToDecuct = await _context.LeaveAllocations
-            .FirstAsync(q => q.LeaveTypeId == model.LeaveTypeId && q.EmployeeId == user.Id && q.PeriodId == periodId);
-        return numberOfDays > allocationToDecuct.Days;
+        var allocation = await _context.LeaveAllocations
+            .FirstAsync(q => q.LeaveTypeId == model.LeaveTypeId && q.EmployeeId == employeeId && q.PeriodId == periodId);
+        var ret = numberOfDays > allocation.Days;
+        return ret;
     }
 
     public async Task ReviewLeaveRequestAsync(int leaveRequestId, bool approved) //cip...159
@@ -131,7 +133,7 @@ public class LeaveRequestsService (IMapper _mapper, ApplicationDbContext _contex
         leaveRequest.LeaveRequestStatusId = approved ? (int)Constants.LeaveRequestStatusEnum.Approved : (int)Constants.LeaveRequestStatusEnum.Declined;
 
         leaveRequest.ReviewerId = (await _functions.GetEmployeeAsync()).Id; //set the reviewer
-        if(!approved) //if declined then give the days back to the employee
+        if (!approved) //if declined then give the days back to the employee
         {
             //restore the allocation days
             await _functions.UpdateAllocationDays(leaveRequest, false); //cip..162

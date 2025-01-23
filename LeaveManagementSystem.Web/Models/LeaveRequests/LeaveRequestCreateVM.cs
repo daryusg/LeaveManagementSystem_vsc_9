@@ -18,6 +18,8 @@ public class LeaveRequestCreateVM : IValidatableObject
     [DisplayName("Leave Type")] //cip...144
     [Required] //cip...146
     public int LeaveTypeId { get; set; }
+    //public ApplicationUser? Employee { get; set; }  = default!; //* 23/01/25 adding admin functionality *
+    public string? EmployeeId { get; set; } = default!; //* 23/01/25 adding admin functionality *
     /*
     public LeaveRequestStatus? LeaveRequestStatus { get; set; } //cip...140. from cip...124. navigation property. it's best to make this nullable.
     public int LeaveRequestStatusId { get; set; }

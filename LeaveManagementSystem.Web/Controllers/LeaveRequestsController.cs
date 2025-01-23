@@ -4,9 +4,9 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace LeaveManagementSystem.Web.Controllers
 {
-    //cip...142
+    //cip...143
     [Authorize]
-    public class LeaveRequestsController (ILeaveTypesService _leaveTypesService, ILeaveRequestsService _leaveRequestsService): Controller
+    public class LeaveRequestsController (ILeaveTypesService _leaveTypesService, ILeaveRequestsService _leaveRequestsService, IFunctions _functions) : Controller
     {
         //Employee View Requests
         // GET: LeaveRequestsController
@@ -18,15 +18,17 @@ namespace LeaveManagementSystem.Web.Controllers
 
         //Employee Create Requests
         //cip...144
-        public async Task<IActionResult> Create()
+        //public async Task<IActionResult> Create() * 23/01/25 adding admin functionality *
+        public async Task<IActionResult> Create(string? employeeId, string? leaveTypeId)
         {
             var leaveTypes = await _leaveTypesService.GetAllAsync();
-            var leaveTypesList = new SelectList(leaveTypes, "Id", "Name"); //SelectList.SelectList(System.Collections.IEnumerable items, string dataValueField, string dataTextField)
+            var leaveTypesList = new SelectList(leaveTypes, "Id", "Name", leaveTypeId ?? string.Empty); //SelectList.SelectList(System.Collections.IEnumerable items, string dataValueField, string dataTextField)
             var model = new LeaveRequestCreateVM
             {
                 StartDate = DateOnly.FromDateTime(DateTime.Now),
                 EndDate = DateOnly.FromDateTime(DateTime.Now.AddDays(1)),
-                LeaveTypes = leaveTypesList
+                LeaveTypes = leaveTypesList,
+                EmployeeId = employeeId // * 23/01/25 adding admin functionality *
             };
             return View(model);
         }
@@ -56,7 +58,11 @@ namespace LeaveManagementSystem.Web.Controllers
             if (ModelState.IsValid)
             {
                 await _leaveRequestsService.CreateLeaveRequestAsync(model);
-                return RedirectToAction(nameof(Index)); //cip...148 tw informed that this should've been added before (cip...146?)
+                //ToDo: if the model.employeeId is different to _functions.GetEmployeeIdAsync() then i need to go back to LeaveAllocations.Details.cshtml
+                if(model.EmployeeId != await _functions.GetEmployeeIdAsync())
+                    return RedirectToAction(nameof(LeaveAllocationsController.Details), nameof(LeaveAllocationsController), new { employeeId = model.EmployeeId}); //admin work
+                else
+                    return RedirectToAction(nameof(Index)); //cip...148 tw informed that this should've been added before (cip...146?)
             }
             //NOTE: LeaveTypes is null at this point because it's unbound
             //refill...

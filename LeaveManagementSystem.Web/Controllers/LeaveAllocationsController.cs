@@ -4,7 +4,7 @@ using LeaveManagementSystem.Web.Services.LeaveTypes;
 namespace LeaveManagementSystem.Web.Controllers
 {
     [Authorize]
-    public class LeaveAllocationsController (ILeaveAllocationsService _leaveAllocationsService, ILeaveTypesService _leaveTypesService): Controller
+    public class LeaveAllocationsController (ILeaveAllocationsService _leaveAllocationsService, ILeaveTypesService _leaveTypesService, IFunctions _functions): Controller
     {
         [Authorize(Roles = Constants.Roles.cAdministrator)]
         // GET: LeaveAllocationsController
@@ -67,6 +67,16 @@ namespace LeaveManagementSystem.Web.Controllers
         {
             var employeeLeaveAllocationsVM = await _leaveAllocationsService.GetEmployeeAllocationsAsync(employeeId);
             return View(employeeLeaveAllocationsVM);
+        }
+
+        //Cancel Editing Vacation Allocation
+        public async Task<IActionResult> Cancel(string employeeId)
+        {
+            //ToDo: if the model.employeeId is different to _functions.GetEmployeeIdAsync() then i need to go back to LeaveAllocations.Details.cshtml
+            if(employeeId != await _functions.GetEmployeeIdAsync())
+                return RedirectToAction(nameof(Details), new { employeeId = employeeId}); //admin work
+            else
+                return RedirectToAction(nameof(Index)); //cip...148 tw informed that this should've been added before (cip...146?)
         }
     }
 }
