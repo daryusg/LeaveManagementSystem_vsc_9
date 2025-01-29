@@ -20,6 +20,14 @@ builder.Services.AddScoped<IFunctions, Functions>(); //cip...162. register the s
 
 builder.Services.AddTransient<IEmailSender, EmailSender>(); //cip...111
 
+builder.Services.AddAuthorization(options => {
+    options.AddPolicy(Constants.Policies.cAdminSupervisorOnly, policy => {
+        policy.RequireRole(Constants.Roles.cAdministrator, Constants.Roles.cSupervisor); //either or
+        //policy.RequireRole(Constants.Roles.cAdministrator); //and
+        //policy.RequireRole(Constants.Roles.cSupervisor); //and
+    });
+}); //cip...165
+
 builder.Services.AddHttpContextAccessor(); //cip...127
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly()); //cip...77
 

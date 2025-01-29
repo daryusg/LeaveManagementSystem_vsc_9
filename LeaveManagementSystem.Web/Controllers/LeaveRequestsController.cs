@@ -19,10 +19,10 @@ namespace LeaveManagementSystem.Web.Controllers
         //Employee Create Requests
         //cip...144
         //public async Task<IActionResult> Create() * 23/01/25 adding admin functionality *
-        public async Task<IActionResult> Create(string? employeeId, string? leaveTypeId)
+        public async Task<IActionResult> Create(string? employeeId, int? leaveTypeId)
         {
             var leaveTypes = await _leaveTypesService.GetAllAsync();
-            var leaveTypesList = new SelectList(leaveTypes, "Id", "Name", leaveTypeId ?? string.Empty); //SelectList.SelectList(System.Collections.IEnumerable items, string dataValueField, string dataTextField)
+            var leaveTypesList = new SelectList(leaveTypes, "Id", "Name", leaveTypeId); //SelectList.SelectList(System.Collections.IEnumerable items, string dataValueField, string dataTextField, object selectedValue)
             var model = new LeaveRequestCreateVM
             {
                 StartDate = DateOnly.FromDateTime(DateTime.Now),
@@ -60,7 +60,8 @@ namespace LeaveManagementSystem.Web.Controllers
                 await _leaveRequestsService.CreateLeaveRequestAsync(model);
                 //ToDo: if the model.employeeId is different to _functions.GetEmployeeIdAsync() then i need to go back to LeaveAllocations.Details.cshtml
                 if(model.EmployeeId != await _functions.GetEmployeeIdAsync())
-                    return RedirectToAction(nameof(LeaveAllocationsController.Details), nameof(LeaveAllocationsController), new { employeeId = model.EmployeeId}); //admin work
+                    //return RedirectToAction("Details", "LeaveAllocations", new { employeeId = model.EmployeeId }); //this works
+                    return RedirectToAction(nameof(LeaveAllocationsController.Details), (nameof(LeaveAllocationsController)).Replace("Controller", ""), new { employeeId = model.EmployeeId}); //admin work
                 else
                     return RedirectToAction(nameof(Index)); //cip...148 tw informed that this should've been added before (cip...146?)
             }
@@ -81,6 +82,7 @@ namespace LeaveManagementSystem.Web.Controllers
         }
 
         //Admin/Supervisor review Requests
+        [Authorize(Policy = Constants.Policies.cAdminSupervisorOnly)]
         public async Task<IActionResult> ListRequests()
         {
             var model = await _leaveRequestsService.GetAllLeaveRequestsAsync();

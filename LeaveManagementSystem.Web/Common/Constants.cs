@@ -9,6 +9,11 @@ public static class Constants
         public const string cEmployee = "Employee";
     }
 
+    public static class Policies //cip...165 Constants.Policies.cAdminSupervisorOnly
+    {
+        public const string cAdminSupervisorOnly = "AdminSupervisorOnly";
+    }
+
     public static int cMonthsPerYear = 12; //cip...125
 
     public enum LeaveRequestStatusEnum //cip...145 (was LeaveRequestStatus but LeaveRequestStatusEnum in git. LeaveRequestStatus is, also, a table so not auto deternmined by vsc)
