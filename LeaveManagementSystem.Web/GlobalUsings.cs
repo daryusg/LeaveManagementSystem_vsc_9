@@ -1,5 +1,5 @@
 //cip...107 -------------------------------------------------
-global using LeaveManagementSystem.Web.Data;
+global using LeaveManagementSystem.Data;
 
 global using System;
 global using System.Collections.Generic;
@@ -19,13 +19,14 @@ global using Microsoft.AspNetCore.WebUtilities;
 global using Microsoft.Extensions.Logging;
 
 global using Microsoft.EntityFrameworkCore;
-global using LeaveManagementSystem.Web.Models.LeaveTypes;
-global using LeaveManagementSystem.Web.Models;
-global using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-global using AutoMapper;
 //cip...107 -------------------------------------------------
-global using LeaveManagementSystem.Web.Common; //cip...112
-global using LeaveManagementSystem.Web.Models.LeaveAllocations; //cip...128
-global using LeaveManagementSystem.Web.Models.Periods; //cip...128
-global using LeaveManagementSystem.Web.Models.LeaveRequests; //cip...143
-global using System.ComponentModel; //cip...149
+global using LeaveManagementSystem.Common;
+global using System.Reflection;
+global using LeaveManagementSystem.Application.Services.Email;
+global using LeaveManagementSystem.Application.Services.LeaveAllocations;
+global using LeaveManagementSystem.Application.Services.LeaveRequests;
+global using LeaveManagementSystem.Application.Services.LeaveTypes; //cip...142
+
+global using LeaveManagementSystem.Application.Models.LeaveAllocations;
+global using LeaveManagementSystem.Application.Models.LeaveRequests;
+global using LeaveManagementSystem.Application.Models;

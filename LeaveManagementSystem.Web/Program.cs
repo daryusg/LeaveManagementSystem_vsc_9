@@ -1,9 +1,4 @@
-using System.Reflection;
-using LeaveManagementSystem.Web.Services.Email;
-using LeaveManagementSystem.Web.Services.LeaveAllocations; //cip...123
-using LeaveManagementSystem.Web.Services.LeaveTypes; //cip...91
-using LeaveManagementSystem.Web.Services.LeaveRequests; //cip...142
-
+using Constants = LeaveManagementSystem.Data.Constants;
 
 var builder = WebApplication.CreateBuilder(args);
 

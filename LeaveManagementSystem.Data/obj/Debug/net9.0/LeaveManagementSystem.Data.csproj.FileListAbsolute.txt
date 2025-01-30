@@ -1,0 +1,15 @@
+C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Data\obj\Debug\net9.0\LeaveManagementSystem.Data.csproj.AssemblyReference.cache
+C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Data\obj\Debug\net9.0\LeaveManagementSystem.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Data\obj\Debug\net9.0\LeaveManagementSystem.Data.AssemblyInfoInputs.cache
+C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Data\obj\Debug\net9.0\LeaveManagementSystem.Data.AssemblyInfo.cs
+C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Data\obj\Debug\net9.0\LeaveManagementSystem.Data.csproj.CoreCompileInputs.cache
+C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Data\obj\Debug\net9.0\LeaveManagementSystem.Data.sourcelink.json
+C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Data\bin\Debug\net9.0\LeaveManagementSystem.Data.deps.json
+C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Data\bin\Debug\net9.0\LeaveManagementSystem.Data.runtimeconfig.json
+C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Data\bin\Debug\net9.0\LeaveManagementSystem.Data.dll
+C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Data\bin\Debug\net9.0\LeaveManagementSystem.Data.pdb
+C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Data\obj\Debug\net9.0\LeaveManagementSystem.Data.dll
+C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Data\obj\Debug\net9.0\refint\LeaveManagementSystem.Data.dll
+C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Data\obj\Debug\net9.0\LeaveManagementSystem.Data.pdb
+C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Data\obj\Debug\net9.0\LeaveManagementSystem.Data.genruntimeconfig.cache
+C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Data\obj\Debug\net9.0\ref\LeaveManagementSystem.Data.dll

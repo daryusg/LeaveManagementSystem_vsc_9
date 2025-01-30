@@ -1,5 +1,4 @@
-using LeaveManagementSystem.Web.Services.LeaveAllocations;
-using LeaveManagementSystem.Web.Services.LeaveTypes;
+using Constants = LeaveManagementSystem.Data.Constants;
 
 namespace LeaveManagementSystem.Web.Controllers
 {

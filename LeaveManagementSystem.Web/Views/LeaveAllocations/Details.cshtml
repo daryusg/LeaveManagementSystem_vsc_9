@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "View Allocations";
+    @using Constants = LeaveManagementSystem.Common.Constants;
     var isAdmin = User.IsInRole(Constants.Roles.cAdministrator); //cip...132
     var isEmployee = User.IsInRole(Constants.Roles.cEmployee); //cip...149
     string msg = isAdmin ? "There are no allocations."  : "You have no allocations. Please contact your administrator.";

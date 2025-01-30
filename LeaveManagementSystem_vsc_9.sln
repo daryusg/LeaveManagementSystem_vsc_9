@@ -5,6 +5,12 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveManagementSystem.Web", "LeaveManagementSystem.Web\LeaveManagementSystem.Web.csproj", "{CC761A8E-6EED-4F69-84ED-01FA7E5F529D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveManagementSystem.Common", "LeaveManagementSystem.Common\LeaveManagementSystem.Common.csproj", "{B08EB439-4BE6-4B11-A25C-C200097A00B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveManagementSystem.Data", "LeaveManagementSystem.Data\LeaveManagementSystem.Data.csproj", "{FA249E57-7F47-4911-989E-FE457A75FE92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveManagementSystem.Application", "LeaveManagementSystem.Application\LeaveManagementSystem.Application.csproj", "{AFA402D2-060C-4B41-9B07-7FFAA6067895}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +24,17 @@ Global
 		{CC761A8E-6EED-4F69-84ED-01FA7E5F529D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC761A8E-6EED-4F69-84ED-01FA7E5F529D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC761A8E-6EED-4F69-84ED-01FA7E5F529D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B08EB439-4BE6-4B11-A25C-C200097A00B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B08EB439-4BE6-4B11-A25C-C200097A00B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B08EB439-4BE6-4B11-A25C-C200097A00B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B08EB439-4BE6-4B11-A25C-C200097A00B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA249E57-7F47-4911-989E-FE457A75FE92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA249E57-7F47-4911-989E-FE457A75FE92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA249E57-7F47-4911-989E-FE457A75FE92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA249E57-7F47-4911-989E-FE457A75FE92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFA402D2-060C-4B41-9B07-7FFAA6067895}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFA402D2-060C-4B41-9B07-7FFAA6067895}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFA402D2-060C-4B41-9B07-7FFAA6067895}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFA402D2-060C-4B41-9B07-7FFAA6067895}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

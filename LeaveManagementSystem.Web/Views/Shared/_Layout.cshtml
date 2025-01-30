@@ -1,9 +1,17 @@
-﻿<!DOCTYPE html>
+﻿@{
+    //https://stackoverflow.com/questions/68491989/user-isinrole-always-returns-false-in-view-or-code-using-policy-based-authorizat
+    //@*https://learn.microsoft.com/en-us/aspnet/core/security/authorization/views?view=aspnetcore-5.0*@
+    @using Microsoft.AspNetCore.Authorization;
+    @inject IAuthorizationService _authorizationService;
+
+    @using Constants = LeaveManagementSystem.Common.Constants;
+}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Leave Management System</title>
+    <title>@ViewData["Title"] - @Constants.cSolutionName</title>
     <script type="importmap"></script>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     @*<link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css"> @*cip...163 copied from https://jqueryui.com/datepicker/#animation -> view source*@
@@ -15,7 +23,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Leave Management System</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">@Constants.cSolutionName</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -28,7 +36,8 @@
                         <li class="nav-item">
                             <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
-                        @if(User.IsInRole(Constants.Roles.cAdministrator)) @*cip...112*@
+                        @*@if(User.IsInRole(Constants.Roles.cAdministrator)) cip...112*@
+                        @if ((await _authorizationService.AuthorizeAsync(User, Constants.Policies.cAdminSupervisorOnly)).Succeeded)
                         {
                             @*this section was copied from Bootstrap (https://getbootstrap.com/docs/5.3/components/navbar/): cip...122
                             <li class="nav-item dropdown">
@@ -75,7 +84,7 @@
 
     <footer class="border-top footer text-light bg-dark">
         <div class="container">
-            &copy; 2025 - Leave Management System - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2025 - @Constants.cSolutionName - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

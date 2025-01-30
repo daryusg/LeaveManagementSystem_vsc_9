@@ -1,3 +1,5 @@
+using Constants = LeaveManagementSystem.Data.Constants;
+
 namespace LeaveManagementSystem.Web.Controllers;
 
 //cip...122

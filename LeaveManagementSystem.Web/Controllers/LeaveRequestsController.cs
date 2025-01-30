@@ -1,6 +1,5 @@
-using LeaveManagementSystem.Web.Services.LeaveRequests;
-using LeaveManagementSystem.Web.Services.LeaveTypes;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Constants = LeaveManagementSystem.Data.Constants;
 
 namespace LeaveManagementSystem.Web.Controllers
 {
