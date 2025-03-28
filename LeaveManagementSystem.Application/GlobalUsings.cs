@@ -19,3 +19,9 @@ global using Microsoft.Extensions.Configuration;
 
 global using AutoMapper;
 global using LeaveManagementSystem.Common;
+//cip...173 -------------------------------------------------
+global using System.Reflection;
+global using LeaveManagementSystem.Application.Services.Email;
+global using LeaveManagementSystem.Application.Services.LeaveAllocations;
+global using LeaveManagementSystem.Application.Services.LeaveRequests;
+global using LeaveManagementSystem.Application.Services.LeaveTypes;

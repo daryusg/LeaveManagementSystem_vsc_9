@@ -1,6 +1,6 @@
 /*
     IMPORTANT: Due to a circular ref issue, this file is in 2 places:
-        1. LeaveManagementSystem.Data. Used by LeaveManagementSystem.Data.IdentityRoleConfig.cs
+        1. LeaveManagementSystem.Data. Used by LeaveManagementSystem.Data.Configurations.IdentityRoleConfig.cs
         2. LeaveManagementSystem.Common. Used everywhere else
 
         BOTH NEED UPDATING IN SYNC.

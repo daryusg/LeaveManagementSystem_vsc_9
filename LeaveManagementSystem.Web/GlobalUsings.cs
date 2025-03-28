@@ -21,8 +21,6 @@ global using Microsoft.Extensions.Logging;
 global using Microsoft.EntityFrameworkCore;
 //cip...107 -------------------------------------------------
 global using LeaveManagementSystem.Common;
-global using System.Reflection;
-global using LeaveManagementSystem.Application.Services.Email;
 global using LeaveManagementSystem.Application.Services.LeaveAllocations;
 global using LeaveManagementSystem.Application.Services.LeaveRequests;
 global using LeaveManagementSystem.Application.Services.LeaveTypes; //cip...142

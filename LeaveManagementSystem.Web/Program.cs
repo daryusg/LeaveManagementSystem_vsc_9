@@ -1,19 +1,11 @@
+using LeaveManagementSystem.Application;
 using Constants = LeaveManagementSystem.Data.Constants;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlite(connectionString));
-builder.Services.AddDatabaseDeveloperPageExceptionFilter();
-
-builder.Services.AddScoped<ILeaveTypesService, LeaveTypesService>(); //cip...91. register the service for dependency injection.
-builder.Services.AddScoped<ILeaveAllocationsService, LeaveAllocationsService>(); //cip...123. register the service for dependency injection.
-builder.Services.AddScoped<ILeaveRequestsService, LeaveRequestsService>(); //cip...142. register the service for dependency injection.
-builder.Services.AddScoped<IFunctions, Functions>(); //cip...162. register the service for dependency injection. NOTE: uses AddHttpContextAccessor.
-
-builder.Services.AddTransient<IEmailSender, EmailSender>(); //cip...111
+DataServicesRegistration.AddDataServices(builder.Services, builder.Configuration); //cip...174. moved 2 entries to LeaveManagementSystem.Data.DataServicesRegistration.AddDataServices
+ApplicationServicesRegistration.AddApplicationServices(builder.Services); //cip..173. moved automapper + 5 builder.Services to LeaveManagementSystem.Application.ApplicationServicesRegistration.AddApplicationServices
 
 builder.Services.AddAuthorization(options => {
     options.AddPolicy(Constants.Policies.cAdminSupervisorOnly, policy => {
@@ -24,7 +16,6 @@ builder.Services.AddAuthorization(options => {
 }); //cip...165
 
 builder.Services.AddHttpContextAccessor(); //cip...127
-builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly()); //cip...77
 
 builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true) //cip...107. (default user) IdentityUser->ApplicationUser
 //cip...108 Register.cshtml.cs if (_userManager.Options.SignIn.RequireConfirmedAccount) -> options.SignIn.RequireConfirmedAccount = true
