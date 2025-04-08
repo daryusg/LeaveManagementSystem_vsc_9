@@ -1,7 +1,9 @@
+using Microsoft.Extensions.Logging;
+
 namespace LeaveManagementSystem.Application.Services.LeaveTypes;
 
-//cip...90
-public class LeaveTypesService(ApplicationDbContext _context, IMapper _mapper) : ILeaveTypesService
+//cip...90, cip...178
+public class LeaveTypesService(ApplicationDbContext _context, IMapper _mapper, ILogger <LeaveTypesService> _logger) : ILeaveTypesService
 {
     //for index
     public async Task<List<LeaveTypeReadOnlyVM>> GetAllAsync() //cip...90
@@ -39,6 +41,7 @@ public class LeaveTypesService(ApplicationDbContext _context, IMapper _mapper) :
 
     public async Task CreateAsync(LeaveTypeCreateVM model) //cip...91
     {
+        _logger.LogInformation("Creating Leave Type: {leaveTypeName} ({days} days)", model.Name, model.Days); //cip...178
         var leaveType = _mapper.Map<LeaveType>(model);
         _context.Add(leaveType);
         await _context.SaveChangesAsync();

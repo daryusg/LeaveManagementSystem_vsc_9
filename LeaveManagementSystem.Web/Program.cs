@@ -1,11 +1,17 @@
 using LeaveManagementSystem.Application;
 using Constants = LeaveManagementSystem.Data.Constants;
+using Serilog; //cip...177
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 DataServicesRegistration.AddDataServices(builder.Services, builder.Configuration); //cip...174. moved 2 entries to LeaveManagementSystem.Data.DataServicesRegistration.AddDataServices
 ApplicationServicesRegistration.AddApplicationServices(builder.Services); //cip..173. moved automapper + 5 builder.Services to LeaveManagementSystem.Application.ApplicationServicesRegistration.AddApplicationServices
+
+builder.Host.UseSerilog((ctx, config) => //cip...177
+    config.WriteTo.Console()
+        .ReadFrom.Configuration(ctx.Configuration)
+);
 
 builder.Services.AddAuthorization(options => {
     options.AddPolicy(Constants.Policies.cAdminSupervisorOnly, policy => {
@@ -32,6 +38,7 @@ if (app.Environment.IsDevelopment())
 }
 else
 {
+    builder.WebHost.UseStaticWebAssets(); //cip...176. 03/04/25 1832 from tw.
     app.UseExceptionHandler("/Home/Error");
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();

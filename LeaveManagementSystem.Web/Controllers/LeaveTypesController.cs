@@ -4,7 +4,7 @@ using Constants = LeaveManagementSystem.Data.Constants;
 namespace LeaveManagementSystem.Web.Controllers
 {
     [Authorize(Roles = Constants.Roles.cAdministrator)] //cip...112
-    public class LeaveTypesController(ILeaveTypesService _leaveTypesService) : Controller //cip...93
+    public class LeaveTypesController(ILeaveTypesService _leaveTypesService, ILogger<LeaveTypesController> _logger) : Controller //cip...93, cip...178
     {
         private const string duplicateName = "Duplicate name"; //cip...84
         private const string invalidName = "Invalid name";
@@ -12,6 +12,7 @@ namespace LeaveManagementSystem.Web.Controllers
         // GET: LeaveTypes
         public async Task<IActionResult> Index()
         {
+            _logger.LogInformation("LeaveTypesController.Index() called"); //cip...178
             var viewData = await _leaveTypesService.GetAllAsync(); //cip...93
             //return the view model to the view.
             return View(viewData);
@@ -62,9 +63,13 @@ namespace LeaveManagementSystem.Web.Controllers
 
             if (ModelState.IsValid)
             {
+                //valid leave type
                 await _leaveTypesService.CreateAsync(leaveTypeCreate);
                 return RedirectToAction(nameof(Index));
             }
+            //invalid leave type
+            _logger.LogWarning("LeaveTypesController.Create(). Invalid Leave Type"); //cip...178
+            //return the view model to the view.
             return View(leaveTypeCreate);
         }
 
