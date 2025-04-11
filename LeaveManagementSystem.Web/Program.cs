@@ -23,7 +23,12 @@ builder.Services.AddAuthorization(options => {
 
 builder.Services.AddHttpContextAccessor(); //cip...127
 
-builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true) //cip...107. (default user) IdentityUser->ApplicationUser
+builder.Services.AddDefaultIdentity<ApplicationUser>(options =>
+{
+    options.SignIn.RequireConfirmedAccount = true;
+    options.Password.RequiredLength = 4; //cip...179
+    //options.Password.RequireNonAlphanumeric = false; //cip...179
+}) //cip...107. (default user) IdentityUser->ApplicationUser
 //cip...108 Register.cshtml.cs if (_userManager.Options.SignIn.RequireConfirmedAccount) -> options.SignIn.RequireConfirmedAccount = true
     .AddRoles<IdentityRole>() //cip...107
     .AddEntityFrameworkStores<ApplicationDbContext>();

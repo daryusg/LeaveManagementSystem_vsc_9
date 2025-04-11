@@ -2,6 +2,8 @@
 
 @{
     ViewData["Title"] = "View Allocations";
+    //note: the default layout is set in LeaveManagementSystem.Web\Views\_ViewStart.cshtml cip...183
+    //Layout = "_Layout"; //cip...183. note: just the name of the file (found in the LeaveManagementSystem.Web\Views\Shared\ folder)
     @using Constants = LeaveManagementSystem.Common.Constants;
     var isAdmin = User.IsInRole(Constants.Roles.cAdministrator); //cip...132
     var isEmployee = User.IsInRole(Constants.Roles.cEmployee); //cip...149

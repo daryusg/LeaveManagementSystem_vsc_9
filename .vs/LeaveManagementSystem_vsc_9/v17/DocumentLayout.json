@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CC761A8E-6EED-4F69-84ED-01FA7E5F529D}|LeaveManagementSystem.Web\\LeaveManagementSystem.Web.csproj|c:\\users\\kev\\projects_vscode\\leavemanagementsystem_vsc_9\\leavemanagementsystem.web\\areas\\identity\\pages\\_identitylayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC761A8E-6EED-4F69-84ED-01FA7E5F529D}|LeaveManagementSystem.Web\\LeaveManagementSystem.Web.csproj|solutionrelative:leavemanagementsystem.web\\areas\\identity\\pages\\_identitylayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CC761A8E-6EED-4F69-84ED-01FA7E5F529D}|LeaveManagementSystem.Web\\LeaveManagementSystem.Web.csproj|c:\\users\\kev\\projects_vscode\\leavemanagementsystem_vsc_9\\leavemanagementsystem.web\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{CC761A8E-6EED-4F69-84ED-01FA7E5F529D}|LeaveManagementSystem.Web\\LeaveManagementSystem.Web.csproj|solutionrelative:leavemanagementsystem.web\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,7 +42,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "_IdentityLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\Areas\\Identity\\Pages\\_IdentityLayout.cshtml",
+              "RelativeDocumentMoniker": "LeaveManagementSystem.Web\\Areas\\Identity\\Pages\\_IdentityLayout.cshtml",
+              "ToolTip": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\Areas\\Identity\\Pages\\_IdentityLayout.cshtml",
+              "RelativeToolTip": "LeaveManagementSystem.Web\\Areas\\Identity\\Pages\\_IdentityLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T12:45:20.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "LeaveManagementSystem.Web\\Views\\Shared\\_Layout.cshtml",
@@ -50,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "LeaveManagementSystem.Web\\Properties\\launchSettings.json",
@@ -58,8 +75,7 @@
               "RelativeToolTip": "LeaveManagementSystem.Web\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-01T12:03:19.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T12:03:19.789Z"
             }
           ]
         }
