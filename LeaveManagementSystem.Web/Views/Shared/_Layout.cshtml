@@ -37,7 +37,7 @@
                             <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                         @*@if(User.IsInRole(Constants.Roles.cAdministrator)) cip...112*@
-                        @if ((await _authorizationService.AuthorizeAsync(User, Constants.Policies.cAdminSupervisorOnly)).Succeeded)
+                        @if ((await _authorizationService.AuthorizeAsync(User, Constants.Policies.cAdminSupervisorOnly)).Succeeded) @*cip...165*@
                         {
                             @*this section was copied from Bootstrap (https://getbootstrap.com/docs/5.3/components/navbar/): cip...122
                             <li class="nav-item dropdown">

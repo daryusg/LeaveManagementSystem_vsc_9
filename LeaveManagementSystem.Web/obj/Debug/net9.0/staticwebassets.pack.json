@@ -45,6 +45,78 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\images\\backgrounds\\sidebar-buynow.png",
+      "PackagePath": "staticwebassets\\images\\backgrounds\\sidebar-buynow.png"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\images\\logos\\favicon.png",
+      "PackagePath": "staticwebassets\\images\\logos\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\images\\logos\\logo-wrappixel.svg",
+      "PackagePath": "staticwebassets\\images\\logos\\logo-wrappixel.svg"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\images\\logos\\logo.svg",
+      "PackagePath": "staticwebassets\\images\\logos\\logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\images\\products\\s1.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\s1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\images\\products\\s2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\s2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\images\\products\\s3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\s3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\images\\products\\s4.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\s4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\images\\products\\s5.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\s5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\images\\profile\\intelligently-generate-user-portrait.svg",
+      "PackagePath": "staticwebassets\\images\\profile\\intelligently-generate-user-portrait.svg"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\images\\profile\\user-1.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\user-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\images\\profile\\user-2.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\user-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\images\\profile\\user-3.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\user-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\images\\profile\\user-4.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\user-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\images\\profile\\user-5.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\user-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\images\\profile\\user-6.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\user-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\images\\profile\\user-7.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\user-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\images\\profile\\user-8.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\user-8.jpg"
+    },
+    {
       "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\js\\app.min.js",
       "PackagePath": "staticwebassets\\js\\app.min.js"
     },
