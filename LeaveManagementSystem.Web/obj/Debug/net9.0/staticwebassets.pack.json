@@ -7661,6 +7661,10 @@
       "PackagePath": "staticwebassets\\scss\\variables\\_variables.scss"
     },
     {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\templates\\email_layout.html",
+      "PackagePath": "staticwebassets\\templates\\email_layout.html"
+    },
+    {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.LeaveManagementSystem.Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
