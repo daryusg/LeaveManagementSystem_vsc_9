@@ -4,6 +4,85 @@
     ViewData["Title"] = "Register";
 }
 
+<!--  Body Wrapper -->
+@* <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+    <div
+        class="position-relative overflow-hidden radial-gradient min-vh-100 d-flex align-items-center justify-content-center"> *@
+        <div class="d-flex align-items-center justify-content-center w-100">
+            <div class="row justify-content-center w-100">
+                <div class="col-md-12 col-lg-8 col-xxl-5">
+                    <div class="card mb-0">
+                        <div class="card-body">
+                            <a href="./index.html" class="text-nowrap logo-img text-center d-block py-3 w-100">
+                                <img src="~/images/logos/follow.png" width="150" alt="">
+                            </a>
+                            <h2 class="text-center">Create a new account.</h2>
+                            <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                                <div class="mb-3">
+                                    <label asp-for="Input.Email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" asp-for="Input.Email"
+                                        aria-describedby="emailHelp">
+                                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <label asp-for="Input.FirstName" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" asp-for="Input.FirstName"
+                                        aria-describedby="textHelp">
+                                    <span asp-validation-for="Input.FirstName" class="text-danger"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <label asp-for="Input.LastName" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" asp-for="Input.LastName"
+                                        aria-describedby="textHelp">
+                                    <span asp-validation-for="Input.LastName" class="text-danger"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <label asp-for="Input.DateOfBirth" class="form-label">Date Of Birth</label>
+                                    <input type="text" class="form-control" asp-for="Input.DateOfBirth"
+                                        aria-describedby="textHelp">
+                                    <span asp-validation-for="Input.DateOfBirth" class="text-danger"></span>
+                                </div>
+                                <div class="mb-4">
+                                    <label asp-for="Input.Password" class="form-label">Password</label>
+                                    <input type="password" class="form-control" asp-for="Input.Password">
+                                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                                </div>
+                                <div class="mb-4">
+                                    <label asp-for="Input.ConfirmPassword" class="form-label">Confirm Password</label>
+                                    <input type="password" class="form-control" asp-for="Input.ConfirmPassword">
+                                    <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                                </div>
+                                <div class="mb-4">
+                                    @* @foreach(var role in Model.Input.RoleNames) *@
+                                    @foreach (var role in Model.RoleNames) //cip...110)
+                                    {
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" asp-for="Input.RoleName"
+                                                value=@role> @* role -> @role cip...109 *@
+                                            <label class="form-check-label" asp-for="Input.RoleName">
+                                                @role
+                                            </label>
+                                            <span asp-validation-for="Input.RoleName" class="text-danger"></span>
+                                        </div>
+                                    }
+                                </div>
+                                @* <a href="./index.html" class="btn btn-primary w-100 fs-4 mb-4 rounded-2">Sign Up</a> *@
+                                <button type="submit" class="btn btn-primary w-100 fs-4 mb-4 rounded-2">Register</button>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <p class="fs-4 mb-0 fw-bold">Already have an Account?</p>
+                                    <a class="text-primary fw-bold ms-2" asp-page="./ExternalLogin">Sign In</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    @* </div>
+</div> *@
+
+@*
 <h1>@ViewData["Title"]</h1>
 
 <div class="row">
@@ -13,7 +92,8 @@
             <hr />
             <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
             <div class="form-floating mb-3">
-                <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true"
+                    placeholder="name@example.com" />
                 <label asp-for="Input.Email">Email</label>
                 <span asp-validation-for="Input.Email" class="text-danger"></span>
             </div>
@@ -33,17 +113,19 @@
                 <span asp-validation-for="Input.DateOfBirth" class="text-danger"></span>
             </div>
             <div class="form-floating mb-3">
-                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true"
+                    placeholder="password" />
                 <label asp-for="Input.Password">Password</label>
                 <span asp-validation-for="Input.Password" class="text-danger"></span>
             </div>
             <div class="form-floating mb-3">
-                <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password"
+                    aria-required="true" placeholder="password" />
                 <label asp-for="Input.ConfirmPassword">Confirm Password</label>
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
-            @* @foreach(var role in Model.Input.RoleNames) *@
-            @foreach(var role in Model.RoleNames) //cip...110)
+            @* @foreach(var role in Model.Input.RoleNames)
+            @foreach (var role in Model.RoleNames) //cip...110)
             {
                 @*02/01/25 from Bootstrap
                 <div class="form-check">
@@ -51,9 +133,9 @@
                 <label class="form-check-label" for="flexRadioDefault1">
                     Default radio
                 </label>
-                </div>*@
+                </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" asp-for="Input.RoleName" value=@role> @* role -> @role cip...109 *@
+                    <input class="form-check-input" type="radio" asp-for="Input.RoleName" value=@role> @* role -> @role cip...109
                     <label class="form-check-label" asp-for="Input.RoleName">
                         @role
                     </label>
@@ -72,19 +154,22 @@
                 {
                     <div>
                         <p>
-                            There are no external authentication services configured. See this <a href="https://go.microsoft.com/fwlink/?LinkID=532715">article
-                            about setting up this ASP.NET application to support logging in via external services</a>.
+                            There are no external authentication services configured. See this <a
+                                href="https://go.microsoft.com/fwlink/?LinkID=532715">article
+                                about setting up this ASP.NET application to support logging in via external services</a>.
                         </p>
                     </div>
                 }
                 else
                 {
-                    <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
+                    <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post"
+                        class="form-horizontal">
                         <div>
                             <p>
                                 @foreach (var provider in Model.ExternalLogins!)
                                 {
-                                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
+                                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name"
+                                        title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
                                 }
                             </p>
                         </div>
@@ -94,7 +179,20 @@
         </section>
     </div>
 </div>
+ *@
 
 @section Scripts {
+    @* @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    } *@
     <partial name="_ValidationScriptsPartial" />
+    <script> @*cip...188 (copied from LeaveRequests.Create.cshtml cip...163)*@
+        $(function () {
+            $("#Input_DateOfBirth").datepicker({
+                dateFormat: 'dd/mm/yy',
+                changeMonth: true,
+                changeYear: true
+            }); @*asp.net: the input tag generates the id value as a duplicate of the asp-for value*@
+        });
+    </script>
 }
