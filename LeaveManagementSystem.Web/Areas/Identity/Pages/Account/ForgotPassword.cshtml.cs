@@ -8,11 +8,13 @@ namespace LeaveManagementSystem.Web.Areas.Identity.Pages.Account
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly IEmailSender _emailSender;
+        private readonly IWebHostEnvironment _hostEnvironment;
 
-        public ForgotPasswordModel(UserManager<ApplicationUser> userManager, IEmailSender emailSender)
+        public ForgotPasswordModel(UserManager<ApplicationUser> userManager, IEmailSender emailSender, IWebHostEnvironment hostEnvironment /*cip...191*/)
         {
             _userManager = userManager;
             _emailSender = emailSender;
+            this._hostEnvironment = hostEnvironment;
         }
 
         /// <summary>
@@ -58,10 +60,20 @@ namespace LeaveManagementSystem.Web.Areas.Identity.Pages.Account
                     values: new { area = "Identity", code },
                     protocol: Request.Scheme);
 
-                await _emailSender.SendEmailAsync(
-                    Input.Email,
-                    "Reset Password",
-                    $"Please reset your password by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+                // await _emailSender.SendEmailAsync(
+                //     Input.Email,
+                //     "Reset Password",
+                //     $"Please reset your password by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+
+                //get the template //cip...191 start
+                var emailTemplatePath = Path.Combine(_hostEnvironment.WebRootPath, "templates", "email_layout.html");
+                var template = await System.IO.File.ReadAllTextAsync(emailTemplatePath);
+                //inject dynamic content
+                var messageBody = template
+                    .Replace("{UserName}", $"{user.FirstName} {user.LastName}") //both Input & user (see above)
+                    .Replace("{MessageContent}", $"Please reset your password by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+
+                await _emailSender.SendEmailAsync(Input.Email, "Reset Password", messageBody); //cip...191 end
 
                 return RedirectToPage("./ForgotPasswordConfirmation");
             }
