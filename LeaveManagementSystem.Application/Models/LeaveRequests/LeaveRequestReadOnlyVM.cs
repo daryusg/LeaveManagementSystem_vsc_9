@@ -5,9 +5,11 @@ public class LeaveRequestReadOnlyVM
 {
     public int Id { get; set; }
 
+    [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}")] //16/04/25 date standardisation
     [DisplayName("Start Date")]
     public DateOnly StartDate { get; set; }
 
+    [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}")] //16/04/25 date standardisation
     [DisplayName("End Date")]
     public DateOnly EndDate { get; set; }
 

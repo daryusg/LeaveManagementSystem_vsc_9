@@ -28,3 +28,5 @@ global using LeaveManagementSystem.Application.Services.LeaveTypes; //cip...142
 global using LeaveManagementSystem.Application.Models.LeaveAllocations;
 global using LeaveManagementSystem.Application.Models.LeaveRequests;
 global using LeaveManagementSystem.Application.Models;
+
+global using LeaveManagementSystem.Application.Models.Periods; //16/04/25

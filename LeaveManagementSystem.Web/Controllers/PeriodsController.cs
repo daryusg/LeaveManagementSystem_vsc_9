@@ -1,3 +1,4 @@
+using AutoMapper;
 using Constants = LeaveManagementSystem.Data.Constants;
 
 namespace LeaveManagementSystem.Web.Controllers;
@@ -7,16 +8,20 @@ namespace LeaveManagementSystem.Web.Controllers;
 public class PeriodsController : Controller
 {
     private readonly ApplicationDbContext _context;
+    private readonly IMapper _mapper;
 
-    public PeriodsController(ApplicationDbContext context)
+    public PeriodsController(ApplicationDbContext context, IMapper mapper)
     {
         _context = context;
+        this._mapper = mapper;
     }
 
     // GET: Periods
     public async Task<IActionResult> Index()
     {
-        return View(await _context.Periods.ToListAsync());
+        var periodsVM = _mapper.Map<List<PeriodVM>>(await _context.Periods.ToListAsync()); 
+
+        return View(periodsVM);
     }
 
     // GET: Periods/Details/5
@@ -34,7 +39,8 @@ public class PeriodsController : Controller
             return NotFound();
         }
 
-        return View(period);
+        var periodVM = _mapper.Map<PeriodVM>(period); 
+        return View(periodVM);
     }
 
     // GET: Periods/Create
@@ -48,15 +54,16 @@ public class PeriodsController : Controller
     // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Create([Bind("Name,StartDate,EndDate,Id")] Period period)
+    public async Task<IActionResult> Create([Bind("Name,StartDate,EndDate,Id")] PeriodVM periodVM)
     {
+        var period = _mapper.Map<Period>(periodVM); 
         if (ModelState.IsValid)
         {
             _context.Add(period);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-        return View(period);
+        return View(periodVM);
     }
 
     // GET: Periods/Edit/5
@@ -72,7 +79,9 @@ public class PeriodsController : Controller
         {
             return NotFound();
         }
-        return View(period);
+
+        var periodVM = _mapper.Map<PeriodVM>(period); 
+        return View(periodVM);
     }
 
     // POST: Periods/Edit/5
@@ -80,8 +89,9 @@ public class PeriodsController : Controller
     // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit(int id, [Bind("Name,StartDate,EndDate,Id")] Period period)
+    public async Task<IActionResult> Edit(int id, [Bind("Name,StartDate,EndDate,Id")] PeriodVM periodVM)
     {
+        var period = _mapper.Map<Period>(periodVM); 
         if (id != period.Id)
         {
             return NotFound();
@@ -107,7 +117,7 @@ public class PeriodsController : Controller
             }
             return RedirectToAction(nameof(Index));
         }
-        return View(period);
+        return View(periodVM);
     }
 
     // GET: Periods/Delete/5
@@ -125,9 +135,10 @@ public class PeriodsController : Controller
             return NotFound();
         }
 
-        return View(period);
+        var periodVM = _mapper.Map<PeriodVM>(period); 
+        return View(periodVM);
     }
-
+ 
     // POST: Periods/Delete/5
     [HttpPost, ActionName("Delete")]
     [ValidateAntiForgeryToken]
