@@ -1,4 +1,5 @@
 ﻿using System.Reflection;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace LeaveManagementSystem.Data;
 
@@ -9,11 +10,29 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser> //cip...1
     {
     }
 
-    protected override void OnModelCreating(ModelBuilder builder) //cip...103
+    protected override void OnModelCreating(ModelBuilder builder)
     {
-        base.OnModelCreating(builder); //must be here
+        base.OnModelCreating(builder); // must be here
 
-        builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly()); //cip...141
+        // Apply your entity configurations
+        builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+
+        // Register a DateOnly -> DateTime converter for all properties of type DateOnly 23/04/25 from chatgpt
+        var dateOnlyConverter = new ValueConverter<DateOnly, DateTime>(
+            d => d.ToDateTime(TimeOnly.MinValue),
+            d => DateOnly.FromDateTime(d)
+        );
+
+        foreach (var entityType in builder.Model.GetEntityTypes())
+        {
+            foreach (var property in entityType.GetProperties())
+            {
+                if (property.ClrType == typeof(DateOnly))
+                {
+                    property.SetValueConverter(dateOnlyConverter);
+                }
+            }
+        }
     }
 
     public DbSet<LeaveType> LeaveTypes { get; set; } //cip...58
