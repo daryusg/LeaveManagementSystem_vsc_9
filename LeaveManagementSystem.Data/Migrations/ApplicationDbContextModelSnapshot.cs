@@ -25,7 +25,8 @@ namespace LeaveManagementSystem.Data.Migrations
             modelBuilder.Entity("LeaveManagementSystem.Data.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                        .HasMaxLength(72)
+                        .HasColumnType("nvarchar(72)");
 
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
@@ -170,7 +171,7 @@ namespace LeaveManagementSystem.Data.Migrations
 
                     b.Property<string>("EmployeeId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(72)");
 
                     b.Property<int>("LeaveTypeId")
                         .HasColumnType("int");
@@ -199,7 +200,7 @@ namespace LeaveManagementSystem.Data.Migrations
 
                     b.Property<string>("EmployeeId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(72)");
 
                     b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime2");
@@ -214,7 +215,7 @@ namespace LeaveManagementSystem.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ReviewerId")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(72)");
 
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime2");
@@ -318,7 +319,8 @@ namespace LeaveManagementSystem.Data.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                        .HasMaxLength(72)
+                        .HasColumnType("nvarchar(72)");
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
@@ -378,7 +380,7 @@ namespace LeaveManagementSystem.Data.Migrations
 
                     b.Property<string>("RoleId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(72)");
 
                     b.HasKey("Id");
 
@@ -403,7 +405,7 @@ namespace LeaveManagementSystem.Data.Migrations
 
                     b.Property<string>("UserId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(72)");
 
                     b.HasKey("Id");
 
@@ -427,7 +429,7 @@ namespace LeaveManagementSystem.Data.Migrations
 
                     b.Property<string>("UserId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(72)");
 
                     b.HasKey("LoginProvider", "ProviderKey");
 
@@ -439,10 +441,12 @@ namespace LeaveManagementSystem.Data.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
                 {
                     b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(450)");
+                        .HasMaxLength(72)
+                        .HasColumnType("nvarchar(72)");
 
                     b.Property<string>("RoleId")
-                        .HasColumnType("nvarchar(450)");
+                        .HasMaxLength(72)
+                        .HasColumnType("nvarchar(72)");
 
                     b.HasKey("UserId", "RoleId");
 
@@ -471,7 +475,7 @@ namespace LeaveManagementSystem.Data.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
                     b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(72)");
 
                     b.Property<string>("LoginProvider")
                         .HasMaxLength(128)

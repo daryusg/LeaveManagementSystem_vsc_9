@@ -16,13 +16,13 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser> //cip...1
 
         // Apply your entity configurations
         builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
-
-        // Register a DateOnly -> DateTime converter for all properties of type DateOnly 23/04/25 from chatgpt
+        
+        //------------------------------------------------------------
+        //   from chatgpt. 27/04/25
         var dateOnlyConverter = new ValueConverter<DateOnly, DateTime>(
-            d => d.ToDateTime(TimeOnly.MinValue),
-            d => DateOnly.FromDateTime(d)
+            dateOnly => dateOnly.ToDateTime(TimeOnly.MinValue),
+            dateTime => DateOnly.FromDateTime(dateTime)
         );
-
         foreach (var entityType in builder.Model.GetEntityTypes())
         {
             foreach (var property in entityType.GetProperties())
@@ -33,6 +33,7 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser> //cip...1
                 }
             }
         }
+        //------------------------------------------------------------
     }
 
     public DbSet<LeaveType> LeaveTypes { get; set; } //cip...58

@@ -1,6 +1,58 @@
 ﻿@{
     ViewData["Title"] = "Privacy Policy";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+</div>
+<div>
+    <p><strong>Effective Date:</strong> @DateTime.UtcNow.ToString("dd MMMM yyyy")</p>
+
+    <p>Thank you for visiting our website. This Privacy Policy explains how we collect, use, and protect your information when you use our site.</p>
+
+    <h2 class="mt-4">1. Information We Collect</h2>
+    <p>We may collect basic information that your browser sends, such as:</p>
+    <ul>
+        <li>IP address</li>
+        <li>Browser type and version</li>
+        <li>Pages visited</li>
+        <li>Time and date of visit</li>
+    </ul>
+    <p>If you submit a form, we may also collect:</p>
+    <ul>
+        <li>Name</li>
+        <li>Email address</li>
+        <li>Any other information you provide</li>
+    </ul>
+
+    <h2 class="mt-4">2. How We Use Your Information</h2>
+    <p>We use the collected information to:</p>
+    <ul>
+        <li>Improve the functionality and performance of our site</li>
+        <li>Respond to your inquiries or feedback</li>
+        <li>Analyze usage to better understand how visitors interact with our site</li>
+    </ul>
+
+    <h2 class="mt-4">3. Cookies</h2>
+    <p>Our website may use cookies to enhance your experience. You can disable cookies in your browser settings if you prefer.</p>
+
+    <h2 class="mt-4">4. Data Sharing</h2>
+    <p>We do <strong>not</strong> sell or share your personal information with third parties, except as required by law.</p>
+
+    <h2 class="mt-4">5. Data Security</h2>
+    <p>We take reasonable steps to protect your data, but no method of transmission over the internet is 100% secure.</p>
+
+    <h2 class="mt-4">6. Third-Party Links</h2>
+    <p>Our site may contain links to external websites. We are not responsible for their privacy practices.</p>
+
+    <h2 class="mt-4">7. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date.</p>
+
+    <h2 class="mt-4">8. Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy, please contact us at 
+        <a href="mailto:kev@daryus.com">kev@daryus.com</a>.
+    </p>
+    <p class="text-muted mt-5" style="font-size: 0.9rem;">
+        This privacy policy was generated with the assistance of ChatGPT and is intended for demo purposes only. It does not constitute legal advice.
+    </p>
+</div>

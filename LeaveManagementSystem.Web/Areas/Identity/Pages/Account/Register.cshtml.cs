@@ -110,8 +110,10 @@ namespace LeaveManagementSystem.Web.Areas.Identity.Pages.Account
 
             [Required]
             [DataType(DataType.Date)]
+            [Functions.DateValidation(16, 99, "Employee")] // 27/04/25 from chatGPT
             [Display(Name = "Date Of Birth")]
             public DateOnly DateOfBirth { get; set; }
+
             //---   cip...109   ---
             [Required] //cip...110
             [Display(Name = "Role Name")]

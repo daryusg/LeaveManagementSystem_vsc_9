@@ -4,5 +4,16 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>
+        ...to my site based on the <a href="https://www.udemy.com/course/complete-aspnet-core-31-and-entity-framework-development" target="_blank">online course</a> I took from 13 Dec 2024 to 27 Apr 2025. I completed it using .NET 9 (ASP.NET Core Web App (MVC), Sqlite 3 backend (later ported to SQL Server (Docker)), Seq logging (Docker), <a href="https://www.wrappixel.com/templates/spike-free-bootstrap-admin/" target="_blank">Bootstrap 5 Admin Template</a>, IIS, and <a href="https://github.com/daryusg/" target="_blank">GitHub</a>, then deployed to my Azure App Service.
+    </p>
+</div>
+<div>
+    <p>
+        Seq setup (in the development environment): docker run --name seq -d --restart unless-stopped -e ACCEPT_EULA=Y -p 5341:80 datalust/seq:latest<br>
+        SQL Server setup (in the development environment): docker run --name LMS_vsc_9 -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Str0ngPa$$w0rd' -p 1447:1433 -d mcr.microsoft.com/mssql/server
+    </p>
+    <p>
+        Developed in Visual Studio Code 1.99 - kevin dyer
+    </p>
 </div>
