@@ -17,6 +17,13 @@ mkdir "%PUBLISH_DIR%"
 REM Publish the app
 echo Publishing the app...
 dotnet publish -c Release /p:EnvironmentName=Production -o "%PUBLISH_DIR%"
+REM dotnet publish -c Release /p:EnvironmentName=Production -o "%PUBLISH_DIR%" ^
+REM   -p:PublishTrimmed=true ^
+REM   -p:PublishSingleFile=true ^
+REM   -p:IncludeNativeLibrariesForSelfExtract=true ^
+REM   -p:EnableCompressionInSingleFile=true ^
+REM   -p:DebugType=None ^
+REM   -p:DebugSymbols=false
 
 echo Done.
 endlocal

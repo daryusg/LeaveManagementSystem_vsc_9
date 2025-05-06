@@ -3,7 +3,7 @@ using Microsoft.Extensions.Logging;
 namespace LeaveManagementSystem.Application.Services.LeaveTypes;
 
 //cip...90, cip...178
-public class LeaveTypesService(ApplicationDbContext _context, IMapper _mapper, ILogger <LeaveTypesService> _logger) : ILeaveTypesService
+public class LeaveTypesService(ApplicationDbContext _context, IMapper _mapper, ILogger <LeaveTypesService> _logger, IFunctions _functions) : ILeaveTypesService
 {
     //for index
     public async Task<List<LeaveTypeReadOnlyVM>> GetAllAsync() //cip...90
@@ -35,6 +35,11 @@ public class LeaveTypesService(ApplicationDbContext _context, IMapper _mapper, I
     public async Task EditAsync(LeaveTypeEditVM model) //cip...91
     {
         var leaveType = _mapper.Map<LeaveType>(model);
+        //---------------------------------------------------------
+        //03/05/25 set modifiedby and modifieddate
+        leaveType.ModifiedBy = new Guid(await _functions.GetEmployeeIdAsync());
+        leaveType.ModifiedDate = DateTime.Now;
+        //---------------------------------------------------------
         _context.Update(leaveType);
         await _context.SaveChangesAsync();
     }
@@ -43,6 +48,11 @@ public class LeaveTypesService(ApplicationDbContext _context, IMapper _mapper, I
     {
         _logger.LogInformation("Creating Leave Type: {leaveTypeName} ({days} days)", model.Name, model.Days); //cip...178
         var leaveType = _mapper.Map<LeaveType>(model);
+        //---------------------------------------------------------
+        //03/05/25 set createdby and createddate
+        leaveType.CreatedBy = new Guid(await _functions.GetEmployeeIdAsync());
+        leaveType.CreatedDate = DateTime.Now;
+        //---------------------------------------------------------
         _context.Add(leaveType);
         await _context.SaveChangesAsync();
     }

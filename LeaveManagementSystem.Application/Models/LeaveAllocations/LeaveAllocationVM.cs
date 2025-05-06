@@ -5,6 +5,7 @@ public class LeaveAllocationVM
     public int Id { get; set; }
 
     [Display(Name = "Number Of Days")]
+    public int Days_Original { get; set; } //03/05/25
     public int Days { get; set; }
 
     [Display(Name = "Allocation Period")]

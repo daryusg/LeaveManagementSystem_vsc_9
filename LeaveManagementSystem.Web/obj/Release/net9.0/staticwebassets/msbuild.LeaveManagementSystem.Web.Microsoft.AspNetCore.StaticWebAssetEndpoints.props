@@ -22983,14 +22983,14 @@
     <StaticWebAssetEndpoint Include="_content/LeaveManagementSystem.Web/templates/email_layout.html">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\templates\email_layout.html'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-\u002BqlhovrSdX\u002B9o\u002BRQnKkaRnBi/cZm5vFuU3YWGzzdiT8="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2317"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022\u002BqlhovrSdX\u002B9o\u002BRQnKkaRnBi/cZm5vFuU3YWGzzdiT8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 17 Apr 2025 17:37:58 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-zupiopiUT2ZcfjdzL\u002B0LmD2Bt7751vA28DWXu6o\u002Brjk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2317"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022zupiopiUT2ZcfjdzL\u002B0LmD2Bt7751vA28DWXu6o\u002Brjk=\u0022"},{"Name":"Last-Modified","Value":"Sat, 03 May 2025 07:14:39 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/LeaveManagementSystem.Web/templates/email_layout.qfplqu5wu1.html">
+    <StaticWebAssetEndpoint Include="_content/LeaveManagementSystem.Web/templates/email_layout.mmi6r7twz8.html">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\templates\email_layout.html'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qfplqu5wu1"},{"Name":"integrity","Value":"sha256-\u002BqlhovrSdX\u002B9o\u002BRQnKkaRnBi/cZm5vFuU3YWGzzdiT8="},{"Name":"label","Value":"_content/LeaveManagementSystem.Web/templates/email_layout.html"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2317"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022\u002BqlhovrSdX\u002B9o\u002BRQnKkaRnBi/cZm5vFuU3YWGzzdiT8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 17 Apr 2025 17:37:58 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"mmi6r7twz8"},{"Name":"integrity","Value":"sha256-zupiopiUT2ZcfjdzL\u002B0LmD2Bt7751vA28DWXu6o\u002Brjk="},{"Name":"label","Value":"_content/LeaveManagementSystem.Web/templates/email_layout.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2317"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022zupiopiUT2ZcfjdzL\u002B0LmD2Bt7751vA28DWXu6o\u002Brjk=\u0022"},{"Name":"Last-Modified","Value":"Sat, 03 May 2025 07:14:39 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

@@ -10,7 +10,9 @@ namespace LeaveManagementSystem.Data;
 public static class Constants
 {
     public const string cSolutionName = "Leave Management System";
-    
+    public const string cUnauthorisedAccess = "Unauthorised access"; //03/05/25
+    public const string cAuthorisedAdmin = "daryus.com"; //03/05/25
+
     public static class Roles //cip...112 Constants.Roles.cAdministrator    Constants.Roles.cSupervisor    Constants.Roles.cEmployee
     {
         public const string cAdministrator = "Administrator";

@@ -13,13 +13,13 @@
 <h1>View Allocations for @Model.FirstName @Model.LastName</h1>
 @if(isAdmin)
 {
-    <a asp-action="Index" class="btn btn-primary">Back to List</a>
-    <br />
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
 }
 @if(isEmployee) //cip...149
 {
     <a asp-controller="LeaveRequests" asp-action="Index" class="btn btn-primary">View Request History</a>
 }
+<br />
 <div>
     <hr />
     <dl class="row">
@@ -63,7 +63,7 @@
 {
     <div class="card">
         <div class="card-header">
-            <h4>Leave Allocations for period @Model.LeaveAllocations[0].Period.Name</h4>
+            <h4>Leave Allocations for period @Model.LeaveAllocations[0].Period.Name</h4><h6>(@Model.LeaveAllocations[0].Period.StartDate - @Model.LeaveAllocations[0].Period.EndDate)</h6>
         </div>
         <ul class="list-group list-group-flush">
             <li class="list-group-item">
@@ -80,7 +80,7 @@
                     <div class="row">
                         <div class="col">@allocation.LeaveType.Name</div>
                         <div class="col">
-                            <span class="badge rounded-pill text-bg-primary">@allocation.Days</span>
+                            <span class="badge rounded-pill text-bg-primary">@allocation.Days_Original</span>
                         </div>
                         <div class="col">
                             <span class="badge rounded-pill text-bg-warning">@allocation.Days@*temp*@</span>

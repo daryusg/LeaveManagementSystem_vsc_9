@@ -12,4 +12,8 @@ public class PeriodVM
     [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}")] //16/04/25 date standardisation
     [DisplayName("End Date")]
     public DateOnly EndDate { get; set; }
+    //-----   03/05/25   ------------------
+    public Guid CreatedBy { get; set; }
+    public DateTime CreatedDate { get; set; }
+    //-----   03/05/25   ------------------
 }

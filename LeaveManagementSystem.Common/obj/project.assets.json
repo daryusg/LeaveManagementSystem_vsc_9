@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     "net9.0": {
+      "Azure.Communication.Email/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Core": "1.34.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Azure.Communication.Email.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Azure.Communication.Email.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Azure.Core/1.38.0": {
         "type": "package",
         "dependencies": {
@@ -1318,6 +1334,22 @@
     }
   },
   "libraries": {
+    "Azure.Communication.Email/1.0.1": {
+      "sha512": "dzbU2uBV12kgeF7c6gXoSOSJx21axQ7t9vPmzoR9k4+QHVO4CIqR3FjMXLmEDi27SCo5jovA8PWbY7GwDupZ3w==",
+      "type": "package",
+      "path": "azure.communication.email/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "README.md",
+        "azure.communication.email.1.0.1.nupkg.sha512",
+        "azure.communication.email.nuspec",
+        "azureicon.png",
+        "lib/netstandard2.0/Azure.Communication.Email.dll",
+        "lib/netstandard2.0/Azure.Communication.Email.xml"
+      ]
+    },
     "Azure.Core/1.38.0": {
       "sha512": "IuEgCoVA0ef7E4pQtpC3+TkPbzaoQfa77HlfJDmfuaJUCVJmn7fT0izamZiryW5sYUFKizsftIxMkXKbgIcPMQ==",
       "type": "package",
@@ -3347,6 +3379,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "Azure.Communication.Email >= 1.0.1",
       "LeaveManagementSystem.Data >= 1.0.0"
     ]
   },
@@ -3404,6 +3437,12 @@
     "frameworks": {
       "net9.0": {
         "targetAlias": "net9.0",
+        "dependencies": {
+          "Azure.Communication.Email": {
+            "target": "Package",
+            "version": "[1.0.1, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

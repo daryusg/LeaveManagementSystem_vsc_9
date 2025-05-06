@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\LeaveManagementSystem.Web.75lwiax4ku.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\css\\chatgpt.mobiles.sidebar.fix.for.sites.min.css",
+      "PackagePath": "staticwebassets\\css\\chatgpt.mobiles.sidebar.fix.for.sites.min.css"
+    },
+    {
       "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\css\\icons\\tabler-icons\\fonts\\tabler-icons.eot",
       "PackagePath": "staticwebassets\\css\\icons\\tabler-icons\\fonts\\tabler-icons.eot"
     },
@@ -1499,6 +1503,10 @@
     {
       "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\js\\app.min.js",
       "PackagePath": "staticwebassets\\js\\app.min.js"
+    },
+    {
+      "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\js\\chatgpt.mobiles.sidebar.fix.js",
+      "PackagePath": "staticwebassets\\js\\chatgpt.mobiles.sidebar.fix.js"
     },
     {
       "Id": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\js\\dashboard.js",

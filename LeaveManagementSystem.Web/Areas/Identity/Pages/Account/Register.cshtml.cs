@@ -153,56 +153,92 @@ namespace LeaveManagementSystem.Web.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");
-                    if (Input.RoleName == Constants.Roles.cSupervisor)
+                    switch (Input.RoleName) //03/05/25
                     {
-                        await _userManager.AddToRolesAsync(user, RoleNames);
-                        //await _userManager.AddToRolesAsync(user, ["Employee", "Supervisor"]); //cip...108
-                    }
-                    else
-                    {
-                        await _userManager.AddToRoleAsync(user, Input.RoleName);
-                        //await _userManager.AddToRolesAsync(user, ["Employee"]); //cip...108
+                        case (Constants.Roles.cAdministrator):
+                            await _userManager.AddToRolesAsync(user, new[] { Constants.Roles.cEmployee, Constants.Roles.cAdministrator });
+                            break;
+
+                        case (Constants.Roles.cSupervisor):
+                            await _userManager.AddToRolesAsync(user, new[] { Constants.Roles.cEmployee, Constants.Roles.cSupervisor });
+                            //await _userManager.AddToRolesAsync(user, ["Employee", "Supervisor"]); //cip...108
+                            break;
+
+                        case (Constants.Roles.cEmployee):
+                            await _userManager.AddToRoleAsync(user, Constants.Roles.cEmployee);
+                            //await _userManager.AddToRoleAsync(user, Input.RoleName); //03/05/25
+                            //await _userManager.AddToRolesAsync(user, ["Employee"]); //cip...108
+                            break;
+
+                        default:
+                            ModelState.AddModelError(string.Empty, $"Contact the Administrator. Invalid role name: {Input.RoleName}.");
+                            return Page();
                     }
 
-                    var userId = await _userManager.GetUserIdAsync(user);
-                    await _leaveAllocationsService.AllocateLeaveAsync(userId); //cip...125. this should (probably) be added AFTER user confirmation.
-                    var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-                    code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
-                    var callbackUrl = Url.Page(
-                        "/Account/ConfirmEmail",
-                        pageHandler: null,
-                        values: new { area = "Identity", userId = userId, code = code, returnUrl = returnUrl },
-                        protocol: Request.Scheme);
-                    
-                    //get the template //cip...191 start
-                    var emailTemplatePath = Path.Combine(_hostEnvironment.WebRootPath, "templates", "email_layout.html");
-                    var template = await System.IO.File.ReadAllTextAsync(emailTemplatePath);
-                    //inject dynamic content
-                    var messageBody = template
-                        .Replace("{UserName}", $"{user.FirstName} {user.LastName}") //both Input & user (see above)
-                        .Replace("{MessageContent}", $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+                        var userId = await _userManager.GetUserIdAsync(user);
 
-                    await _emailSender.SendEmailAsync(Input.Email, "Confirm your email", messageBody); //cip...191 end
+                        try //01/05/25 abort if leave can't be allocated (missing Period?).
+                        {
+                            await _leaveAllocationsService.AllocateLeaveAsync(userId); //cip...125. this should (probably) be added AFTER user confirmation.
+                        }
+                        catch (Exception ex)
+                        {
+                            await _userManager.DeleteAsync(user); //30/04/25 remove the user from the db
+                            await _userManager.UpdateAsync(user);
+                            //log the error
+                            _logger.LogError(ex, "Error allocating leave to user (email:" + user.Email + "). " + ex.Message);
+                            ModelState.AddModelError(string.Empty, "Contact the Administrator: " + ex.Message);
+                            return Page();
+                        }
 
-                    if (_userManager.Options.SignIn.RequireConfirmedAccount)
-                    {
-                        return RedirectToPage("RegisterConfirmation", new { email = Input.Email, returnUrl = returnUrl });
+                        var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+                        code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
+                        var callbackUrl = Url.Page(
+                            "/Account/ConfirmEmail",
+                            pageHandler: null,
+                            values: new { area = "Identity", userId = userId, code = code, returnUrl = returnUrl },
+                            protocol: Request.Scheme);
+
+                        //get the template //cip...191 start
+                        var emailTemplatePath = Path.Combine(_hostEnvironment.WebRootPath, "templates", "email_layout.html");
+                        var template = await System.IO.File.ReadAllTextAsync(emailTemplatePath);
+                        //inject dynamic content
+                        var messageBody = template
+                            .Replace("{UserName}", $"{user.FirstName} {user.LastName}") //both Input & user (see above)
+                            .Replace("{MessageContent}", $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+
+                        try
+                        {
+                            await _emailSender.SendEmailAsync(Input.Email, "Confirm your email", messageBody); //cip...191 end
+                        }
+                        catch (Exception ex)
+                        {
+                            await _userManager.DeleteAsync(user); //30/04/25 remove the user from the db
+                                                                  //log the error
+                            _logger.LogError(ex, "Error sending email confirmation to:" + Input.Email);
+                            ModelState.AddModelError(string.Empty, "Error sending email confirmation. Please try again later.");
+                            return Page();
+                        }
+
+                        if (_userManager.Options.SignIn.RequireConfirmedAccount)
+                        {
+                            return RedirectToPage("RegisterConfirmation", new { email = Input.Email, returnUrl = returnUrl });
+                        }
+                        else
+                        {
+                            await _signInManager.SignInAsync(user, isPersistent: false);
+                            return LocalRedirect(returnUrl);
+                        }
                     }
-                    else
+                    foreach (var error in result.Errors)
                     {
-                        await _signInManager.SignInAsync(user, isPersistent: false);
-                        return LocalRedirect(returnUrl);
+                        ModelState.AddModelError(string.Empty, error.Description);
                     }
                 }
-                foreach (var error in result.Errors)
-                {
-                    ModelState.AddModelError(string.Empty, error.Description);
-                }
+
+                // If we got this far, something failed, redisplay form
+                return Page();
             }
-
-            // If we got this far, something failed, redisplay form
-            return Page();
-        }
 
         private ApplicationUser CreateUser()
         {
@@ -232,7 +268,7 @@ namespace LeaveManagementSystem.Web.Areas.Identity.Pages.Account
         {
             string[] roles = await _roleManager.Roles
                 .Select(q => q.Name)
-                .Where(q => q != Constants.Roles.cAdministrator)
+                //.Where(q => q != Constants.Roles.cAdministrator) //03/05/25
                 .ToArrayAsync(); // cip...108. fill the combo prior.
             return roles; //Password1!
         }

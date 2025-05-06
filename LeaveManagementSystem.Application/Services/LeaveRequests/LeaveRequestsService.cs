@@ -7,7 +7,7 @@ public class LeaveRequestsService(IMapper _mapper, ApplicationDbContext _context
         var leaveRequest = await _context.LeaveRequests.FindAsync(Id);
         leaveRequest.LeaveRequestStatusId = (int)Data.Constants.LeaveRequestStatusEnum.Cancelled;
         //restore the allocation days
-        await _functions.UpdateAllocationDays(leaveRequest, false); //cip..162
+        await _functions.UpdateAllocationDaysAsync(leaveRequest, false); //cip..162
         await _context.SaveChangesAsync();
     }
 
@@ -23,9 +23,14 @@ public class LeaveRequestsService(IMapper _mapper, ApplicationDbContext _context
         //save leave request
         //_context.LeaveRequests.Add(leaveRequest);
         //or
+        //---------------------------------------------------------
+        //03/05/25 set createdby and createddate
+        leaveRequest.CreatedBy = Guid.Parse(leaveRequest.EmployeeId);
+        leaveRequest.CreatedDate = DateTime.Now;
+        //---------------------------------------------------------
         _context.Add(leaveRequest);
         //deduct the allocation days
-        await _functions.UpdateAllocationDays(leaveRequest, true); //cip..162
+        await _functions.UpdateAllocationDaysAsync(leaveRequest, true); //cip..162
         await _context.SaveChangesAsync(); //if any of the previous ops failed then this won't save.
     }
 
@@ -136,8 +141,13 @@ public class LeaveRequestsService(IMapper _mapper, ApplicationDbContext _context
         if (!approved) //if declined then give the days back to the employee
         {
             //restore the allocation days
-            await _functions.UpdateAllocationDays(leaveRequest, false); //cip..162
+            await _functions.UpdateAllocationDaysAsync(leaveRequest, false); //cip..162
         }
+        //---------------------------------------------------------
+        //03/05/25 set modifiedby and modifieddate
+        leaveRequest.ModifiedBy = new Guid(await _functions.GetEmployeeIdAsync());
+        leaveRequest.ModifiedDate = DateTime.Now;
+        //---------------------------------------------------------
         await _context.SaveChangesAsync();
     }
 }

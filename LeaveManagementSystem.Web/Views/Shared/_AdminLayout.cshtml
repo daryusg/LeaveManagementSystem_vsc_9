@@ -18,19 +18,28 @@
     <link rel="stylesheet" href="~/css/styles.min.css" />
     <link rel="stylesheet" href="~/lib/jquery-ui-1.14.1.custom/jquery-ui-themes-1.14.1/themes/base/jquery-ui.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    @*<link rel="stylesheet" href="~/css/chatgpt.mobiles.sidebar.fix.for.sites.min.css" asp-append-version="true" /> 06/05/25*@
     <link rel="stylesheet" href="~/LeaveManagementSystem.Web.styles.css" asp-append-version="true" />
 </head>
 
 <body>
+    @if (!SignInManager.IsSignedIn(User)) @*added here 06/05/25. from LoginPartial.cshtml*@
+    {
+        <a class="nav-link sidebartoggler nav-icon-hover d-block d-xl-none" 
+            id="sidebarCollapse" 
+            href="javascript:void(0)" 
+            style="position: absolute; top: 30px; left: 30px; font-size: 1.5rem; z-index: 98;"> @*06/05/25 set 1 less than the .left-sidebar in styles.min.css (z-index: 99;)*@
+            <i class="ti ti-menu-2"></i>
+        </a>
+    }
     <!--  Body Wrapper -->
-    <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
-        data-sidebar-position="fixed" data-header-position="fixed">
+    <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-sidebar-position="fixed"  data-navbarbg="skin6" data-sidebartype="full"
         <!-- Sidebar Start -->
         <aside class="left-sidebar">
             <!-- Sidebar scroll-->
             <div class="scroll-sidebar" data-simplebar>
                 <div class="d-flex mb-4 align-items-center justify-content-between">
-                    <a href="index.html" class="text-nowrap logo-img ms-0 ms-md-1">
+                    <a href="javascript:void(0)" class="text-nowrap logo-img ms-0 ms-md-1">
                         <img src="~/images/logos/summer.png" width="180" alt="">
                     </a>
                     <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
@@ -225,7 +234,7 @@
         <!--  Sidebar End -->
         <!--  Main wrapper -->
         <div class="body-wrapper">
-            @if (SignInManager.IsSignedIn(User)) //from LoginPartial.cshtml
+            @if (SignInManager.IsSignedIn(User)) @*from LoginPartial.cshtml*@
             {
                 <!--  Header Start -->
                 <header class="app-header">
@@ -304,6 +313,7 @@
     <script src="~/js/sidebarmenu.js"></script>
     <script src="~/js/app.min.js"></script>
     <script src="~/lib/simplebar/dist/simplebar.js"></script>
+    @*<script src="~/js/chatgpt.mobiles.sidebar.fix.js"></script> 06/05/25*@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 

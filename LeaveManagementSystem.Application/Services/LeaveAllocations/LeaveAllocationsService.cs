@@ -35,6 +35,7 @@ public class LeaveAllocationsService(ApplicationDbContext _context, IMapper _map
             //if(await AllocationExists(employeeId, period.Id, leaveType.Id))
             //    continue;
             var accrualRate = decimal.Divide(leaveType.NumberOfDays, Data.Constants.cMonthsPerYear); //cip...125
+            var days = (int)Math.Ceiling(accrualRate * monthsRemaining); //cip...125
             var leaveAllocation = new LeaveAllocation
             {
                 EmployeeId = employeeId,
@@ -43,7 +44,13 @@ public class LeaveAllocationsService(ApplicationDbContext _context, IMapper _map
                 //check out tw's ef core course for full explanation (https://www.udemy.com/course/entity-framework-core-a-full-tour/?couponCode=NEWYEARCAREER).
                 // Period = period, //navigation property
                 PeriodId = period.Id, //fk property NOTE: tw's recommendation: use fk property. DON'T DO BOTH. do 1 or t'other.
-                Days = (int)Math.Ceiling(accrualRate * monthsRemaining)  //cip...125
+                Days_Original = days, //03/05/25
+                Days = days,
+                //---------------------------------------------------------
+                //03/05/25 set createdby and createddate
+                CreatedBy = Guid.Parse(employeeId),
+                CreatedDate = DateTime.Now
+                //---------------------------------------------------------
             };
             _context.Add(leaveAllocation);
         }
@@ -77,7 +84,7 @@ public class LeaveAllocationsService(ApplicationDbContext _context, IMapper _map
 
     public async Task<List<EmployeeVM>> GetEmployeesAsync() //cip...131
     {
-        var users = await _functions.GetUsers(Data.Constants.Roles.cEmployee);
+        var users = await _functions.GetUsersAsync(Data.Constants.Roles.cEmployee);
         var employees = _mapper.Map<List<ApplicationUser>, List<EmployeeVM>>(users.ToList()); //cip...131 NOTE: users is IList
         return employees;
     }
@@ -107,8 +114,11 @@ public class LeaveAllocationsService(ApplicationDbContext _context, IMapper _map
         //option 1b _context.Entry(leaveAllocation).State = EntityState.Modified; //update the modified fields
         //await _context.SaveChangesAsync();
         //option 2
+        //03/05/25 added modifiedby and modifieddate
         await _context.LeaveAllocations
             .Where(q => q.Id == allocationEditVM.Id)
-            .ExecuteUpdateAsync(s1 => s1.SetProperty(s2 => s2.Days, allocationEditVM.Days));
+            .ExecuteUpdateAsync(s1 => s1.SetProperty(s2 => s2.Days, allocationEditVM.Days)
+                .SetProperty(s2 => s2.ModifiedBy, new Guid(_functions.GetEmployeeId()))
+                .SetProperty(s2 => s2.ModifiedDate, DateTime.UtcNow));
     }
 }

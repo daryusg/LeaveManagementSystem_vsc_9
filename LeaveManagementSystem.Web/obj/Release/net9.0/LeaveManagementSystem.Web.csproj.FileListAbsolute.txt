@@ -1802,7 +1802,6 @@ C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.W
 C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Release\net9.0\compressed\whap06gjuq-qivweo54s6.gz
 C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Release\net9.0\compressed\ec76qfwh6f-epmwxry5gg.gz
 C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Release\net9.0\compressed\7t9cjgu3iv-6n7i8ba5eh.gz
-C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Release\net9.0\compressed\9g5let928x-qfplqu5wu1.gz
 C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Release\net9.0\compressed\psjaxfsg4u-75lwiax4ku.gz
 C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Release\net9.0\compressed\7gn9h6uint-75lwiax4ku.gz
 C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Release\net9.0\staticwebassets.build.json
@@ -1820,3 +1819,5 @@ C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.W
 C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Release\net9.0\LeaveManagementSystem.Web.pdb
 C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Release\net9.0\LeaveManagementSystem.Web.genruntimeconfig.cache
 C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Release\net9.0\ref\LeaveManagementSystem.Web.dll
+C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\bin\Release\net9.0\Azure.Communication.Email.dll
+C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Release\net9.0\compressed\9g5let928x-mmi6r7twz8.gz

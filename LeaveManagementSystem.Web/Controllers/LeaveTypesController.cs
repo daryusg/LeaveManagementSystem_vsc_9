@@ -4,7 +4,7 @@ using Constants = LeaveManagementSystem.Data.Constants;
 namespace LeaveManagementSystem.Web.Controllers
 {
     [Authorize(Roles = Constants.Roles.cAdministrator)] //cip...112
-    public class LeaveTypesController(ILeaveTypesService _leaveTypesService, ILogger<LeaveTypesController> _logger) : Controller //cip...93, cip...178
+    public class LeaveTypesController(ILeaveTypesService _leaveTypesService, ILogger<LeaveTypesController> _logger, IFunctions _functions, ApplicationDbContext _context) : Controller //cip...93, cip...178
     {
         private const string duplicateName = "Duplicate name"; //cip...84
         private const string invalidName = "Invalid name";
@@ -12,6 +12,10 @@ namespace LeaveManagementSystem.Web.Controllers
         // GET: LeaveTypes
         public async Task<IActionResult> Index()
         {
+            if (TempData.ContainsKey("ErrorMessage")) //04/05/25
+            {
+                ModelState.AddModelError(string.Empty, TempData["ErrorMessage"].ToString());
+            }
             _logger.LogInformation("LeaveTypesController.Index() called"); //cip...178
             var viewData = await _leaveTypesService.GetAllAsync(); //cip...93
             //return the view model to the view.
@@ -80,7 +84,7 @@ namespace LeaveManagementSystem.Web.Controllers
             {
                 return NotFound();
             }
-            
+
             var viewData = await _leaveTypesService.GetAsync<LeaveTypeEditVM>(id); //cip...93
             if (viewData == null)
             {
@@ -107,21 +111,27 @@ namespace LeaveManagementSystem.Web.Controllers
 
             if (ModelState.IsValid)
             {
-                try
+                if (await _functions.isAuthorisedAdminAsync(leaveType.CreatedBy)) //03/05/25
                 {
-                    await _leaveTypesService.EditAsync(leaveType); //cip...93
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!_leaveTypesService.LeaveTypeExists(leaveType.Id)) //cip...93
+                    try
                     {
-                        return NotFound();
+                        await _leaveTypesService.EditAsync(leaveType); //cip...93
                     }
-                    else
+                    catch (DbUpdateConcurrencyException)
                     {
-                        throw;
+                        if (!_leaveTypesService.LeaveTypeExists(leaveType.Id)) //cip...93
+                        {
+                            return NotFound();
+                        }
+                        else
+                        {
+                            throw;
+                        }
                     }
                 }
+                else
+                    TempData["ErrorMessage"] = Constants.cUnauthorisedAccess;
+
                 return RedirectToAction(nameof(Index));
             }
             return View(leaveType);
@@ -148,7 +158,14 @@ namespace LeaveManagementSystem.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            await _leaveTypesService.RemoveAsync(id); //cip...93
+            var leaveType = await _context.LeaveTypes.FindAsync(id);
+            if (await _functions.isAuthorisedAdminAsync(leaveType.CreatedBy)) //03/05/25
+            {
+                await _leaveTypesService.RemoveAsync(id); //cip...93
+            }
+            else
+                TempData["ErrorMessage"] = Constants.cUnauthorisedAccess;
+
             return RedirectToAction(nameof(Index));
         }
     }

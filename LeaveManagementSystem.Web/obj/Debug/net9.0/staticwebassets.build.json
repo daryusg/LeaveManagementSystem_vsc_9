@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KohHwj8hfSa9MQSMshsLzwtV5/9ZgPt+xLsm/XaWac0=",
+  "Hash": "+WERV9qZKcv1tPVnkC+eXh8EcmPxWNX2ksAw1SunOoU=",
   "Source": "LeaveManagementSystem.Web",
   "BasePath": "_content/LeaveManagementSystem.Web",
   "Mode": "Default",
@@ -9845,12 +9845,12 @@
       "OriginalItemSpec": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\prismjs\\components\\prism-purebasic.min.js"
     },
     {
-      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\9g5let928x-qfplqu5wu1.gz",
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\9g5let928x-mmi6r7twz8.gz",
       "SourceId": "LeaveManagementSystem.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/LeaveManagementSystem.Web",
-      "RelativePath": "templates/email_layout#[.{fingerprint=qfplqu5wu1}]?.html.gz",
+      "RelativePath": "templates/email_layout#[.{fingerprint=mmi6r7twz8}]?.html.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -9859,8 +9859,8 @@
       "RelatedAsset": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\templates\\email_layout.html",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "qyxubgyy6v",
-      "Integrity": "ji2/Ex3sta7C2CntJ24gVzSYzkjidflcztJtyYxfuBc=",
+      "Fingerprint": "m44m2kgm0u",
+      "Integrity": "ZlCqEWcrdIhop1tn8HHPJjWxYQe/9zXKzl8eNng5Pk8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\templates\\email_layout.html"
@@ -26309,6 +26309,27 @@
       "OriginalItemSpec": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\prismjs\\components\\prism-applescript.min.js"
     },
     {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\sq5v8p6xh6-tipxkdddg9.gz",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "js/chatgpt.mobiles.sidebar.fix#[.{fingerprint=tipxkdddg9}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\js\\chatgpt.mobiles.sidebar.fix.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "w7a03p6hj3",
+      "Integrity": "REXNp89jhSnbPEfF7LWmn7bMVK5IlQY+8QvXAjDWS3s=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\js\\chatgpt.mobiles.sidebar.fix.js"
+    },
+    {
       "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\sqeq931tnr-q079dvpbxh.gz",
       "SourceId": "LeaveManagementSystem.Web",
       "SourceType": "Discovered",
@@ -28470,6 +28491,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\prismjs\\components\\prism-jexl.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\vchf54al3c-czc4xhpwv5.gz",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "css/chatgpt.mobiles.sidebar.fix.for.sites.min#[.{fingerprint=czc4xhpwv5}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\css\\chatgpt.mobiles.sidebar.fix.for.sites.min.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "4b863zedx8",
+      "Integrity": "kN6CuVrJB2dHXFCfXKcEsM1Hcx8MX8zDfK3stUggq3w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\css\\chatgpt.mobiles.sidebar.fix.for.sites.min.css"
     },
     {
       "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\vdjtauwa80-kxxci8y9zd.gz",
@@ -32691,6 +32733,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\LeaveManagementSystem.Web.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\css\\chatgpt.mobiles.sidebar.fix.for.sites.min.css",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "css/chatgpt.mobiles.sidebar.fix.for.sites.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "czc4xhpwv5",
+      "Integrity": "uE/Z3qldJehXKMW7jbYB+QTogIcmWXt/k5tuSHjeZkU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\chatgpt.mobiles.sidebar.fix.for.sites.min.css"
     },
     {
       "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\css\\icons\\tabler-icons\\fonts\\tabler-icons.eot",
@@ -40545,6 +40608,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\app.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\js\\chatgpt.mobiles.sidebar.fix.js",
+      "SourceId": "LeaveManagementSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\",
+      "BasePath": "_content/LeaveManagementSystem.Web",
+      "RelativePath": "js/chatgpt.mobiles.sidebar.fix#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tipxkdddg9",
+      "Integrity": "iwic8Z+Uypj8qo+1IY7S0nWeVLTfcrFKBOzlPoUAZlw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\chatgpt.mobiles.sidebar.fix.js"
     },
     {
       "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\js\\dashboard.js",
@@ -72901,14 +72985,312 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "qfplqu5wu1",
-      "Integrity": "+qlhovrSdX+9o+RQnKkaRnBi/cZm5vFuU3YWGzzdiT8=",
+      "Fingerprint": "mmi6r7twz8",
+      "Integrity": "zupiopiUT2ZcfjdzL+0LmD2Bt7751vA28DWXu6o+rjk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\templates\\email_layout.html"
     }
   ],
   "Endpoints": [
+    {
+      "Route": "css/chatgpt.mobiles.sidebar.fix.for.sites.min.css",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\vchf54al3c-czc4xhpwv5.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.005714285714"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "174"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kN6CuVrJB2dHXFCfXKcEsM1Hcx8MX8zDfK3stUggq3w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 12:52:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"uE/Z3qldJehXKMW7jbYB+QTogIcmWXt/k5tuSHjeZkU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uE/Z3qldJehXKMW7jbYB+QTogIcmWXt/k5tuSHjeZkU="
+        }
+      ]
+    },
+    {
+      "Route": "css/chatgpt.mobiles.sidebar.fix.for.sites.min.css",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\css\\chatgpt.mobiles.sidebar.fix.for.sites.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uE/Z3qldJehXKMW7jbYB+QTogIcmWXt/k5tuSHjeZkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 12:52:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uE/Z3qldJehXKMW7jbYB+QTogIcmWXt/k5tuSHjeZkU="
+        }
+      ]
+    },
+    {
+      "Route": "css/chatgpt.mobiles.sidebar.fix.for.sites.min.css.gz",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\vchf54al3c-czc4xhpwv5.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "174"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kN6CuVrJB2dHXFCfXKcEsM1Hcx8MX8zDfK3stUggq3w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 12:52:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kN6CuVrJB2dHXFCfXKcEsM1Hcx8MX8zDfK3stUggq3w="
+        }
+      ]
+    },
+    {
+      "Route": "css/chatgpt.mobiles.sidebar.fix.for.sites.min.czc4xhpwv5.css",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\vchf54al3c-czc4xhpwv5.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.005714285714"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "174"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kN6CuVrJB2dHXFCfXKcEsM1Hcx8MX8zDfK3stUggq3w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 12:52:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"uE/Z3qldJehXKMW7jbYB+QTogIcmWXt/k5tuSHjeZkU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "czc4xhpwv5"
+        },
+        {
+          "Name": "label",
+          "Value": "css/chatgpt.mobiles.sidebar.fix.for.sites.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uE/Z3qldJehXKMW7jbYB+QTogIcmWXt/k5tuSHjeZkU="
+        }
+      ]
+    },
+    {
+      "Route": "css/chatgpt.mobiles.sidebar.fix.for.sites.min.czc4xhpwv5.css",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\css\\chatgpt.mobiles.sidebar.fix.for.sites.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uE/Z3qldJehXKMW7jbYB+QTogIcmWXt/k5tuSHjeZkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 12:52:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "czc4xhpwv5"
+        },
+        {
+          "Name": "label",
+          "Value": "css/chatgpt.mobiles.sidebar.fix.for.sites.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uE/Z3qldJehXKMW7jbYB+QTogIcmWXt/k5tuSHjeZkU="
+        }
+      ]
+    },
+    {
+      "Route": "css/chatgpt.mobiles.sidebar.fix.for.sites.min.czc4xhpwv5.css.gz",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\vchf54al3c-czc4xhpwv5.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "174"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kN6CuVrJB2dHXFCfXKcEsM1Hcx8MX8zDfK3stUggq3w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 12:52:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "czc4xhpwv5"
+        },
+        {
+          "Name": "label",
+          "Value": "css/chatgpt.mobiles.sidebar.fix.for.sites.min.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kN6CuVrJB2dHXFCfXKcEsM1Hcx8MX8zDfK3stUggq3w="
+        }
+      ]
+    },
     {
       "Route": "css/icons/tabler-icons/fonts/tabler-icons.44rkqwcj9k.ttf",
       "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\css\\icons\\tabler-icons\\fonts\\tabler-icons.ttf",
@@ -185407,6 +185789,304 @@
       ]
     },
     {
+      "Route": "js/chatgpt.mobiles.sidebar.fix.js",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\sq5v8p6xh6-tipxkdddg9.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002652519894"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "376"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"REXNp89jhSnbPEfF7LWmn7bMVK5IlQY+8QvXAjDWS3s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 12:53:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"iwic8Z+Uypj8qo+1IY7S0nWeVLTfcrFKBOzlPoUAZlw=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iwic8Z+Uypj8qo+1IY7S0nWeVLTfcrFKBOzlPoUAZlw="
+        }
+      ]
+    },
+    {
+      "Route": "js/chatgpt.mobiles.sidebar.fix.js",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\js\\chatgpt.mobiles.sidebar.fix.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "764"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iwic8Z+Uypj8qo+1IY7S0nWeVLTfcrFKBOzlPoUAZlw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 12:53:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iwic8Z+Uypj8qo+1IY7S0nWeVLTfcrFKBOzlPoUAZlw="
+        }
+      ]
+    },
+    {
+      "Route": "js/chatgpt.mobiles.sidebar.fix.js.gz",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\sq5v8p6xh6-tipxkdddg9.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "376"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"REXNp89jhSnbPEfF7LWmn7bMVK5IlQY+8QvXAjDWS3s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 12:53:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-REXNp89jhSnbPEfF7LWmn7bMVK5IlQY+8QvXAjDWS3s="
+        }
+      ]
+    },
+    {
+      "Route": "js/chatgpt.mobiles.sidebar.fix.tipxkdddg9.js",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\sq5v8p6xh6-tipxkdddg9.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002652519894"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "376"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"REXNp89jhSnbPEfF7LWmn7bMVK5IlQY+8QvXAjDWS3s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 12:53:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"iwic8Z+Uypj8qo+1IY7S0nWeVLTfcrFKBOzlPoUAZlw=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tipxkdddg9"
+        },
+        {
+          "Name": "label",
+          "Value": "js/chatgpt.mobiles.sidebar.fix.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iwic8Z+Uypj8qo+1IY7S0nWeVLTfcrFKBOzlPoUAZlw="
+        }
+      ]
+    },
+    {
+      "Route": "js/chatgpt.mobiles.sidebar.fix.tipxkdddg9.js",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\js\\chatgpt.mobiles.sidebar.fix.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "764"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iwic8Z+Uypj8qo+1IY7S0nWeVLTfcrFKBOzlPoUAZlw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 12:53:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tipxkdddg9"
+        },
+        {
+          "Name": "label",
+          "Value": "js/chatgpt.mobiles.sidebar.fix.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iwic8Z+Uypj8qo+1IY7S0nWeVLTfcrFKBOzlPoUAZlw="
+        }
+      ]
+    },
+    {
+      "Route": "js/chatgpt.mobiles.sidebar.fix.tipxkdddg9.js.gz",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\sq5v8p6xh6-tipxkdddg9.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "376"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"REXNp89jhSnbPEfF7LWmn7bMVK5IlQY+8QvXAjDWS3s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 12:53:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tipxkdddg9"
+        },
+        {
+          "Name": "label",
+          "Value": "js/chatgpt.mobiles.sidebar.fix.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-REXNp89jhSnbPEfF7LWmn7bMVK5IlQY+8QvXAjDWS3s="
+        }
+      ]
+    },
+    {
       "Route": "js/dashboard.d1a6jlweky.js",
       "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\s38v6ewvhq-d1a6jlweky.gz",
       "Selectors": [
@@ -186362,7 +187042,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 12:53:23 GMT"
+          "Value": "Tue, 06 May 2025 11:33:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -186423,7 +187103,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 12:53:23 GMT"
+          "Value": "Tue, 06 May 2025 11:33:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -186468,7 +187148,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 12:53:23 GMT"
+          "Value": "Tue, 06 May 2025 11:33:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -186523,7 +187203,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 12:53:23 GMT"
+          "Value": "Tue, 06 May 2025 11:33:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -186584,7 +187264,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 12:53:23 GMT"
+          "Value": "Tue, 06 May 2025 11:33:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -186629,7 +187309,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 12:53:23 GMT"
+          "Value": "Tue, 06 May 2025 11:33:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -186684,7 +187364,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 12:53:23 GMT"
+          "Value": "Tue, 06 May 2025 11:33:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -186737,7 +187417,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 12:53:23 GMT"
+          "Value": "Tue, 06 May 2025 11:33:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -186774,7 +187454,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 12:53:23 GMT"
+          "Value": "Tue, 06 May 2025 11:33:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -186821,7 +187501,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 12:53:23 GMT"
+          "Value": "Tue, 06 May 2025 11:33:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -186874,7 +187554,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 12:53:23 GMT"
+          "Value": "Tue, 06 May 2025 11:33:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -186911,7 +187591,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 12:53:23 GMT"
+          "Value": "Tue, 06 May 2025 11:33:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -549333,12 +550013,12 @@
     },
     {
       "Route": "templates/email_layout.html",
-      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\9g5let928x-qfplqu5wu1.gz",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\9g5let928x-mmi6r7twz8.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001367989056"
+          "Quality": "0.001360544218"
         }
       ],
       "ResponseHeaders": [
@@ -549348,15 +550028,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "730"
+          "Value": "734"
         },
         {
           "Name": "ETag",
-          "Value": "\"ji2/Ex3sta7C2CntJ24gVzSYzkjidflcztJtyYxfuBc=\""
+          "Value": "\"ZlCqEWcrdIhop1tn8HHPJjWxYQe/9zXKzl8eNng5Pk8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 17 Apr 2025 17:37:58 GMT"
+          "Value": "Sat, 03 May 2025 07:14:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -549376,13 +550056,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"+qlhovrSdX+9o+RQnKkaRnBi/cZm5vFuU3YWGzzdiT8=\""
+          "Value": "W/\"zupiopiUT2ZcfjdzL+0LmD2Bt7751vA28DWXu6o+rjk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-+qlhovrSdX+9o+RQnKkaRnBi/cZm5vFuU3YWGzzdiT8="
+          "Value": "sha256-zupiopiUT2ZcfjdzL+0LmD2Bt7751vA28DWXu6o+rjk="
         }
       ]
     },
@@ -549405,11 +550085,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+qlhovrSdX+9o+RQnKkaRnBi/cZm5vFuU3YWGzzdiT8=\""
+          "Value": "\"zupiopiUT2ZcfjdzL+0LmD2Bt7751vA28DWXu6o+rjk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 17 Apr 2025 17:37:58 GMT"
+          "Value": "Sat, 03 May 2025 07:14:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -549419,13 +550099,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-+qlhovrSdX+9o+RQnKkaRnBi/cZm5vFuU3YWGzzdiT8="
+          "Value": "sha256-zupiopiUT2ZcfjdzL+0LmD2Bt7751vA28DWXu6o+rjk="
         }
       ]
     },
     {
       "Route": "templates/email_layout.html.gz",
-      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\9g5let928x-qfplqu5wu1.gz",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\9g5let928x-mmi6r7twz8.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -549434,7 +550114,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "730"
+          "Value": "734"
         },
         {
           "Name": "Content-Type",
@@ -549442,11 +550122,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ji2/Ex3sta7C2CntJ24gVzSYzkjidflcztJtyYxfuBc=\""
+          "Value": "\"ZlCqEWcrdIhop1tn8HHPJjWxYQe/9zXKzl8eNng5Pk8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 17 Apr 2025 17:37:58 GMT"
+          "Value": "Sat, 03 May 2025 07:14:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -549464,18 +550144,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ji2/Ex3sta7C2CntJ24gVzSYzkjidflcztJtyYxfuBc="
+          "Value": "sha256-ZlCqEWcrdIhop1tn8HHPJjWxYQe/9zXKzl8eNng5Pk8="
         }
       ]
     },
     {
-      "Route": "templates/email_layout.qfplqu5wu1.html",
-      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\9g5let928x-qfplqu5wu1.gz",
+      "Route": "templates/email_layout.mmi6r7twz8.html",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\9g5let928x-mmi6r7twz8.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001367989056"
+          "Quality": "0.001360544218"
         }
       ],
       "ResponseHeaders": [
@@ -549485,15 +550165,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "730"
+          "Value": "734"
         },
         {
           "Name": "ETag",
-          "Value": "\"ji2/Ex3sta7C2CntJ24gVzSYzkjidflcztJtyYxfuBc=\""
+          "Value": "\"ZlCqEWcrdIhop1tn8HHPJjWxYQe/9zXKzl8eNng5Pk8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 17 Apr 2025 17:37:58 GMT"
+          "Value": "Sat, 03 May 2025 07:14:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -549513,13 +550193,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"+qlhovrSdX+9o+RQnKkaRnBi/cZm5vFuU3YWGzzdiT8=\""
+          "Value": "W/\"zupiopiUT2ZcfjdzL+0LmD2Bt7751vA28DWXu6o+rjk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "qfplqu5wu1"
+          "Value": "mmi6r7twz8"
         },
         {
           "Name": "label",
@@ -549527,12 +550207,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-+qlhovrSdX+9o+RQnKkaRnBi/cZm5vFuU3YWGzzdiT8="
+          "Value": "sha256-zupiopiUT2ZcfjdzL+0LmD2Bt7751vA28DWXu6o+rjk="
         }
       ]
     },
     {
-      "Route": "templates/email_layout.qfplqu5wu1.html",
+      "Route": "templates/email_layout.mmi6r7twz8.html",
       "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\templates\\email_layout.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -549550,11 +550230,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+qlhovrSdX+9o+RQnKkaRnBi/cZm5vFuU3YWGzzdiT8=\""
+          "Value": "\"zupiopiUT2ZcfjdzL+0LmD2Bt7751vA28DWXu6o+rjk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 17 Apr 2025 17:37:58 GMT"
+          "Value": "Sat, 03 May 2025 07:14:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -549564,7 +550244,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "qfplqu5wu1"
+          "Value": "mmi6r7twz8"
         },
         {
           "Name": "label",
@@ -549572,13 +550252,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-+qlhovrSdX+9o+RQnKkaRnBi/cZm5vFuU3YWGzzdiT8="
+          "Value": "sha256-zupiopiUT2ZcfjdzL+0LmD2Bt7751vA28DWXu6o+rjk="
         }
       ]
     },
     {
-      "Route": "templates/email_layout.qfplqu5wu1.html.gz",
-      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\9g5let928x-qfplqu5wu1.gz",
+      "Route": "templates/email_layout.mmi6r7twz8.html.gz",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Debug\\net9.0\\compressed\\9g5let928x-mmi6r7twz8.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -549587,7 +550267,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "730"
+          "Value": "734"
         },
         {
           "Name": "Content-Type",
@@ -549595,11 +550275,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ji2/Ex3sta7C2CntJ24gVzSYzkjidflcztJtyYxfuBc=\""
+          "Value": "\"ZlCqEWcrdIhop1tn8HHPJjWxYQe/9zXKzl8eNng5Pk8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 17 Apr 2025 17:37:58 GMT"
+          "Value": "Sat, 03 May 2025 07:14:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -549617,7 +550297,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "qfplqu5wu1"
+          "Value": "mmi6r7twz8"
         },
         {
           "Name": "label",
@@ -549625,7 +550305,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ji2/Ex3sta7C2CntJ24gVzSYzkjidflcztJtyYxfuBc="
+          "Value": "sha256-ZlCqEWcrdIhop1tn8HHPJjWxYQe/9zXKzl8eNng5Pk8="
         }
       ]
     }

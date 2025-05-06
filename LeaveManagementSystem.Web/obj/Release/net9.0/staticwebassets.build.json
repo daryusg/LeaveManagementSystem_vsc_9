@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xK2cIA40z6vwrRkLDJg1qNJ75GVSBbU9A8QM5wZDHic=",
+  "Hash": "+u/yU3s1TyU9B6U3NOZr4H82zP4XDy7pbmoAH4hHwC8=",
   "Source": "LeaveManagementSystem.Web",
   "BasePath": "_content/LeaveManagementSystem.Web",
   "Mode": "Default",
@@ -9845,12 +9845,12 @@
       "OriginalItemSpec": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\lib\\prismjs\\components\\prism-purebasic.min.js"
     },
     {
-      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Release\\net9.0\\compressed\\9g5let928x-qfplqu5wu1.gz",
+      "Identity": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Release\\net9.0\\compressed\\9g5let928x-mmi6r7twz8.gz",
       "SourceId": "LeaveManagementSystem.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Release\\net9.0\\compressed\\",
       "BasePath": "_content/LeaveManagementSystem.Web",
-      "RelativePath": "templates/email_layout#[.{fingerprint=qfplqu5wu1}]?.html.gz",
+      "RelativePath": "templates/email_layout#[.{fingerprint=mmi6r7twz8}]?.html.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -9859,8 +9859,8 @@
       "RelatedAsset": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\templates\\email_layout.html",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "qyxubgyy6v",
-      "Integrity": "ji2/Ex3sta7C2CntJ24gVzSYzkjidflcztJtyYxfuBc=",
+      "Fingerprint": "m44m2kgm0u",
+      "Integrity": "ZlCqEWcrdIhop1tn8HHPJjWxYQe/9zXKzl8eNng5Pk8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\templates\\email_layout.html"
@@ -72901,8 +72901,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "qfplqu5wu1",
-      "Integrity": "+qlhovrSdX+9o+RQnKkaRnBi/cZm5vFuU3YWGzzdiT8=",
+      "Fingerprint": "mmi6r7twz8",
+      "Integrity": "zupiopiUT2ZcfjdzL+0LmD2Bt7751vA28DWXu6o+rjk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\templates\\email_layout.html"
@@ -549333,12 +549333,12 @@
     },
     {
       "Route": "templates/email_layout.html",
-      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Release\\net9.0\\compressed\\9g5let928x-qfplqu5wu1.gz",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Release\\net9.0\\compressed\\9g5let928x-mmi6r7twz8.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001367989056"
+          "Quality": "0.001360544218"
         }
       ],
       "ResponseHeaders": [
@@ -549348,15 +549348,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "730"
+          "Value": "734"
         },
         {
           "Name": "ETag",
-          "Value": "\"ji2/Ex3sta7C2CntJ24gVzSYzkjidflcztJtyYxfuBc=\""
+          "Value": "\"ZlCqEWcrdIhop1tn8HHPJjWxYQe/9zXKzl8eNng5Pk8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 17 Apr 2025 17:37:58 GMT"
+          "Value": "Sat, 03 May 2025 07:14:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -549376,13 +549376,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"+qlhovrSdX+9o+RQnKkaRnBi/cZm5vFuU3YWGzzdiT8=\""
+          "Value": "W/\"zupiopiUT2ZcfjdzL+0LmD2Bt7751vA28DWXu6o+rjk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-+qlhovrSdX+9o+RQnKkaRnBi/cZm5vFuU3YWGzzdiT8="
+          "Value": "sha256-zupiopiUT2ZcfjdzL+0LmD2Bt7751vA28DWXu6o+rjk="
         }
       ]
     },
@@ -549405,11 +549405,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+qlhovrSdX+9o+RQnKkaRnBi/cZm5vFuU3YWGzzdiT8=\""
+          "Value": "\"zupiopiUT2ZcfjdzL+0LmD2Bt7751vA28DWXu6o+rjk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 17 Apr 2025 17:37:58 GMT"
+          "Value": "Sat, 03 May 2025 07:14:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -549419,13 +549419,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-+qlhovrSdX+9o+RQnKkaRnBi/cZm5vFuU3YWGzzdiT8="
+          "Value": "sha256-zupiopiUT2ZcfjdzL+0LmD2Bt7751vA28DWXu6o+rjk="
         }
       ]
     },
     {
       "Route": "templates/email_layout.html.gz",
-      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Release\\net9.0\\compressed\\9g5let928x-qfplqu5wu1.gz",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Release\\net9.0\\compressed\\9g5let928x-mmi6r7twz8.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -549434,7 +549434,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "730"
+          "Value": "734"
         },
         {
           "Name": "Content-Type",
@@ -549442,11 +549442,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ji2/Ex3sta7C2CntJ24gVzSYzkjidflcztJtyYxfuBc=\""
+          "Value": "\"ZlCqEWcrdIhop1tn8HHPJjWxYQe/9zXKzl8eNng5Pk8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 17 Apr 2025 17:37:58 GMT"
+          "Value": "Sat, 03 May 2025 07:14:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -549464,18 +549464,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ji2/Ex3sta7C2CntJ24gVzSYzkjidflcztJtyYxfuBc="
+          "Value": "sha256-ZlCqEWcrdIhop1tn8HHPJjWxYQe/9zXKzl8eNng5Pk8="
         }
       ]
     },
     {
-      "Route": "templates/email_layout.qfplqu5wu1.html",
-      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Release\\net9.0\\compressed\\9g5let928x-qfplqu5wu1.gz",
+      "Route": "templates/email_layout.mmi6r7twz8.html",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Release\\net9.0\\compressed\\9g5let928x-mmi6r7twz8.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001367989056"
+          "Quality": "0.001360544218"
         }
       ],
       "ResponseHeaders": [
@@ -549485,15 +549485,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "730"
+          "Value": "734"
         },
         {
           "Name": "ETag",
-          "Value": "\"ji2/Ex3sta7C2CntJ24gVzSYzkjidflcztJtyYxfuBc=\""
+          "Value": "\"ZlCqEWcrdIhop1tn8HHPJjWxYQe/9zXKzl8eNng5Pk8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 17 Apr 2025 17:37:58 GMT"
+          "Value": "Sat, 03 May 2025 07:14:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -549513,13 +549513,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"+qlhovrSdX+9o+RQnKkaRnBi/cZm5vFuU3YWGzzdiT8=\""
+          "Value": "W/\"zupiopiUT2ZcfjdzL+0LmD2Bt7751vA28DWXu6o+rjk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "qfplqu5wu1"
+          "Value": "mmi6r7twz8"
         },
         {
           "Name": "label",
@@ -549527,12 +549527,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-+qlhovrSdX+9o+RQnKkaRnBi/cZm5vFuU3YWGzzdiT8="
+          "Value": "sha256-zupiopiUT2ZcfjdzL+0LmD2Bt7751vA28DWXu6o+rjk="
         }
       ]
     },
     {
-      "Route": "templates/email_layout.qfplqu5wu1.html",
+      "Route": "templates/email_layout.mmi6r7twz8.html",
       "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\wwwroot\\templates\\email_layout.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -549550,11 +549550,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+qlhovrSdX+9o+RQnKkaRnBi/cZm5vFuU3YWGzzdiT8=\""
+          "Value": "\"zupiopiUT2ZcfjdzL+0LmD2Bt7751vA28DWXu6o+rjk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 17 Apr 2025 17:37:58 GMT"
+          "Value": "Sat, 03 May 2025 07:14:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -549564,7 +549564,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "qfplqu5wu1"
+          "Value": "mmi6r7twz8"
         },
         {
           "Name": "label",
@@ -549572,13 +549572,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-+qlhovrSdX+9o+RQnKkaRnBi/cZm5vFuU3YWGzzdiT8="
+          "Value": "sha256-zupiopiUT2ZcfjdzL+0LmD2Bt7751vA28DWXu6o+rjk="
         }
       ]
     },
     {
-      "Route": "templates/email_layout.qfplqu5wu1.html.gz",
-      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Release\\net9.0\\compressed\\9g5let928x-qfplqu5wu1.gz",
+      "Route": "templates/email_layout.mmi6r7twz8.html.gz",
+      "AssetFile": "C:\\Users\\kev\\projects_vscode\\LeaveManagementSystem_vsc_9\\LeaveManagementSystem.Web\\obj\\Release\\net9.0\\compressed\\9g5let928x-mmi6r7twz8.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -549587,7 +549587,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "730"
+          "Value": "734"
         },
         {
           "Name": "Content-Type",
@@ -549595,11 +549595,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ji2/Ex3sta7C2CntJ24gVzSYzkjidflcztJtyYxfuBc=\""
+          "Value": "\"ZlCqEWcrdIhop1tn8HHPJjWxYQe/9zXKzl8eNng5Pk8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 17 Apr 2025 17:37:58 GMT"
+          "Value": "Sat, 03 May 2025 07:14:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -549617,7 +549617,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "qfplqu5wu1"
+          "Value": "mmi6r7twz8"
         },
         {
           "Name": "label",
@@ -549625,7 +549625,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ji2/Ex3sta7C2CntJ24gVzSYzkjidflcztJtyYxfuBc="
+          "Value": "sha256-ZlCqEWcrdIhop1tn8HHPJjWxYQe/9zXKzl8eNng5Pk8="
         }
       ]
     }

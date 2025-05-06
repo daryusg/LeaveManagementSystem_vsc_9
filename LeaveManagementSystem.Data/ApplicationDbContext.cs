@@ -16,24 +16,6 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser> //cip...1
 
         // Apply your entity configurations
         builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
-        
-        //------------------------------------------------------------
-        //   from chatgpt. 27/04/25
-        var dateOnlyConverter = new ValueConverter<DateOnly, DateTime>(
-            dateOnly => dateOnly.ToDateTime(TimeOnly.MinValue),
-            dateTime => DateOnly.FromDateTime(dateTime)
-        );
-        foreach (var entityType in builder.Model.GetEntityTypes())
-        {
-            foreach (var property in entityType.GetProperties())
-            {
-                if (property.ClrType == typeof(DateOnly))
-                {
-                    property.SetValueConverter(dateOnlyConverter);
-                }
-            }
-        }
-        //------------------------------------------------------------
     }
 
     public DbSet<LeaveType> LeaveTypes { get; set; } //cip...58

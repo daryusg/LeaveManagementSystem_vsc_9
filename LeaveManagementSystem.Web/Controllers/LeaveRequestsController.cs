@@ -11,6 +11,10 @@ namespace LeaveManagementSystem.Web.Controllers
         // GET: LeaveRequestsController
         public async Task<IActionResult> Index() //cip...150
         {
+            if (TempData.ContainsKey("ErrorMessage")) //04/05/25
+            {
+                ModelState.AddModelError(string.Empty, TempData["ErrorMessage"].ToString());
+            }
             var model = await _leaveRequestsService.GetEmployeeLeaveRequestsAsync();
             return View(model);
         }

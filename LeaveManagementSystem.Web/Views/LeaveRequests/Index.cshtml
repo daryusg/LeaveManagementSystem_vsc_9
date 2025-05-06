@@ -7,8 +7,9 @@
 <h1>Reviewing Your Leave Requests</h1>
 
 <p>
-    <a asp-action="Create" class="btn btn-primary">Request Leave</a>
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" }) @*04/05/25*@
     <a asp-controller="LeaveAllocations" asp-action="Details" class="btn btn-secondary">Back to Allocations</a>
+    <a asp-action="Create" class="btn btn-primary">Request Leave</a>
 </p>
 <table class="table">
     <thead>

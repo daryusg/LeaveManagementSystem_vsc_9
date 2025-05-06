@@ -2,3 +2,6 @@ LeaveManagementSystem.Web/app.db
 LeaveManagementSystem.Web/app.db-shm
 LeaveManagementSystem.Web/app.db-wal
 LeaveManagementSystem.Web/logs
+LeaveManagementSystem.Web/publish
+LMS.session.sql
+LeaveManagementSystem.Web/appsettings.Production.json

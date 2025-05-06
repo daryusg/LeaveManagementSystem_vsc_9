@@ -6,13 +6,13 @@ namespace LeaveManagementSystem.Common;
 
 public class Functions(ApplicationDbContext _context, UserManager<ApplicationUser> _userManager, IHttpContextAccessor _httpContextAccessor) : IFunctions
 {
-    public Task<IList<ApplicationUser>> GetUsers(string role) //my code cip...162
+    public async Task<IList<ApplicationUser>> GetUsersAsync(string role) //my code cip...162
     {
-        var users = _userManager.GetUsersInRoleAsync(role);
+        var users = await _userManager.GetUsersInRoleAsync(role);
         return users;
     }
 
-    public async Task UpdateAllocationDays(LeaveRequest leaveRequest, bool deductDays) //cip...162
+    public async Task UpdateAllocationDaysAsync(LeaveRequest leaveRequest, bool deductDays) //cip...162
     {
         var numberOfDays = leaveRequest.EndDate.DayNumber - leaveRequest.StartDate.DayNumber + 1;
         var allocation = await GetCurrentAllocationAsync(leaveRequest.LeaveTypeId, leaveRequest.EmployeeId);
@@ -61,10 +61,39 @@ public class Functions(ApplicationDbContext _context, UserManager<ApplicationUse
     //-------------------------------------------------------------------------------------------------
     //-------------------------------------------------------------------------------------------------
     //-------------------------------------------------------------------------------------------------
+    public string GetEmployeeId() //03/05/25
+    {
+        var user = _userManager.GetUserId(_httpContextAccessor.HttpContext?.User);
+        return user;
+    }
+
     public async Task<string> GetEmployeeIdAsync() //my code cip...127
     {
         var user = await _userManager.GetUserAsync(_httpContextAccessor.HttpContext?.User);
         return user.Id;
+    }
+
+    public async Task<bool> isAuthorisedAdminAsync(Guid guidCreatedBy) //03/05/25
+    {
+        bool bAuthorised = true;
+        //only cAuthorisedAdmin's records need validation.
+        //get the user associated with cAuthorisedAdmin
+        var userCreatedBy = await _userManager.FindByIdAsync(guidCreatedBy.ToString());
+        if (userCreatedBy.Email
+            .Split('@')
+            .Skip(1)                // Skip the local part
+            .Take(1)                // Take the domain part
+            .Any(domain => domain.Equals(Constants.cAuthorisedAdmin, StringComparison.OrdinalIgnoreCase)))
+            {
+                //this record can only be altered/deleted by cAuthorisedAdmin
+                var userRequestingAccess = await _userManager.GetUserAsync(_httpContextAccessor.HttpContext?.User);
+                bAuthorised = (userRequestingAccess.Email
+                    .Split('@')
+                    .Skip(1)                // Skip the local part
+                    .Take(1)                // Take the domain part
+                    .Any(domain => domain.Equals(Constants.cAuthorisedAdmin, StringComparison.OrdinalIgnoreCase)));
+            }
+            return bAuthorised;
     }
 
     //cip...126...moved when made private cip..131
@@ -89,7 +118,7 @@ public class Functions(ApplicationDbContext _context, UserManager<ApplicationUse
         return leaveAllocations;
     }
 
-    public async Task<bool> AllocationExists(string employeeId, int periodId, int leaveTypeId) //cip...132
+    public async Task<bool> AllocationExistsAsync(string employeeId, int periodId, int leaveTypeId) //cip...132
     {
         var exists = await _context.LeaveAllocations.AnyAsync(q => q.EmployeeId == employeeId && q.PeriodId == periodId && q.LeaveTypeId == leaveTypeId);
         return exists;

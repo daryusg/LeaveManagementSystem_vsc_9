@@ -7,5 +7,9 @@ public class LeaveTypeEditVM : BaseLeaveTypeVm
     [Range(1, 90)]
     [Display(Name="Maximum allocation of days")] //cip...83
     public int Days { get; set; }
+    //-----   03/05/25   ------------------
+    public Guid CreatedBy { get; set; }
+    public DateTime CreatedDate { get; set; }
+    //-----   03/05/25   ------------------
 }
 

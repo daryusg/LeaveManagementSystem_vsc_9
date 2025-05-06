@@ -1,3 +1,4 @@
+using System.Reflection.Metadata;
 using AutoMapper;
 using Constants = LeaveManagementSystem.Data.Constants;
 
@@ -9,17 +10,24 @@ public class PeriodsController : Controller
 {
     private readonly ApplicationDbContext _context;
     private readonly IMapper _mapper;
+    private readonly IFunctions _functions; //03/05/25
 
-    public PeriodsController(ApplicationDbContext context, IMapper mapper)
+    public PeriodsController(ApplicationDbContext context, IMapper mapper, IFunctions functions)
     {
         _context = context;
         this._mapper = mapper;
+        this._functions = functions;
     }
 
     // GET: Periods
     public async Task<IActionResult> Index()
     {
-        var periodsVM = _mapper.Map<List<PeriodVM>>(await _context.Periods.ToListAsync()); 
+        if (TempData.ContainsKey("ErrorMessage")) //03/05/25
+        {
+            ModelState.AddModelError(string.Empty, TempData["ErrorMessage"].ToString());
+        }
+
+        var periodsVM = _mapper.Map<List<PeriodVM>>(await _context.Periods.ToListAsync());
 
         return View(periodsVM);
     }
@@ -39,7 +47,7 @@ public class PeriodsController : Controller
             return NotFound();
         }
 
-        var periodVM = _mapper.Map<PeriodVM>(period); 
+        var periodVM = _mapper.Map<PeriodVM>(period);
         return View(periodVM);
     }
 
@@ -56,9 +64,14 @@ public class PeriodsController : Controller
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Create([Bind("Name,StartDate,EndDate,Id")] PeriodVM periodVM)
     {
-        var period = _mapper.Map<Period>(periodVM); 
+        var period = _mapper.Map<Period>(periodVM);
         if (ModelState.IsValid)
         {
+            //---------------------------------------------------------
+            //03/05/25 set createdby and createddate
+            period.CreatedBy = new Guid(await _functions.GetEmployeeIdAsync());
+            period.CreatedDate = DateTime.Now;
+            //---------------------------------------------------------
             _context.Add(period);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
@@ -80,7 +93,7 @@ public class PeriodsController : Controller
             return NotFound();
         }
 
-        var periodVM = _mapper.Map<PeriodVM>(period); 
+        var periodVM = _mapper.Map<PeriodVM>(period);
         return View(periodVM);
     }
 
@@ -89,9 +102,9 @@ public class PeriodsController : Controller
     // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit(int id, [Bind("Name,StartDate,EndDate,Id")] PeriodVM periodVM)
+    public async Task<IActionResult> Edit(int id, [Bind("CreatedDate,CreatedBy,Name,StartDate,EndDate,Id")] PeriodVM periodVM)
     {
-        var period = _mapper.Map<Period>(periodVM); 
+        var period = _mapper.Map<Period>(periodVM);
         if (id != period.Id)
         {
             return NotFound();
@@ -99,22 +112,33 @@ public class PeriodsController : Controller
 
         if (ModelState.IsValid)
         {
-            try
+            if (await _functions.isAuthorisedAdminAsync(period.CreatedBy)) //03/05/25
             {
-                _context.Update(period);
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!PeriodExists(period.Id))
+                try
                 {
-                    return NotFound();
+                    //---------------------------------------------------------
+                    //03/05/25 set modifiedby and modifieddate
+                    period.ModifiedBy = new Guid(await _functions.GetEmployeeIdAsync());
+                    period.ModifiedDate = DateTime.Now;
+                    //---------------------------------------------------------
+                    _context.Update(period);
+                    await _context.SaveChangesAsync();
                 }
-                else
+                catch (DbUpdateConcurrencyException)
                 {
-                    throw;
+                    if (!PeriodExists(period.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
                 }
             }
+            else
+                TempData["ErrorMessage"] = Constants.cUnauthorisedAccess;
+
             return RedirectToAction(nameof(Index));
         }
         return View(periodVM);
@@ -135,22 +159,28 @@ public class PeriodsController : Controller
             return NotFound();
         }
 
-        var periodVM = _mapper.Map<PeriodVM>(period); 
+        var periodVM = _mapper.Map<PeriodVM>(period);
         return View(periodVM);
     }
- 
+
     // POST: Periods/Delete/5
     [HttpPost, ActionName("Delete")]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> DeleteConfirmed(int id)
     {
         var period = await _context.Periods.FindAsync(id);
-        if (period != null)
+        if (await _functions.isAuthorisedAdminAsync(period.CreatedBy)) //03/05/25
         {
-            _context.Periods.Remove(period);
-        }
+            if (period != null)
+            {
+                _context.Periods.Remove(period);
+            }
 
-        await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
+        }
+        else
+            TempData["ErrorMessage"] = Constants.cUnauthorisedAccess;
+
         return RedirectToAction(nameof(Index));
     }
 

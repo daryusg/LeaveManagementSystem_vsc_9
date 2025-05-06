@@ -25,8 +25,7 @@ namespace LeaveManagementSystem.Data.Migrations
             modelBuilder.Entity("LeaveManagementSystem.Data.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
-                        .HasMaxLength(72)
-                        .HasColumnType("nvarchar(72)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
@@ -35,8 +34,8 @@ namespace LeaveManagementSystem.Data.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("DateOfBirth")
-                        .HasColumnType("datetime2");
+                    b.Property<DateOnly>("DateOfBirth")
+                        .HasColumnType("date");
 
                     b.Property<string>("Email")
                         .HasMaxLength(256)
@@ -104,57 +103,57 @@ namespace LeaveManagementSystem.Data.Migrations
                             Id = "cb6397fe-acf8-49dd-b791-01bf0b069aee",
                             AccessFailedCount = 0,
                             ConcurrencyStamp = "adb2ad4efab64d049c8a713991f0bd37",
-                            DateOfBirth = new DateTime(1990, 7, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "admin@localhost.com",
+                            DateOfBirth = new DateOnly(1970, 11, 7),
+                            Email = "admin@daryus.com",
                             EmailConfirmed = true,
-                            FirstName = "Admin",
-                            LastName = "Default",
+                            FirstName = "Administrator",
+                            LastName = "Anonymous",
                             LockoutEnabled = false,
-                            NormalizedEmail = "ADMIN@LOCALHOST.COM",
-                            NormalizedUserName = "ADMIN@LOCALHOST.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEN5WCPZ+e5Tcc6puplTNrflD+R6WpF82fsT2aCWMlDDmwAlhys5FMsfFVgax4+GI7Q==",
+                            NormalizedEmail = "ADMIN@DARYUS.COM",
+                            NormalizedUserName = "ADMIN@DARYUS.COM",
+                            PasswordHash = "AQAAAAIAAYagAAAAEJayflAw5VX1+ms/Pdn0L7/PDMCtliDSisLaP6QeKibeCZXGFGZEp14Oq8CKhOztHw==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "26d82787-3f4c-4fe2-b6c6-1660a3c8d58a",
                             TwoFactorEnabled = false,
-                            UserName = "admin@localhost.com"
+                            UserName = "admin@daryus.com"
                         },
                         new
                         {
                             Id = "8a862852-9e68-4bcc-b624-220e9b060cf9",
                             AccessFailedCount = 0,
                             ConcurrencyStamp = "bff9869ba62a4a4986479a91c0d6890b",
-                            DateOfBirth = new DateTime(1991, 7, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "admin_bu1@localhost.com",
+                            DateOfBirth = new DateOnly(1985, 7, 11),
+                            Email = "supervisor@daryus.com",
                             EmailConfirmed = true,
-                            FirstName = "Admin_Bu1",
-                            LastName = "Default",
+                            FirstName = "Supervisor",
+                            LastName = "Anonymous",
                             LockoutEnabled = false,
-                            NormalizedEmail = "ADMIN_BU1@LOCALHOST.COM",
-                            NormalizedUserName = "ADMIN_BU1@LOCALHOST.COM",
+                            NormalizedEmail = "SUPERVISOR@DARYUS.COM",
+                            NormalizedUserName = "SUPERVISOR@DARYUS.COM",
                             PasswordHash = "AQAAAAIAAYagAAAAEJ5jT7bufJvPmguGXW9QAbwUO4GGPlOPUpZDSdL3J5uk9pgBbth4gkSONtFF3+A8kg==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "8dd5bb17-2a8e-4998-a66b-8611e32a9b9a",
                             TwoFactorEnabled = false,
-                            UserName = "admin_bu1@localhost.com"
+                            UserName = "supervisor@daryus.com"
                         },
                         new
                         {
                             Id = "a23d75b8-c842-4164-9cb1-f9e7c2366c3b",
                             AccessFailedCount = 0,
                             ConcurrencyStamp = "939075471b23410b832121d4f56ebeb3",
-                            DateOfBirth = new DateTime(1992, 7, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "testuser@leavemanagement.com",
+                            DateOfBirth = new DateOnly(1992, 11, 7),
+                            Email = "employee@daryus.com",
                             EmailConfirmed = true,
-                            FirstName = "test",
-                            LastName = "user",
+                            FirstName = "Employee",
+                            LastName = "Anonymous",
                             LockoutEnabled = false,
-                            NormalizedEmail = "TESTUSER@LEAVEMANAGEMENT.COM",
-                            NormalizedUserName = "TESTUSER@LEAVEMANAGEMENT.COM",
+                            NormalizedEmail = "EMPLOYEE@DARYUS.COM",
+                            NormalizedUserName = "EMPLOYEE@DARYUS.COM",
                             PasswordHash = "AQAAAAIAAYagAAAAEFmo3ccUYE1zfv2SyMqUSjAxLxupY6bcQEuHLVIgF+ShU/lOkD2lbsPYrlcXNnKNnQ==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "49123653-2d14-4579-a213-e8263f280755",
                             TwoFactorEnabled = false,
-                            UserName = "testuser@leavemanagement.com"
+                            UserName = "employee@daryus.com"
                         });
                 });
 
@@ -166,15 +165,30 @@ namespace LeaveManagementSystem.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<Guid>("CreatedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<int>("Days")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Days_Original")
                         .HasColumnType("int");
 
                     b.Property<string>("EmployeeId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(72)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("LeaveTypeId")
                         .HasColumnType("int");
+
+                    b.Property<Guid?>("ModifiedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("ModifiedDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<int>("PeriodId")
                         .HasColumnType("int");
@@ -187,7 +201,7 @@ namespace LeaveManagementSystem.Data.Migrations
 
                     b.HasIndex("PeriodId");
 
-                    b.ToTable("LeaveAllocations");
+                    b.ToTable("LeaveAllocations", (string)null);
                 });
 
             modelBuilder.Entity("LeaveManagementSystem.Data.LeaveRequest", b =>
@@ -198,12 +212,18 @@ namespace LeaveManagementSystem.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<Guid>("CreatedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("EmployeeId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(72)");
+                        .HasColumnType("nvarchar(450)");
 
-                    b.Property<DateTime>("EndDate")
-                        .HasColumnType("datetime2");
+                    b.Property<DateOnly>("EndDate")
+                        .HasColumnType("date");
 
                     b.Property<int>("LeaveRequestStatusId")
                         .HasColumnType("int");
@@ -211,14 +231,20 @@ namespace LeaveManagementSystem.Data.Migrations
                     b.Property<int>("LeaveTypeId")
                         .HasColumnType("int");
 
+                    b.Property<Guid?>("ModifiedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("ModifiedDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("RequestComments")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ReviewerId")
-                        .HasColumnType("nvarchar(72)");
+                        .HasColumnType("nvarchar(450)");
 
-                    b.Property<DateTime>("StartDate")
-                        .HasColumnType("datetime2");
+                    b.Property<DateOnly>("StartDate")
+                        .HasColumnType("date");
 
                     b.HasKey("Id");
 
@@ -230,7 +256,7 @@ namespace LeaveManagementSystem.Data.Migrations
 
                     b.HasIndex("ReviewerId");
 
-                    b.ToTable("LeaveRequests");
+                    b.ToTable("LeaveRequests", (string)null);
                 });
 
             modelBuilder.Entity("LeaveManagementSystem.Data.LeaveRequestStatus", b =>
@@ -248,7 +274,7 @@ namespace LeaveManagementSystem.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("LeaveRequestStatuses");
+                    b.ToTable("LeaveRequestStatuses", (string)null);
 
                     b.HasData(
                         new
@@ -281,16 +307,29 @@ namespace LeaveManagementSystem.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<Guid>("CreatedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("ModifiedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("ModifiedDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<int>("NumberOfDays")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.ToTable("LeaveTypes");
+                    b.ToTable("LeaveTypes", (string)null);
                 });
 
             modelBuilder.Entity("LeaveManagementSystem.Data.Period", b =>
@@ -301,26 +340,38 @@ namespace LeaveManagementSystem.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("EndDate")
+                    b.Property<Guid>("CreatedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateOnly>("EndDate")
+                        .HasColumnType("date");
+
+                    b.Property<Guid?>("ModifiedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("ModifiedDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
-                    b.Property<DateTime>("StartDate")
-                        .HasColumnType("datetime2");
+                    b.Property<DateOnly>("StartDate")
+                        .HasColumnType("date");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Periods");
+                    b.ToTable("Periods", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
-                        .HasMaxLength(72)
-                        .HasColumnType("nvarchar(72)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
@@ -380,7 +431,7 @@ namespace LeaveManagementSystem.Data.Migrations
 
                     b.Property<string>("RoleId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(72)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
 
@@ -405,7 +456,7 @@ namespace LeaveManagementSystem.Data.Migrations
 
                     b.Property<string>("UserId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(72)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
 
@@ -429,7 +480,7 @@ namespace LeaveManagementSystem.Data.Migrations
 
                     b.Property<string>("UserId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(72)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("LoginProvider", "ProviderKey");
 
@@ -441,12 +492,10 @@ namespace LeaveManagementSystem.Data.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
                 {
                     b.Property<string>("UserId")
-                        .HasMaxLength(72)
-                        .HasColumnType("nvarchar(72)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("RoleId")
-                        .HasMaxLength(72)
-                        .HasColumnType("nvarchar(72)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("UserId", "RoleId");
 
@@ -475,7 +524,7 @@ namespace LeaveManagementSystem.Data.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
                     b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(72)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("LoginProvider")
                         .HasMaxLength(128)

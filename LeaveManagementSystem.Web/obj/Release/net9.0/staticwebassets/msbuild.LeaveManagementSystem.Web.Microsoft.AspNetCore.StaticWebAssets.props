@@ -34482,8 +34482,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>qfplqu5wu1</Fingerprint>
-      <Integrity>+qlhovrSdX+9o+RQnKkaRnBi/cZm5vFuU3YWGzzdiT8=</Integrity>
+      <Fingerprint>mmi6r7twz8</Fingerprint>
+      <Integrity>zupiopiUT2ZcfjdzL+0LmD2Bt7751vA28DWXu6o+rjk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\templates\email_layout.html'))</OriginalItemSpec>

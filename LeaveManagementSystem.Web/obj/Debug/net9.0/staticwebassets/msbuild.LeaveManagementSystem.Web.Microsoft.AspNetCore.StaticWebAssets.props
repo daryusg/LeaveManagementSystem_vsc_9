@@ -1,5 +1,23 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\chatgpt.mobiles.sidebar.fix.for.sites.min.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LeaveManagementSystem.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LeaveManagementSystem.Web</BasePath>
+      <RelativePath>css/chatgpt.mobiles.sidebar.fix.for.sites.min.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>czc4xhpwv5</Fingerprint>
+      <Integrity>uE/Z3qldJehXKMW7jbYB+QTogIcmWXt/k5tuSHjeZkU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\chatgpt.mobiles.sidebar.fix.for.sites.min.css'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\icons\tabler-icons\fonts\tabler-icons.eot'))">
       <SourceType>Package</SourceType>
       <SourceId>LeaveManagementSystem.Web</SourceId>
@@ -6731,6 +6749,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\app.min.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\chatgpt.mobiles.sidebar.fix.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LeaveManagementSystem.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LeaveManagementSystem.Web</BasePath>
+      <RelativePath>js/chatgpt.mobiles.sidebar.fix.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>tipxkdddg9</Fingerprint>
+      <Integrity>iwic8Z+Uypj8qo+1IY7S0nWeVLTfcrFKBOzlPoUAZlw=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\chatgpt.mobiles.sidebar.fix.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\dashboard.js'))">
       <SourceType>Package</SourceType>
@@ -34482,8 +34518,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>qfplqu5wu1</Fingerprint>
-      <Integrity>+qlhovrSdX+9o+RQnKkaRnBi/cZm5vFuU3YWGzzdiT8=</Integrity>
+      <Fingerprint>mmi6r7twz8</Fingerprint>
+      <Integrity>zupiopiUT2ZcfjdzL+0LmD2Bt7751vA28DWXu6o+rjk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\templates\email_layout.html'))</OriginalItemSpec>
