@@ -108,13 +108,11 @@ C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.W
 C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\bin\Release\net9.0\System.Composition.Runtime.dll
 C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\bin\Release\net9.0\System.Composition.TypedParts.dll
 C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\bin\Release\net9.0\System.Configuration.ConfigurationManager.dll
-C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\bin\Release\net9.0\System.Formats.Asn1.dll
 C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\bin\Release\net9.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\bin\Release\net9.0\System.Memory.Data.dll
 C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\bin\Release\net9.0\System.Reflection.MetadataLoadContext.dll
 C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\bin\Release\net9.0\System.Runtime.Caching.dll
 C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\bin\Release\net9.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\bin\Release\net9.0\System.Text.Json.dll
 C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\bin\Release\net9.0\af\Humanizer.resources.dll
 C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\bin\Release\net9.0\ar\Humanizer.resources.dll
 C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\bin\Release\net9.0\az\Humanizer.resources.dll
@@ -1807,12 +1805,6 @@ C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.W
 C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Release\net9.0\staticwebassets.build.json
 C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Release\net9.0\staticwebassets.development.json
 C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Release\net9.0\staticwebassets.build.endpoints.json
-C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Release\net9.0\staticwebassets\msbuild.LeaveManagementSystem.Web.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Release\net9.0\staticwebassets\msbuild.LeaveManagementSystem.Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Release\net9.0\staticwebassets\msbuild.build.LeaveManagementSystem.Web.props
-C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Release\net9.0\staticwebassets\msbuild.buildMultiTargeting.LeaveManagementSystem.Web.props
-C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Release\net9.0\staticwebassets\msbuild.buildTransitive.LeaveManagementSystem.Web.props
-C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Release\net9.0\staticwebassets.pack.json
 C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Release\net9.0\LeaveMan.0CDBFD2D.Up2Date
 C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Release\net9.0\LeaveManagementSystem.Web.dll
 C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Release\net9.0\refint\LeaveManagementSystem.Web.dll
@@ -1821,3 +1813,8 @@ C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.W
 C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Release\net9.0\ref\LeaveManagementSystem.Web.dll
 C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\bin\Release\net9.0\Azure.Communication.Email.dll
 C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Release\net9.0\compressed\9g5let928x-mmi6r7twz8.gz
+C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Release\net9.0\rpswa.dswa.cache.json
+C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Release\net9.0\rjimswa.dswa.cache.json
+C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Release\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Release\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\obj\Release\net9.0\staticwebassets.build.json.cache

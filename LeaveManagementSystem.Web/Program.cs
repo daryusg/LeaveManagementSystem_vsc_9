@@ -53,7 +53,8 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options =>
     //options.Password.RequireNonAlphanumeric = false; //cip...179
 }) //cip...107. (default user) IdentityUser->ApplicationUser
 //cip...108 Register.cshtml.cs if (_userManager.Options.SignIn.RequireConfirmedAccount) -> options.SignIn.RequireConfirmedAccount = true
-    .AddRoles<IdentityRole>() //cip...107
+    //.AddRoles<IdentityRole>() //cip...107
+    .AddRoles<ApplicationRole>() //11/07/25
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
 

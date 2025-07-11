@@ -55,6 +55,7 @@
                                     <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
                                 </div>
                                 <div class="mb-4">
+                                    <label class="form-label">Role</label> @*11/07/25*@
                                     @* @foreach(var role in Model.Input.RoleNames) *@
                                     @foreach (var role in Model.RoleNames) //cip...110)
                                     {

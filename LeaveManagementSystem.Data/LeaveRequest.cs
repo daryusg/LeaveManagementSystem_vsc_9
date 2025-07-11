@@ -14,10 +14,4 @@ public class LeaveRequest : BaseEntity
     public ApplicationUser? Reviewer { get; set; } //cip...140. from cip...124. navigation property. it's best to make this nullable.
     public string? ReviewerId { get; set; } //cip...140. from cip...124. fk property. this needs to be nullable because it will be reviewed AFTER creation.
     public string? RequestComments { get; set; }
-    //-----   03/05/25   ------------------
-    public Guid CreatedBy { get; set; }
-    public DateTime CreatedDate { get; set; }
-    public Guid? ModifiedBy { get; set; } //null when record is created.
-    public DateTime? ModifiedDate { get; set; } //null when record is created.
-    //-----   03/05/25   ------------------
 }

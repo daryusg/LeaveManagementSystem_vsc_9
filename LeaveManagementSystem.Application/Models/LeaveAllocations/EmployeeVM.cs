@@ -12,4 +12,7 @@ public class EmployeeVM
 
     [Display(Name = "Email Address")]
     public string Email { get; set; } = string.Empty;
+
+    public string RoleName { get; set; }  // ✅ Add this 11/07/25
+    public int Level { get; set; }  // ✅ Add this 11/07/25
 }

@@ -16,10 +16,4 @@ public class LeaveAllocation : BaseEntity
     
     public int Days_Original { get; set; } //03/05/25
     public int Days { get; set; }
-    //-----   03/05/25   ------------------
-    public Guid CreatedBy { get; set; }
-    public DateTime CreatedDate { get; set; }
-    public Guid? ModifiedBy { get; set; } //null when record is created.
-    public DateTime? ModifiedDate { get; set; } //null when record is created.
-    //-----   03/05/25   ------------------
 }

@@ -67,12 +67,10 @@ public class PeriodsController : Controller
         var period = _mapper.Map<Period>(periodVM);
         if (ModelState.IsValid)
         {
-            //---------------------------------------------------------
-            //03/05/25 set createdby and createddate
-            period.CreatedBy = new Guid(await _functions.GetEmployeeIdAsync());
-            period.CreatedDate = DateTime.Now;
-            //---------------------------------------------------------
             _context.Add(period);
+            //18/06/25 saving userid for audit fields
+            Guid userId = Guid.Parse(await _functions.GetEmployeeIdAsync());
+            _context.SetCurrentUser(userId);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
@@ -116,12 +114,10 @@ public class PeriodsController : Controller
             {
                 try
                 {
-                    //---------------------------------------------------------
-                    //03/05/25 set modifiedby and modifieddate
-                    period.ModifiedBy = new Guid(await _functions.GetEmployeeIdAsync());
-                    period.ModifiedDate = DateTime.Now;
-                    //---------------------------------------------------------
                     _context.Update(period);
+                    //18/06/25 saving userid for audit fields
+                    Guid userId = Guid.Parse(await _functions.GetEmployeeIdAsync());
+                    _context.SetCurrentUser(userId);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -176,6 +172,9 @@ public class PeriodsController : Controller
                 _context.Periods.Remove(period);
             }
 
+            //18/06/25 saving userid for audit fields
+            Guid userId = Guid.Parse(await _functions.GetEmployeeIdAsync());
+            _context.SetCurrentUser(userId);
             await _context.SaveChangesAsync();
         }
         else

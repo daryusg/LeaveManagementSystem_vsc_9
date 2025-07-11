@@ -9,7 +9,8 @@ namespace LeaveManagementSystem.Web.Areas.Identity.Pages.Account
     public class RegisterModel : PageModel
     {
         private readonly SignInManager<ApplicationUser> _signInManager;
-        private readonly RoleManager<IdentityRole> _roleManager;
+        //private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly RoleManager<ApplicationRole> _roleManager; //11/07/25
         private readonly ILeaveAllocationsService _leaveAllocationsService;
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly IUserStore<ApplicationUser> _userStore;
@@ -23,7 +24,8 @@ namespace LeaveManagementSystem.Web.Areas.Identity.Pages.Account
             UserManager<ApplicationUser> userManager,
             IUserStore<ApplicationUser> userStore,
             SignInManager<ApplicationUser> signInManager,
-            RoleManager<IdentityRole> roleManager, //cip...108
+            //RoleManager<IdentityRole> roleManager, //cip...108
+            RoleManager<ApplicationRole> roleManager, //11/07/25
             ILogger<RegisterModel> logger,
             IEmailSender emailSender,
             IWebHostEnvironment hostEnvironment /*cip...191*/)
@@ -267,6 +269,7 @@ namespace LeaveManagementSystem.Web.Areas.Identity.Pages.Account
         private async Task<string[]> GetRoles()
         {
             string[] roles = await _roleManager.Roles
+                .OrderBy(q => q.Level) //11/07/25
                 .Select(q => q.Name)
                 //.Where(q => q != Constants.Roles.cAdministrator) //03/05/25
                 .ToArrayAsync(); // cip...108. fill the combo prior.
