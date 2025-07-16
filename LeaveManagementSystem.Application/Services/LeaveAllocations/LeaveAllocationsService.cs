@@ -87,7 +87,8 @@ public class LeaveAllocationsService(ApplicationDbContext _context, IMapper _map
     public async Task<List<EmployeeVM>> GetEmployeesAsync() //cip...131
     {
         // var users = await _functions.GetUsersAsync(Data.Constants.Roles.cEmployee);
-        // var employees = _mapper.Map<List<ApplicationUser>, List<EmployeeVM>>(users.ToList()); //cip...131 NOTE: users is IListF
+        // var employees = _mapper.Map<List<ApplicationUser>, List<EmployeeVM>>(users.ToList()); //cip...131 NOTE: users is IList<ApplicationUser>
+        //11/07/25 chatgpt
         var allUsers = _userManager.Users.ToList(); // or use ToListAsync() if IQueryable
         var allRoles = _roleManager.Roles.ToList(); // ApplicationRole with Level
 
@@ -100,7 +101,7 @@ public class LeaveAllocationsService(ApplicationDbContext _context, IMapper _map
             // Get matching ApplicationRole instances from the role names
             var userRoles = allRoles.Where(r => roleNames.Contains(r.Name)).ToList();
 
-            // Get the highest level (Administrator = 3, Supervisor = 2, Employee = 1)
+            // Get the highest level (Administrator = 5, Supervisor = 3, Employee = 1)
             // int highestLevel = userRoles.Any() ? userRoles.Max(r => (r as ApplicationRole)?.Level ?? 0) : 0;
             var topRole = userRoles
                 .OfType<ApplicationRole>()                       // safely cast

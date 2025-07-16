@@ -419,6 +419,26 @@ namespace LeaveManagementSystem.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Periods");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreatedBy = new Guid("00000000-0000-0000-0000-000000000000"),
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            EndDate = new DateOnly(2024, 12, 31),
+                            Name = "2024-2025",
+                            StartDate = new DateOnly(2024, 1, 1)
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreatedBy = new Guid("00000000-0000-0000-0000-000000000000"),
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            EndDate = new DateOnly(2025, 12, 31),
+                            Name = "2025-2026",
+                            StartDate = new DateOnly(2025, 1, 1)
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

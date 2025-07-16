@@ -12,6 +12,16 @@ public class LeaveTypesService(ApplicationDbContext _context, IMapper _mapper, I
         return _mapper.Map<List<LeaveTypeReadOnlyVM>>(data);
     }
 
+    public async Task<List<LeaveTypeReadOnlyVM>> GetAllAsync(string employeeId) //16/07/25
+    {
+        //only display valid LeaveTypes ie don't display unallocated leave types
+        var data = await _context.LeaveTypes
+            .Where(lt => _context.LeaveAllocations
+                .Any(la => la.LeaveTypeId == lt.Id && la.EmployeeId == employeeId))
+            .ToListAsync();
+        return _mapper.Map<List<LeaveTypeReadOnlyVM>>(data);
+    }
+
     //for details
     public async Task<T?> GetAsync<T>(int? id) where T : class //cip...90
     {

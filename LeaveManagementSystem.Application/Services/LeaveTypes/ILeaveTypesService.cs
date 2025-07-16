@@ -5,6 +5,7 @@ public interface ILeaveTypesService
     Task CreateAsync(LeaveTypeCreateVM model);
     Task EditAsync(LeaveTypeEditVM model);
     Task<List<LeaveTypeReadOnlyVM>> GetAllAsync();
+    Task<List<LeaveTypeReadOnlyVM>> GetAllAsync(string employeeId); //13/07/25
     Task<T?> GetAsync<T>(int? id) where T : class;
     Task RemoveAsync(int id);
     bool LeaveTypeExists(int id);

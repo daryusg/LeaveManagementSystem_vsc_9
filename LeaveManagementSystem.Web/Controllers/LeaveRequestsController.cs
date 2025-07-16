@@ -24,7 +24,8 @@ namespace LeaveManagementSystem.Web.Controllers
         //public async Task<IActionResult> Create() * 23/01/25 adding admin functionality *
         public async Task<IActionResult> Create(string? employeeId, int? leaveTypeId)
         {
-            var leaveTypes = await _leaveTypesService.GetAllAsync();
+            //var leaveTypes = await _leaveTypesService.GetAllAsync();
+            var leaveTypes = await _leaveTypesService.GetAllAsync(employeeId); //16/07/25
             var leaveTypesList = new SelectList(leaveTypes, "Id", "Name", leaveTypeId); //SelectList.SelectList(System.Collections.IEnumerable items, string dataValueField, string dataTextField, object selectedValue)
             var model = new LeaveRequestCreateVM
             {
@@ -70,7 +71,8 @@ namespace LeaveManagementSystem.Web.Controllers
             }
             //NOTE: LeaveTypes is null at this point because it's unbound
             //refill...
-            var leaveTypes = await _leaveTypesService.GetAllAsync();
+            //var leaveTypes = await _leaveTypesService.GetAllAsync();
+            var leaveTypes = await _leaveTypesService.GetAllAsync(model.EmployeeId); //16/07/25
             model.LeaveTypes = new SelectList(leaveTypes, "Id", "Name");
             return View(model);
         }
