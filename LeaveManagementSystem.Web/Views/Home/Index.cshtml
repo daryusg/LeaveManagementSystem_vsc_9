@@ -10,8 +10,8 @@
 </div>
 <div>
     <p>
-        Seq setup (in the development environment): docker run --name seq -d --restart unless-stopped -e ACCEPT_EULA=Y -p 5341:80 datalust/seq:latest<br>
-        SQL Server setup (in the development environment): docker run --name LMS_vsc_9 -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Str0ngPa$$w0rd' -p 1447:1433 -d mcr.microsoft.com/mssql/server
+        Seq setup (in the development environment): docker run --name seq -d --restart unless-stopped -e ACCEPT_EULA=Y -e SEQ_FIRSTRUN_NOAUTHENTICATION=True -p 5341:80 datalust/seq:latest<br>
+        SQL Server setup (in the development environment): docker run --name LMS_vsc_9 -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Str0ngPa$$w0rd' -p 1447:1433 -d mcr.microsoft.com/mssql/server<br>
     </p>
     <p>
         Developed using c# in Visual Studio Code - kevin dyer

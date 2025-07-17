@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LeaveManagementSystem.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af0ecd1d3f4596daac179b29c15ae865b2dbe01d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba2eb5dd4e90285725d0fef1e3689fbc2aca2bfc")]
 [assembly: System.Reflection.AssemblyProductAttribute("LeaveManagementSystem.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LeaveManagementSystem.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
