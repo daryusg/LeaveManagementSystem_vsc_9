@@ -1,5 +1,0 @@
-C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\publish\appsettings.Development.json
-C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\publish\appsettings.json
-C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\publish\appsettings.Production.json
-C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\publish\app.db
-C:\Users\kev\projects_vscode\LeaveManagementSystem_vsc_9\LeaveManagementSystem.Web\publish\LeaveManagementSystem.Web.exe

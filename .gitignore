@@ -1,7 +1,61 @@
-LeaveManagementSystem.Web/app.db
-LeaveManagementSystem.Web/app.db-shm
-LeaveManagementSystem.Web/app.db-wal
-LeaveManagementSystem.Web/logs
-LeaveManagementSystem.Web/publish
+#18/07/25
+#LeaveManagementSystem.Web/app.db
+#LeaveManagementSystem.Web/app.db-shm
+#LeaveManagementSystem.Web/app.db-wal
+#LeaveManagementSystem.Web/logs
+#LeaveManagementSystem.Web/publish
+#LMS.session.sql
+#LeaveManagementSystem.Web/appsettings.Production.json
+
+
+## .NET & Build-related ##
+bin/
+obj/
+**/bin/
+**/obj/
+
+## VS Code settings ##
+.vscode/
+
+## SQLite database files ##
+**/*.db
+**/*.db-shm
+**/*.db-wal
+
+## Logs ##
+logs/
+*.log
+
+## User-specific files ##
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Publish output ##
+**/publish/
+
+## Secrets and sensitive configs ##
+**/appsettings.Production.json
 LMS.session.sql
-LeaveManagementSystem.Web/appsettings.Production.json
+
+## Dependency caches ##
+packages/
+.nuget/
+project.lock.json
+project.fragment.lock.json
+
+## OS-specific ##
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+## GitGuardian and other scan tools cache ##
+.ggshield/
